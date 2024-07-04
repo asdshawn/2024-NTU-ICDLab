@@ -1,0 +1,20 @@
+{
+    "CORE": [
+        "CORE",
+        "WaVp2",
+        "module",
+        3
+    ],
+    "Top_tb": [
+        "Top_tb",
+        "P2DQS",
+        "module",
+        4
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        2
+    ]
+}

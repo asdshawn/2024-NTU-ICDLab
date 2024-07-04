@@ -1,0 +1,89 @@
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : pMaxPool
+Version: U-2022.12
+Date   : Wed Jun  5 17:14:48 2024
+****************************************
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: i_data_1[0]
+              (input port clocked by clk)
+  Endpoint: sub_r_reg[20]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pMaxPool           G200K                 fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  input external delay                     1.00       1.50 r
+  i_data_1[0] (in)                         0.02       1.52 r
+  U116/O (AN2B1S)                          0.21       1.72 r
+  U117/O (NR2)                             0.09       1.81 f
+  U118/O (MOAI1S)                          0.41       2.22 r
+  U119/O (NR2)                             0.10       2.31 f
+  U120/O (MOAI1S)                          0.43       2.74 r
+  U121/O (NR2)                             0.10       2.84 f
+  U122/O (MOAI1S)                          0.43       3.27 r
+  U123/O (NR2)                             0.10       3.36 f
+  U124/O (MOAI1S)                          0.43       3.79 r
+  U125/O (NR2)                             0.10       3.89 f
+  U126/O (MOAI1S)                          0.43       4.32 r
+  U127/O (NR2)                             0.10       4.41 f
+  U128/O (MOAI1S)                          0.43       4.84 r
+  U129/O (NR2)                             0.10       4.94 f
+  U130/O (MOAI1S)                          0.43       5.37 r
+  U131/O (NR2)                             0.10       5.46 f
+  U132/O (MOAI1S)                          0.43       5.89 r
+  U133/O (NR2)                             0.10       5.99 f
+  U134/O (MOAI1S)                          0.43       6.42 r
+  U135/O (NR2)                             0.10       6.51 f
+  U136/O (MOAI1S)                          0.43       6.94 r
+  U137/O (NR2)                             0.10       7.04 f
+  U138/O (MOAI1S)                          0.43       7.47 r
+  U139/O (NR2)                             0.10       7.56 f
+  U140/O (MOAI1S)                          0.43       7.99 r
+  U141/O (NR2)                             0.10       8.09 f
+  U142/O (MOAI1S)                          0.43       8.52 r
+  U143/O (NR2)                             0.10       8.61 f
+  U144/O (MOAI1S)                          0.43       9.04 r
+  U145/O (NR2)                             0.10       9.14 f
+  U146/O (MOAI1S)                          0.43       9.57 r
+  U147/O (NR2)                             0.10       9.66 f
+  U148/O (MOAI1S)                          0.43      10.09 r
+  U149/O (NR2)                             0.10      10.19 f
+  U150/O (MOAI1S)                          0.43      10.62 r
+  U151/O (NR2)                             0.10      10.71 f
+  U152/O (MOAI1S)                          0.43      11.14 r
+  U153/O (NR2)                             0.10      11.24 f
+  U154/O (MOAI1S)                          0.38      11.62 r
+  U156/O (MOAI1S)                          0.26      11.88 r
+  sub_r_reg[20]/D (QDFFRBP)                0.00      11.88 r
+  data arrival time                                  11.88
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.50       1.50
+  clock uncertainty                       -0.10       1.40
+  sub_r_reg[20]/CK (QDFFRBP)               0.00       1.40 r
+  library setup time                      -0.11       1.29
+  data required time                                  1.29
+  -----------------------------------------------------------
+  data required time                                  1.29
+  data arrival time                                 -11.88
+  -----------------------------------------------------------
+  slack (VIOLATED)                                  -10.59
+
+
+1

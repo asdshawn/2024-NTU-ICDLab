@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : alu
+Version: U-2022.12
+Date   : Sat Mar  9 02:15:53 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    fsa0m_a_generic_core_tt1p8v25c (File: /home/raid7_2/user12/r2945050/ICDLab/HW3/fsa0m_a_generic_core_tt1p8v25c.db)
+
+Number of ports:                          127
+Number of nets:                           549
+Number of cells:                          372
+Number of combinational cells:            334
+Number of sequential cells:                35
+Number of macros/black boxes:               0
+Number of buf/inv:                         99
+Number of references:                      27
+
+Combinational area:               8196.350387
+Buf/Inv area:                     1568.649568
+Noncombinational area:            2077.992020
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 10274.342407
+Total area:                 undefined
+1

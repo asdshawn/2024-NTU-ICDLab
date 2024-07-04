@@ -1,0 +1,119 @@
+#################  nanoroute  ################
+[06/04 00:07:00] [00:00:00] #Copyright (c) 1999 - 2010
+[06/04 00:07:00] [00:00:00] #Cadence Design Systems, Inc.
+[06/04 00:07:00] [00:00:00] #All rights reserved. This work may not be copied, modified, 
+[06/04 00:07:00] [00:00:00] #re-published, uploaded, executed, or distributed in any way, 
+[06/04 00:07:00] [00:00:00] #in any medium, whether in whole or in part, without prior 
+[06/04 00:07:00] [00:00:00] #written permission from Cadence Design Systems, Inc.
+[06/04 00:07:00] [00:00:00] #http://www.cadence.com
+[06/04 00:07:00] [00:00:00] #
+[06/04 00:07:00] [00:00:00] #Product Version : 21.13-s100_1 NR220220-0140/21_13-UB
+[06/04 00:07:00] [00:00:00] #Database Version : 18.20 {superthreading v2.17}
+[06/04 00:07:00] [00:00:00] #Checkout Date : 02/20/2022:01:40:25 from 21_13
+[06/04 00:07:00] [00:00:00] #Compiled Date : 03/04/2022 14:01:27 using tools-
+[06/04 00:07:00] [00:00:00] #Hostname : cad16 (x86_64 w/Linux 3.10.0-1160.88.1.el7.x86_64 Xeon E5-2620_0 2.30GHz 6Core 24CPU 15MB cache 40GB)
+[06/04 00:07:00] [00:00:00] #Current Working Directory : /home/raid7_2/user12/r2945050/ICDLab/APR
+[06/04 00:07:00] [00:00:00] #nanoroute Executable : /usr/cad/innovus/cur/tools.lnx86/plato/bin/64bit/nanoroute
+[06/04 00:07:00] [00:00:00] #Current Date and Time : Tue Jun  4 00:07:00 2024
+#
+[06/04 00:07:00] [00:00:00] #number of cpu = 8.
+[06/04 00:07:00] [00:00:00] #client index = 1717431075.
+[06/04 00:07:00] [00:00:00] #Connected to server cad16.ee.ntu.edu.tw on port 49697. (8 threads)
+[06/04 00:07:00] [00:00:00] #WARNING (NRIF-47) This option supports a feature that is under development and experimental, use at your own risk.
+[06/04 00:07:00] [00:00:00] #WARNING (NRIF-47) This option supports a feature that is under development and experimental, use at your own risk.
+[06/04 00:07:00] [00:00:00] #WARNING (NRIF-47) This option supports a feature that is under development and experimental, use at your own risk.
+[06/04 00:07:00] [00:00:00] #WARNING (NRIF-47) This option supports a feature that is under development and experimental, use at your own risk.
+[06/04 00:07:00] [00:00:00] #WARNING (NRIF-47) This option supports a feature that is under development and experimental, use at your own risk.
+[06/04 00:07:00] [00:00:00] #WARNING (NRIF-47) This option supports a feature that is under development and experimental, use at your own risk.
+[06/04 00:07:00] [00:00:00] #WARNING (NRIF-47) This option supports a feature that is under development and experimental, use at your own risk.
+[06/04 00:07:00] [00:00:00] #WARNING (NRIF-47) This option supports a feature that is under development and experimental, use at your own risk.
+[06/04 00:07:00] [00:00:00] #Loading library ...
+[06/04 00:07:00] [00:00:00] #    loading LIBRARY_HEADER ...
+[06/04 00:07:00] [00:00:00] #    loading TECHNOLOGY ...
+[06/04 00:07:00] [00:00:00] #    loading 12 LAYERS ...
+[06/04 00:07:00] [00:00:00] #    loading 80 VIAS ...
+[06/04 00:07:00] [00:00:00] #    loading 15 VIA_RULES ...
+[06/04 00:07:00] [00:00:00] #    loading 1 RULES ...
+[06/04 00:07:00] [00:00:00] #    loading TIMING ...
+[06/04 00:07:00] [00:00:00] #    receiving 427 CELLS ...
+[06/04 00:07:00] [00:00:00] #setNanoRouteMode -droute_end_iteration 1
+[06/04 00:07:00] [00:00:00] #setNanoRouteMode -droute_post_route_litho_repair true
+[06/04 00:07:00] [00:00:00] #setNanoRouteMode -droute_post_route_spread_wire "1"
+[06/04 00:07:00] [00:00:00] #setNanoRouteMode -route_antenna_cell_name "ANTENNA"
+[06/04 00:07:00] [00:00:00] #setNanoRouteMode -route_concurrent_minimize_via_count_effort "high"
+[06/04 00:07:00] [00:00:00] #setNanoRouteMode -route_insert_antenna_diode true
+[06/04 00:07:00] [00:00:00] #setNanoRouteMode -route_reserve_space_for_multi_cut true
+[06/04 00:07:00] [00:00:00] #setNanoRouteMode -route_strictly_honor_non_default_rule "false"
+[06/04 00:07:00] [00:00:00] #setNanoRouteMode -route_with_litho_driven true
+[06/04 00:07:00] [00:00:00] #setNanoRouteMode -route_with_si_driven true
+[06/04 00:07:00] [00:00:00] #setNanoRouteMode -route_with_timing_driven true
+[06/04 00:07:00] [00:00:00] #Loading design CHIP init ...
+[06/04 00:07:00] [00:00:00] #    loading DESIGN_VIEW CHIP,init ... 
+[06/04 00:07:00] [00:00:00] #    loading 123 CHILD CELL_VIEWS ...
+[06/04 00:07:00] [00:00:00] #    loading 18 VIAS ...
+[06/04 00:07:00] [00:00:00] #    loading 14190 INSTANCES ...
+[06/04 00:07:00] [00:00:00] #    loading 8628 DIRTY_AREA ...
+[06/04 00:07:00] [00:00:00] #    loading 2 SPECIAL_NETS ...
+[06/04 00:07:00] [00:00:00] #    loading 14286 NETS ...
+[06/04 00:07:00] [00:00:01] #setNanoRouteMode -droute_end_iteration 1
+[06/04 00:07:00] [00:00:01] #setNanoRouteMode -droute_post_route_litho_repair true
+[06/04 00:07:00] [00:00:01] #setNanoRouteMode -droute_post_route_spread_wire "1"
+[06/04 00:07:00] [00:00:01] #setNanoRouteMode -route_antenna_cell_name "ANTENNA"
+[06/04 00:07:00] [00:00:01] #setNanoRouteMode -route_concurrent_minimize_via_count_effort "high"
+[06/04 00:07:00] [00:00:01] #setNanoRouteMode -route_insert_antenna_diode true
+[06/04 00:07:00] [00:00:01] #setNanoRouteMode -route_reserve_space_for_multi_cut true
+[06/04 00:07:00] [00:00:01] #setNanoRouteMode -route_strictly_honor_non_default_rule "false"
+[06/04 00:07:00] [00:00:01] #setNanoRouteMode -route_with_litho_driven true
+[06/04 00:07:00] [00:00:01] #setNanoRouteMode -route_with_si_driven true
+[06/04 00:07:00] [00:00:01] #setNanoRouteMode -route_with_timing_driven true
+[06/04 00:07:00] [00:00:01] #cpu time = 00:00:00, elapsed time = 00:00:00, memory = 43.95 (MB), peak = 43.95 (MB)
+[06/04 00:07:00] [00:00:01] #Start routing data preparation on Tue Jun  4 00:07:00 2024
+#
+[06/04 00:07:00] [00:00:01] #Minimum voltage of a net in the design = 0.000.
+[06/04 00:07:00] [00:00:01] #Maximum voltage of a net in the design = 1.980.
+[06/04 00:07:00] [00:00:01] #Voltage range [0.000 - 1.980] has 14284 nets.
+[06/04 00:07:00] [00:00:01] #Voltage range [0.000 - 0.000] has 1 net.
+[06/04 00:07:00] [00:00:01] #Voltage range [1.620 - 1.980] has 1 net.
+[06/04 00:07:00] [00:00:01] #Build and mark too close pins for the same net.
+[06/04 00:07:00] [00:00:01] ### receiving APA data from server ...
+[06/04 00:07:00] [00:00:01] #Restoring pin access data from file (null) ...
+[06/04 00:07:00] [00:00:01] #Done restoring pin access data
+[06/04 00:07:00] [00:00:01] #Initial pin access analysis.
+[06/04 00:07:01] [00:00:01] #Detail pin access analysis.
+[06/04 00:07:01] [00:00:01] # metal1       H   Track-Pitch = 0.5600    Line-2-Via Pitch = 0.5000
+[06/04 00:07:01] [00:00:01] # metal2       V   Track-Pitch = 0.6200    Line-2-Via Pitch = 0.5600
+[06/04 00:07:01] [00:00:01] # metal3       H   Track-Pitch = 0.5600    Line-2-Via Pitch = 0.5600
+[06/04 00:07:01] [00:00:01] # metal4       V   Track-Pitch = 0.6200    Line-2-Via Pitch = 0.5600
+[06/04 00:07:01] [00:00:01] # metal5       H   Track-Pitch = 0.5600    Line-2-Via Pitch = 0.5600
+[06/04 00:07:01] [00:00:01] # metal6       V   Track-Pitch = 2.4800    Line-2-Via Pitch = 2.2000
+[06/04 00:07:01] [00:00:01] #Regenerating Ggrids automatically.
+[06/04 00:07:01] [00:00:01] #Auto generating G-grids with size=15 tracks, using layer metal3's pitch = 0.5600.
+[06/04 00:07:01] [00:00:01] #Using automatically generated G-grids.
+[06/04 00:07:01] [00:00:01] #(check_and_prepare_match_target_file) no match_target_file in constraint. quit
+[06/04 00:07:02] [00:00:02] #Done routing data preparation.
+[06/04 00:07:02] [00:00:02] #cpu time = 00:00:02, elapsed time = 00:00:02, memory = 74.70 (MB), peak = 74.88 (MB)
+[06/04 00:07:02] [00:00:02] ### drc_pitch = 14800 ( 14.8000 um) drc_range = 8400 (  8.4000 um) route_pitch = 14800 ( 14.8000 um) patch_pitch = 16000 ( 16.0000 um) top_route_layer = 6 top_pin_layer = 6
+[06/04 00:07:02] [00:00:02] #build: cpu time = 00:00:02, elapsed time = 00:00:02, memory = 75.88 (MB), peak = 76.32 (MB)
+[06/04 00:07:02] [00:00:02] #
+[06/04 00:07:02] [00:00:02] #Start client routing ...
+[06/04 00:07:02] [00:00:02] #
+[06/04 00:07:02] [00:00:02] #start initial detail routing ...
+[06/04 00:07:10] [00:00:51] #cpu time = 00:00:49, elapsed time = 00:00:08, memory = 80.37 (MB), peak = 339.43 (MB)
+[06/04 00:07:10] [00:00:51] #
+[06/04 00:07:10] [00:00:51] #start DRC checking ...
+[06/04 00:07:11] [00:01:01] #cpu time = 00:00:10, elapsed time = 00:00:02, memory = 81.77 (MB), peak = 339.43 (MB)
+[06/04 00:07:11] [00:01:01] #start 1st optimization iteration ...
+[06/04 00:07:12] [00:01:02] #cpu time = 00:00:01, elapsed time = 00:00:00, memory = 82.70 (MB), peak = 339.43 (MB)
+[06/04 00:07:12] [00:01:02] #Cpu time = 00:01:02
+[06/04 00:07:12] [00:01:02] #Elapsed time = 00:00:11
+[06/04 00:07:12] [00:01:02] #Increased memory = 38.75 (MB)
+[06/04 00:07:12] [00:01:02] #Total memory = 82.70 (MB)
+[06/04 00:07:12] [00:01:02] #Peak memory = 339.43 (MB)
+[06/04 00:07:12] [00:01:02] #
+[06/04 00:07:13] [00:01:02] #Cpu time = 00:01:02
+[06/04 00:07:13] [00:01:02] #Elapsed time = 00:00:13
+[06/04 00:07:13] [00:01:02] #Increased memory = 81.50 (MB)
+[06/04 00:07:13] [00:01:02] #Total memory = 82.68 (MB)
+[06/04 00:07:13] [00:01:02] #Peak memory = 339.43 (MB)
+[06/04 00:07:13] [00:01:02] #Finished client route on Tue Jun  4 00:07:13 2024
+#

@@ -1,0 +1,9 @@
+Command Line: /usr/spring_soft/verdi/cur/platform/LINUXAMD64/bin/Novas -nWave
+uname(Linux cad21 3.10.0-1160.el7.x86_64 #1 SMP Mon Oct 19 16:18:59 UTC 2020 x86_64)
+Disabled Info Message: The file you selected is a VCD file.
+ It will be translated to Fast Signal Database(FSDB) file.
+The new waveform file name: /home/raid7_2/user12/r2945050/ICDLab/Final/partial_conv/partial_conv.fsdb.fsdb
+Converter is running ...
+
+Disabled Info Message: Fast file /home/raid7_2/user12/r2945050/ICDLab/Final/partial_conv/partial_conv.fsdb.fsdb auto loading!
+au time 1521.439348 17.314547 15.052781 delta 345759744 345759744 total 873177088 873177088

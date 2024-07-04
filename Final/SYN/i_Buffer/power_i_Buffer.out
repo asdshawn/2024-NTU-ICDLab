@@ -1,0 +1,58 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : i_Buffer
+Version: U-2022.12
+Date   : Wed Jun  5 16:42:07 2024
+****************************************
+
+
+Library(s) Used:
+
+    fsa0m_a_generic_core_tt1p8v25c (File: /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/i_Buffer/fsa0m_a_generic_core_tt1p8v25c.db)
+
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+i_Buffer               G200K             fsa0m_a_generic_core_tt1p8v25c
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =  77.9711 mW   (59%)
+  Net Switching Power  =  53.2476 mW   (41%)
+                         ---------
+Total Dynamic Power    = 131.2188 mW  (100%)
+
+Cell Leakage Power     = 674.5728 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network     72.8090            0.0000            0.0000           72.8090  (  55.49%)  i
+register           1.2593            0.2261        3.3518e+05            1.4857  (   1.13%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      3.9032           53.0220        3.3939e+05           56.9254  (  43.38%)
+--------------------------------------------------------------------------------------------------
+Total             77.9715 mW        53.2482 mW     6.7457e+05 pW       131.2201 mW
+1

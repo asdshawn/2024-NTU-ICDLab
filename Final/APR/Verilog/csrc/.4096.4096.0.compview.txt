@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1717432196.147609072, "rt":3.86, "ut":2.88, "st":0.32}}
+{"vcselab":{"timestamp_begin":1717432200.083217641, "rt":2.72, "ut":1.74, "st":0.22}}
+{"link":{"timestamp_begin":1717432202.870017774, "rt":0.54, "ut":0.23, "st":0.17}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1717432195.661062908}
+{"VCS_COMP_START_TIME": 1717432195.661062908}
+{"VCS_COMP_END_TIME": 1717432208.180151474}
+{"VCS_USER_OPTIONS": "Top_tb.v ../CHIP.v -v fsa0m_a_generic_core_21.lib.src fsa0m_a_t33_generic_io_21.lib.src -full64 -R -debug_access+all +v2k+define+SDF"}
+{"vcs1": {"peak_mem": 351724}}
+{"stitch_vcselab": {"peak_mem": 255416}}

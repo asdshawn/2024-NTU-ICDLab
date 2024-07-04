@@ -1,0 +1,60 @@
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : i_Buffer
+Version: U-2022.12
+Date   : Wed Jun  5 16:42:07 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: layer_num[0]
+              (input port clocked by clk)
+  Endpoint: data_0_r_reg[8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  i_Buffer           G200K                 fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  input external delay                     1.00       1.50 r
+  layer_num[0] (in)                        0.09       1.59 r
+  U2444/O (INV1S)                          0.13       1.71 f
+  U2150/O (INV1S)                          0.10       1.81 r
+  U2149/O (INV1S)                          0.18       1.99 f
+  U2250/O (XOR2HP)                         0.24       2.24 r
+  U2223/O (INV12)                          0.07       2.31 f
+  U2206/O (BUF6)                           0.16       2.47 f
+  U2215/O (INV4)                           0.07       2.53 r
+  U2703/O (INV4)                           0.07       2.61 f
+  U2167/O (OAI222S)                        0.24       2.85 r
+  data_0_r_reg[8]/D (QDFFRBN)              0.00       2.85 r
+  data arrival time                                   2.85
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.50       1.50
+  clock uncertainty                       -0.10       1.40
+  data_0_r_reg[8]/CK (QDFFRBN)             0.00       1.40 r
+  library setup time                      -0.12       1.28
+  data required time                                  1.28
+  -----------------------------------------------------------
+  data required time                                  1.28
+  data arrival time                                  -2.85
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -1.56
+
+
+1

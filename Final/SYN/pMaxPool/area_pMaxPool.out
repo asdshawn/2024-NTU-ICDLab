@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : pMaxPool
+Version: U-2022.12
+Date   : Wed Jun  5 17:14:48 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    fsa0m_a_generic_core_tt1p8v25c (File: /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/fsa0m_a_generic_core_tt1p8v25c.db)
+
+Number of ports:                           65
+Number of nets:                           219
+Number of cells:                          175
+Number of combinational cells:            153
+Number of sequential cells:                22
+Number of macros/black boxes:               0
+Number of buf/inv:                         91
+Number of references:                      12
+
+Combinational area:               3212.294365
+Buf/Inv area:                     2165.486357
+Noncombinational area:            1309.291210
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  4521.585576
+Total area:                 undefined
+1

@@ -1,0 +1,396 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+                 Version U-2022.12 for linux64 - Nov 22, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+# Read Design
+read_file -format verilog pMaxPool.v
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/fsa0m_a_generic_core_tt1p8v25c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/fsa0m_a_generic_core_ss1p62v125c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/fsa0m_a_generic_core_ff1p98vm40c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/fsa0m_a_t33_generic_io_tt1p8v25c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/fsa0m_a_t33_generic_io_ss1p62v125c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/fsa0m_a_t33_generic_io_ff1p98vm40c.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+  Loading link library 'fsa0m_a_generic_core_tt1p8v25c'
+  Loading link library 'fsa0m_a_generic_core_ss1p62v125c'
+  Loading link library 'fsa0m_a_generic_core_ff1p98vm40c'
+  Loading link library 'fsa0m_a_t33_generic_io_tt1p8v25c'
+  Loading link library 'fsa0m_a_t33_generic_io_ss1p62v125c'
+  Loading link library 'fsa0m_a_t33_generic_io_ff1p98vm40c'
+  Loading link library 'gtech'
+Loading verilog file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/pMaxPool.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/pMaxPool.v
+
+Inferred memory devices in process
+	in routine pMaxPool line 15 in file
+		'/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/pMaxPool.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      sub_r_reg      | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|     comp_r_reg      | Flip-flop |  21   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/pMaxPool.db:pMaxPool'
+Loaded 1 design.
+Current design is 'pMaxPool'.
+pMaxPool
+current_design pMaxPool
+Current design is 'pMaxPool'.
+{pMaxPool}
+uniquify
+1
+link
+
+  Linking design 'pMaxPool'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
+  fsa0m_a_generic_core_tt1p8v25c (library) /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/fsa0m_a_generic_core_tt1p8v25c.db
+  fsa0m_a_generic_core_ss1p62v125c (library) /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/fsa0m_a_generic_core_ss1p62v125c.db
+  fsa0m_a_generic_core_ff1p98vm40c (library) /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/fsa0m_a_generic_core_ff1p98vm40c.db
+  fsa0m_a_t33_generic_io_tt1p8v25c (library) /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/fsa0m_a_t33_generic_io_tt1p8v25c.db
+  fsa0m_a_t33_generic_io_ss1p62v125c (library) /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/fsa0m_a_t33_generic_io_ss1p62v125c.db
+  fsa0m_a_t33_generic_io_ff1p98vm40c (library) /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/fsa0m_a_t33_generic_io_ff1p98vm40c.db
+
+1
+#source -echo -verbose ./your_design.sdc
+############in sdc file
+# Set the Optimization Constraints 
+create_clock -period 1 -name "clk" -waveform {0 0.5} "clk"
+1
+set_dont_touch_network [get_ports clk]
+1
+set_fix_hold [get_clocks clk]
+1
+# Define the design environment
+set_clock_uncertainty  0.1  [get_clocks clk]
+1
+set_clock_latency      0.5  [get_clocks clk]
+1
+set_input_delay -max 1 -clock clk [all_inputs]
+1
+set_output_delay -min 0.5 -clock clk [all_outputs]
+1
+set_drive 1  [all_inputs]
+1
+set_load  10 [all_outputs]
+1
+set_fix_multiple_port_nets -all -buffer_constants
+1
+set_operating_conditions -min_library fsa0m_a_generic_core_ff1p98vm40c -min BCCOM -max_library fsa0m_a_generic_core_ss1p62v125c -max WCCOM
+Using operating conditions 'WCCOM' found in library 'fsa0m_a_generic_core_ss1p62v125c'.
+Using operating conditions 'BCCOM' found in library 'fsa0m_a_generic_core_ff1p98vm40c'.
+1
+set_wire_load_model -name G200K -library fsa0m_a_generic_core_tt1p8v25c
+1
+set_max_area 0
+1
+set_max_fanout 6 pMaxPool
+1
+set_boundary_optimization {"*"}
+1
+#############in sdc file
+check_design
+1
+# remove_attribute [find -hierarchy design {"*"}] dont_touch
+# Map and Optimize the Design
+compile_ultra
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Warning: Ignoring compile_fix_multiple_port_nets = TRUE. (UIO-60)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | U-2022.12-DWBB_202212.0 |     *     |
+| Licensed DW Building Blocks        | U-2022.12-DWBB_202212.0 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Comand Line  | compile_ultra                                                                     |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 27                                     |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 22                                     |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 2                                      |
+| Number of Dont Touch Nets                               | 1                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+  Simplifying Design 'pMaxPool'
+
+  Loading target library 'fsa0m_a_generic_core_ss1p62v125c'
+  Loading target library 'fsa0m_a_generic_core_ff1p98vm40c'
+  Loading target library 'fsa0m_a_t33_generic_io_tt1p8v25c'
+  Loading target library 'fsa0m_a_t33_generic_io_ss1p62v125c'
+  Loading target library 'fsa0m_a_t33_generic_io_ff1p98vm40c'
+Loaded alib file './alib-52/fsa0m_a_generic_core_tt1p8v25c.db.alib'
+Loaded alib file './alib-52/fsa0m_a_generic_core_ss1p62v125c.db.alib'
+Loaded alib file './alib-52/fsa0m_a_generic_core_ff1p98vm40c.db.alib'
+Loaded alib file './alib-52/fsa0m_a_t33_generic_io_tt1p8v25c.db.alib' (placeholder)
+Loaded alib file './alib-52/fsa0m_a_t33_generic_io_ss1p62v125c.db.alib' (placeholder)
+Loaded alib file './alib-52/fsa0m_a_t33_generic_io_ff1p98vm40c.db.alib' (placeholder)
+Warning: Operating condition WCCOM set on design pMaxPool has different process,
+voltage and temperatures parameters than the parameters at which target library 
+fsa0m_a_generic_core_tt1p8v25c is characterized. Delays may be inaccurate as a result. (OPT-998)
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'pMaxPool'
+ Implement Synthetic for 'pMaxPool'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'TIE1' in the library 'fsa0m_a_generic_core_tt1p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIE0' in the library 'fsa0m_a_generic_core_tt1p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'BHD1' in the library 'fsa0m_a_generic_core_tt1p8v25c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: compile falsified 84 infeasible paths. (OPT-1720)
+Information: Added key list 'DesignWare' to design 'pMaxPool'. (DDB-72)
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:02:09    2431.1      0.00       0.0  120560.0                           11047.3936      0.00  
+    0:02:09    2431.1      0.00       0.0  120560.0                           11047.3936      0.00  
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:02:10    2431.1      0.00       0.0  120560.0                           11047.3936      0.00  
+    0:02:10    2431.1      0.00       0.0  120560.0                           11047.3936      0.00  
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:02:13    2393.6      0.01       0.2  120560.0                           10745.5186      0.00  
+    0:02:13    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:13    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:13    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:13    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:14    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:02:14    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:14    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:14    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:15    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:15    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:15    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:15    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:15    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:15    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:15    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:15    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:15    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:15    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:15    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:15    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:15    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:15    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:15    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:15    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:15    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:15    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+    0:02:15    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_fanout)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:02:15    2396.7      0.00       0.0  120566.0                           10821.5938      0.00  
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+    0:02:18    8527.6      0.00       0.0   59401.0                           48297.1328      0.00  
+    0:02:18    8527.6      0.00       0.0   59401.0                           48297.1328      0.00  
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:02:18    8527.6      0.00       0.0   59401.0                           48297.1328      0.00  
+    0:02:18    8527.6      0.00       0.0   59401.0                           48297.1328      0.00  
+    0:02:18    8527.6      0.00       0.0   59401.0                           48297.1328      0.00  
+    0:02:18    8527.6      0.00       0.0   59401.0                           48297.1328      0.00  
+    0:02:19    4593.5      0.00       0.0   59400.6                           23482.7246      0.00  
+    0:02:19    4593.5      0.00       0.0   59400.6                           23482.7246      0.00  
+    0:02:19    4593.5      0.00       0.0   59400.6                           23482.7246      0.00  
+    0:02:19    4593.5      0.00       0.0   59400.6                           23482.7246      0.00  
+    0:02:19    4593.5      0.00       0.0   59400.6                           23482.7246      0.00  
+    0:02:19    4593.5      0.00       0.0   59400.6                           23482.7246      0.00  
+    0:02:19    4593.5      0.00       0.0   59400.6                           23482.7246      0.00  
+    0:02:19    4593.5      0.00       0.0   59400.6                           23482.7246      0.00  
+    0:02:19    4593.5      0.00       0.0   59400.6                           23482.7246      0.00  
+    0:02:19    4593.5      0.00       0.0   59400.6                           23482.7246      0.00  
+    0:02:19    4593.5      0.00       0.0   59400.6                           23482.7246      0.00  
+    0:02:19    4593.5      0.00       0.0   59400.6                           23482.7246      0.00  
+    0:02:19    4593.5      0.00       0.0   59400.6                           23482.7246      0.00  
+    0:02:19    4593.5      0.00       0.0   59400.6                           23482.7246      0.00  
+    0:02:19    4593.5      0.00       0.0   59400.6                           23482.7246      0.00  
+    0:02:19    4593.5      0.00       0.0   59400.6                           23482.7246      0.00  
+    0:02:19    4593.5      0.00       0.0   59400.6                           23482.7246      0.00  
+    0:02:19    4593.5      0.00       0.0   59400.6                           23482.7246      0.00  
+    0:02:19    4593.5      0.00       0.0   59400.6                           23482.7246      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:02:19    4593.5      0.00       0.0   59400.6                           23482.7246      0.00  
+    0:02:20    4590.3      0.00       0.0   59400.7                           23381.5195      0.00  
+    0:02:20    4521.6      0.00       0.0   59415.7                           23078.8516      0.00  
+    0:02:20    4521.6      0.00       0.0   59415.7                           23078.8516      0.00  
+    0:02:21    4521.6      0.00       0.0   59415.7                           23078.8516      0.00  
+    0:02:23    4615.3      0.00       0.0   59400.7                           23557.8711      0.00  
+    0:02:23    4615.3      0.00       0.0   59400.7                           23557.8711      0.00  
+    0:02:23    4615.3      0.00       0.0   59400.7                           23557.8711      0.00  
+    0:02:23    4615.3      0.00       0.0   59400.7                           23557.8711      0.00  
+    0:02:23    4615.3      0.00       0.0   59400.7                           23557.8711      0.00  
+    0:02:23    4615.3      0.00       0.0   59400.7                           23557.8711      0.00  
+    0:02:24    4521.6      0.00       0.0   59400.7                           22647.1133      0.00  
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/fsa0m_a_generic_core_tt1p8v25c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/fsa0m_a_generic_core_ss1p62v125c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/fsa0m_a_generic_core_ff1p98vm40c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/fsa0m_a_t33_generic_io_tt1p8v25c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/fsa0m_a_t33_generic_io_ss1p62v125c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/fsa0m_a_t33_generic_io_ff1p98vm40c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+  Loading target library 'fsa0m_a_generic_core_ss1p62v125c'
+  Loading target library 'fsa0m_a_generic_core_ff1p98vm40c'
+  Loading target library 'fsa0m_a_t33_generic_io_tt1p8v25c'
+  Loading target library 'fsa0m_a_t33_generic_io_ss1p62v125c'
+  Loading target library 'fsa0m_a_t33_generic_io_ff1p98vm40c'
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+# Analyze and debug the design
+report_area > area_pMaxPool.out
+report_power > power_pMaxPool.out
+report_timing -path full -delay max > timing_pMaxPool.out
+#write -format db -hierarchy -output $active_design.db
+write -format verilog -hierarchy -output pMaxPool_syn.v
+Writing verilog file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/pMaxPool_syn.v'.
+1
+write_sdf -version 2.1 -context verilog pMaxPool.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pMaxPool/pMaxPool.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+write_sdc pMaxPool.sdc
+1
+1
+dc_shell> 
+Memory usage for this session 450 Mbytes.
+Memory usage for this session including child processes 450 Mbytes.
+CPU usage for this session 129 seconds ( 0.04 hours ).
+Elapsed time for this session 411 seconds ( 0.11 hours ).
+
+Thank you...

@@ -1,0 +1,779 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+                 Version U-2022.12 for linux64 - Nov 22, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+# Read Design
+read_file -format verilog Top.v
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/fsa0m_a_generic_core_tt1p8v25c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/fsa0m_a_generic_core_ss1p62v125c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/fsa0m_a_generic_core_ff1p98vm40c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/fsa0m_a_t33_generic_io_tt1p8v25c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/fsa0m_a_t33_generic_io_ss1p62v125c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/fsa0m_a_t33_generic_io_ff1p98vm40c.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+  Loading link library 'fsa0m_a_generic_core_tt1p8v25c'
+  Loading link library 'fsa0m_a_generic_core_ss1p62v125c'
+  Loading link library 'fsa0m_a_generic_core_ff1p98vm40c'
+  Loading link library 'fsa0m_a_t33_generic_io_tt1p8v25c'
+  Loading link library 'fsa0m_a_t33_generic_io_ss1p62v125c'
+  Loading link library 'fsa0m_a_t33_generic_io_ff1p98vm40c'
+  Loading link library 'gtech'
+Loading verilog file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/Top.v'
+Detecting input file type automatically (-rtl or -netlist).
+Opening include file ./i_Buffer/i_Buffer.v
+Opening include file ./pConv/pConv.v
+Opening include file ./Adder_relu/Adder_relu.v
+Opening include file ./pMaxPool/pMaxPool.v
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/Top.v
+Opening include file ./i_Buffer/i_Buffer.v
+Opening include file ./pConv/pConv.v
+Opening include file ./Adder_relu/Adder_relu.v
+Opening include file ./pMaxPool/pMaxPool.v
+
+Statistics for case statements in always block at line 68 in file
+	'./i_Buffer/i_Buffer.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            69            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine i_Buffer line 26 in file
+		'./i_Buffer/i_Buffer.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  counter_temp_reg   | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i_Buffer line 34 in file
+		'./i_Buffer/i_Buffer.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   data_buffer_reg   | Flip-flop | 1248  |  Y  | N  | Y  | N  | N  | N  | N  |
+|  weight_buffer_reg  | Flip-flop |  72   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i_Buffer line 49 in file
+		'./i_Buffer/i_Buffer.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    data_1_r_reg     | Flip-flop |  48   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    data_2_r_reg     | Flip-flop |  48   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   weight_0_r_reg    | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   weight_1_r_reg    | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   weight_2_r_reg    | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    data_0_r_reg     | Flip-flop |  48   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Warning:  ./pConv/pConv.v:35: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./pConv/pConv.v:36: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./pConv/pConv.v:37: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./pConv/pConv.v:42: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./pConv/pConv.v:43: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./pConv/pConv.v:44: signed to unsigned conversion occurs. (VER-318)
+Warning:  ./pConv/pConv.v:46: signed to unsigned part selection occurs. (VER-318)
+Warning:  ./pConv/pConv.v:47: signed to unsigned part selection occurs. (VER-318)
+Warning:  ./pConv/pConv.v:48: signed to unsigned part selection occurs. (VER-318)
+Warning:  ./pConv/pConv.v:50: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./pConv/pConv.v:51: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./pConv/pConv.v:52: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./pConv/pConv.v:54: signed to unsigned assignment occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine pConv line 20 in file
+		'./pConv/pConv.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   product_2_r_reg   | Flip-flop |  22   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     pconv_r_reg     | Flip-flop |  25   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   product_0_r_reg   | Flip-flop |  22   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   product_1_r_reg   | Flip-flop |  22   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Warning:  ./Adder_relu/Adder_relu.v:31: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./Adder_relu/Adder_relu.v:32: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./Adder_relu/Adder_relu.v:33: unsigned to signed assignment occurs. (VER-318)
+Warning:  ./Adder_relu/Adder_relu.v:37: signed to unsigned part selection occurs. (VER-318)
+Warning:  ./Adder_relu/Adder_relu.v:38: signed to unsigned part selection occurs. (VER-318)
+Warning:  ./Adder_relu/Adder_relu.v:39: signed to unsigned assignment occurs. (VER-318)
+
+Inferred memory devices in process
+	in routine Adder_relu line 20 in file
+		'./Adder_relu/Adder_relu.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   data_sum_r_reg    | Flip-flop |  28   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    o_data_r_reg     | Flip-flop |  21   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine pMaxPool line 14 in file
+		'./pMaxPool/pMaxPool.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     comp_r_reg      | Flip-flop |  21   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine Top line 98 in file
+		'/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/Top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   buffer_conv_reg   | Flip-flop |  63   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   buffer_pmp_reg    | Flip-flop | 1113  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine Top line 109 in file
+		'/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/Top.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     pmp_1_r_reg     | Flip-flop |  21   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    o_data_r_reg     | Flip-flop |  15   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    conv_0_r_reg     | Flip-flop |  21   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    conv_1_r_reg     | Flip-flop |  21   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     pmp_0_r_reg     | Flip-flop |  21   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/i_Buffer.db:i_Buffer'
+Loaded 5 designs.
+Current design is 'i_Buffer'.
+i_Buffer pConv Adder_relu pMaxPool Top
+current_design Top
+Current design is 'Top'.
+{Top}
+uniquify
+Information: Uniquified 3 instances of design 'pConv'. (OPT-1056)
+Information: Uniquified 2 instances of design 'pMaxPool'. (OPT-1056)
+1
+link
+
+  Linking design 'Top'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
+  fsa0m_a_generic_core_tt1p8v25c (library) /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/fsa0m_a_generic_core_tt1p8v25c.db
+  fsa0m_a_generic_core_ss1p62v125c (library) /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/fsa0m_a_generic_core_ss1p62v125c.db
+  fsa0m_a_generic_core_ff1p98vm40c (library) /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/fsa0m_a_generic_core_ff1p98vm40c.db
+  fsa0m_a_t33_generic_io_tt1p8v25c (library) /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/fsa0m_a_t33_generic_io_tt1p8v25c.db
+  fsa0m_a_t33_generic_io_ss1p62v125c (library) /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/fsa0m_a_t33_generic_io_ss1p62v125c.db
+  fsa0m_a_t33_generic_io_ff1p98vm40c (library) /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/fsa0m_a_t33_generic_io_ff1p98vm40c.db
+
+Warning: Unable to resolve reference 'pConv_2' in 'Top'. (LINK-5)
+Warning: Unable to resolve reference 'pConv_1' in 'Top'. (LINK-5)
+Warning: Unable to resolve reference 'pConv_0' in 'Top'. (LINK-5)
+Warning: Unable to resolve reference 'pMaxPool_1' in 'Top'. (LINK-5)
+Warning: Unable to resolve reference 'pMaxPool_0' in 'Top'. (LINK-5)
+0
+#source -echo -verbose ./your_design.sdc
+############in sdc file
+# Set the Optimization Constraints 
+create_clock -period 2 -name "clk" -waveform {0 1} "clk"
+1
+set_dont_touch_network [get_ports clk]
+1
+set_fix_hold [get_clocks clk]
+1
+# Define the design environment
+set_clock_uncertainty  0.1  [get_clocks clk]
+1
+set_clock_latency      0.5  [get_clocks clk]
+1
+set_input_delay -max 1 -clock clk [all_inputs]
+1
+set_output_delay -min 0.5 -clock clk [all_outputs]
+1
+set_drive 1  [all_inputs]
+1
+set_load  10 [all_outputs]
+1
+set_fix_multiple_port_nets -all -buffer_constants
+1
+set_operating_conditions -min_library fsa0m_a_generic_core_ff1p98vm40c -min BCCOM -max_library fsa0m_a_generic_core_ss1p62v125c -max WCCOM
+Using operating conditions 'WCCOM' found in library 'fsa0m_a_generic_core_ss1p62v125c'.
+Using operating conditions 'BCCOM' found in library 'fsa0m_a_generic_core_ff1p98vm40c'.
+1
+set_wire_load_model -name G200K -library fsa0m_a_generic_core_tt1p8v25c
+1
+set_max_fanout 6 Top
+1
+set_boundary_optimization {"*"}
+1
+#############in sdc file
+check_design
+ 
+****************************************
+check_design summary:
+Version:     U-2022.12
+Date:        Wed Jun  5 17:37:04 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      9
+    Unconnected ports (LINT-28)                                     9
+
+Cells                                                               2
+    Cells do not drive (LINT-1)                                     2
+
+Nets                                                                6
+    Unloaded nets (LINT-2)                                          6
+--------------------------------------------------------------------------------
+
+Warning: In design 'i_Buffer', cell 'C6074' does not drive any nets. (LINT-1)
+Warning: In design 'Adder_relu', cell 'B_2' does not drive any nets. (LINT-1)
+Warning: In design 'Top', net 'o_data_temp[15]' driven by pin 'MaxPool/o_data[15]' has no loads. (LINT-2)
+Warning: In design 'Top', net 'o_data_temp[16]' driven by pin 'MaxPool/o_data[16]' has no loads. (LINT-2)
+Warning: In design 'Top', net 'o_data_temp[17]' driven by pin 'MaxPool/o_data[17]' has no loads. (LINT-2)
+Warning: In design 'Top', net 'o_data_temp[18]' driven by pin 'MaxPool/o_data[18]' has no loads. (LINT-2)
+Warning: In design 'Top', net 'o_data_temp[19]' driven by pin 'MaxPool/o_data[19]' has no loads. (LINT-2)
+Warning: In design 'Top', net 'o_data_temp[20]' driven by pin 'MaxPool/o_data[20]' has no loads. (LINT-2)
+Warning: In design 'pConv_2', port 'i_data[32]' is not connected to any nets. (LINT-28)
+Warning: In design 'pConv_2', port 'i_data[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'pConv_2', port 'i_data[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'pConv_1', port 'i_data[32]' is not connected to any nets. (LINT-28)
+Warning: In design 'pConv_1', port 'i_data[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'pConv_1', port 'i_data[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'pConv_0', port 'i_data[32]' is not connected to any nets. (LINT-28)
+Warning: In design 'pConv_0', port 'i_data[16]' is not connected to any nets. (LINT-28)
+Warning: In design 'pConv_0', port 'i_data[0]' is not connected to any nets. (LINT-28)
+1
+# remove_attribute [find -hierarchy design {"*"}] dont_touch
+# Map and Optimize the Design
+compile_ultra
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Warning: Ignoring compile_fix_multiple_port_nets = TRUE. (UIO-60)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | U-2022.12-DWBB_202212.0 |     *     |
+| Licensed DW Building Blocks        | U-2022.12-DWBB_202212.0 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Comand Line  | compile_ultra                                                                     |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 3271                                   |
+| Number of User Hierarchies                              | 7                                      |
+| Sequential Cell Count                                   | 3179                                   |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 23                                     |
+| Number of Dont Touch Nets                               | 8                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 17 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'Top'
+Information: The register 'MaxPool/comp_r_reg[15]' will be removed. (OPT-1207)
+Information: The register 'MaxPool/comp_r_reg[16]' will be removed. (OPT-1207)
+Information: The register 'MaxPool/comp_r_reg[17]' will be removed. (OPT-1207)
+Information: The register 'MaxPool/comp_r_reg[18]' will be removed. (OPT-1207)
+Information: The register 'MaxPool/comp_r_reg[19]' will be removed. (OPT-1207)
+Information: The register 'MaxPool/comp_r_reg[20]' will be removed. (OPT-1207)
+Information: The register 'Buffer/data_0_r_reg[0]' will be removed. (OPT-1207)
+Information: The register 'Buffer/data_0_r_reg[16]' will be removed. (OPT-1207)
+Information: The register 'Buffer/data_0_r_reg[32]' will be removed. (OPT-1207)
+Information: The register 'Buffer/data_2_r_reg[0]' will be removed. (OPT-1207)
+Information: The register 'Buffer/data_2_r_reg[16]' will be removed. (OPT-1207)
+Information: The register 'Buffer/data_2_r_reg[32]' will be removed. (OPT-1207)
+Information: The register 'Buffer/data_1_r_reg[0]' will be removed. (OPT-1207)
+Information: The register 'Buffer/data_1_r_reg[16]' will be removed. (OPT-1207)
+Information: The register 'Buffer/data_1_r_reg[32]' will be removed. (OPT-1207)
+
+  Loading target library 'fsa0m_a_generic_core_ss1p62v125c'
+  Loading target library 'fsa0m_a_generic_core_ff1p98vm40c'
+  Loading target library 'fsa0m_a_t33_generic_io_tt1p8v25c'
+  Loading target library 'fsa0m_a_t33_generic_io_ss1p62v125c'
+  Loading target library 'fsa0m_a_t33_generic_io_ff1p98vm40c'
+Loaded alib file './alib-52/fsa0m_a_generic_core_tt1p8v25c.db.alib'
+Loaded alib file './alib-52/fsa0m_a_generic_core_ss1p62v125c.db.alib'
+Loaded alib file './alib-52/fsa0m_a_generic_core_ff1p98vm40c.db.alib'
+Loaded alib file './alib-52/fsa0m_a_t33_generic_io_tt1p8v25c.db.alib' (placeholder)
+Loaded alib file './alib-52/fsa0m_a_t33_generic_io_ss1p62v125c.db.alib' (placeholder)
+Loaded alib file './alib-52/fsa0m_a_t33_generic_io_ff1p98vm40c.db.alib' (placeholder)
+Warning: Operating condition WCCOM set on design Top has different process,
+voltage and temperatures parameters than the parameters at which target library 
+fsa0m_a_generic_core_tt1p8v25c is characterized. Delays may be inaccurate as a result. (OPT-998)
+  Building model 'DW01_NAND2'
+Information: Ungrouping hierarchy Buffer before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy pConv_0 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy pConv_1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy pConv_2 before Pass 1 (OPT-776)
+Information: Ungrouping 4 of 8 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'Top'
+Information: Added key list 'DesignWare' to design 'Top'. (DDB-72)
+Information: In design 'Top', the register 'pConv_1/pconv_r_reg[24]' is removed because it is merged to 'pConv_1/pconv_r_reg[23]'. (OPT-1215)
+Information: In design 'Top', the register 'pConv_2/pconv_r_reg[24]' is removed because it is merged to 'pConv_2/pconv_r_reg[23]'. (OPT-1215)
+Information: In design 'Top', the register 'pConv_0/pconv_r_reg[24]' is removed because it is merged to 'pConv_0/pconv_r_reg[23]'. (OPT-1215)
+Information: In design 'Top', the register 'conv_0_r_reg[0]' is removed because it is merged to 'buffer_conv_reg[21]'. (OPT-1215)
+Information: In design 'Top', the register 'conv_0_r_reg[1]' is removed because it is merged to 'buffer_conv_reg[22]'. (OPT-1215)
+Information: In design 'Top', the register 'conv_0_r_reg[2]' is removed because it is merged to 'buffer_conv_reg[23]'. (OPT-1215)
+Information: In design 'Top', the register 'conv_0_r_reg[3]' is removed because it is merged to 'buffer_conv_reg[24]'. (OPT-1215)
+Information: In design 'Top', the register 'conv_0_r_reg[4]' is removed because it is merged to 'buffer_conv_reg[25]'. (OPT-1215)
+Information: In design 'Top', the register 'conv_0_r_reg[5]' is removed because it is merged to 'buffer_conv_reg[26]'. (OPT-1215)
+Information: In design 'Top', the register 'conv_0_r_reg[6]' is removed because it is merged to 'buffer_conv_reg[27]'. (OPT-1215)
+Information: In design 'Top', the register 'conv_0_r_reg[7]' is removed because it is merged to 'buffer_conv_reg[28]'. (OPT-1215)
+Information: In design 'Top', the register 'conv_0_r_reg[8]' is removed because it is merged to 'buffer_conv_reg[29]'. (OPT-1215)
+Information: In design 'Top', the register 'conv_0_r_reg[9]' is removed because it is merged to 'buffer_conv_reg[30]'. (OPT-1215)
+Information: In design 'Top', the register 'conv_0_r_reg[10]' is removed because it is merged to 'buffer_conv_reg[31]'. (OPT-1215)
+Information: In design 'Top', the register 'conv_0_r_reg[11]' is removed because it is merged to 'buffer_conv_reg[32]'. (OPT-1215)
+Information: In design 'Top', the register 'conv_0_r_reg[12]' is removed because it is merged to 'buffer_conv_reg[33]'. (OPT-1215)
+Information: In design 'Top', the register 'conv_0_r_reg[13]' is removed because it is merged to 'buffer_conv_reg[34]'. (OPT-1215)
+Information: In design 'Top', the register 'conv_0_r_reg[14]' is removed because it is merged to 'buffer_conv_reg[35]'. (OPT-1215)
+Information: In design 'Top', the register 'conv_0_r_reg[15]' is removed because it is merged to 'buffer_conv_reg[36]'. (OPT-1215)
+Information: In design 'Top', the register 'conv_0_r_reg[16]' is removed because it is merged to 'buffer_conv_reg[37]'. (OPT-1215)
+Information: In design 'Top', the register 'conv_0_r_reg[17]' is removed because it is merged to 'buffer_conv_reg[38]'. (OPT-1215)
+Information: In design 'Top', the register 'conv_0_r_reg[18]' is removed because it is merged to 'buffer_conv_reg[39]'. (OPT-1215)
+Information: In design 'Top', the register 'conv_0_r_reg[19]' is removed because it is merged to 'buffer_conv_reg[40]'. (OPT-1215)
+Information: In design 'Top', the register 'conv_0_r_reg[20]' is removed because it is merged to 'buffer_conv_reg[41]'. (OPT-1215)
+Information: In design 'Top', the register 'pmp_0_r_reg[20]' is removed because it is merged to 'buffer_pmp_reg[41]'. (OPT-1215)
+Information: In design 'Top', the register 'pmp_0_r_reg[19]' is removed because it is merged to 'buffer_pmp_reg[40]'. (OPT-1215)
+Information: In design 'Top', the register 'pmp_0_r_reg[18]' is removed because it is merged to 'buffer_pmp_reg[39]'. (OPT-1215)
+Information: In design 'Top', the register 'pmp_0_r_reg[17]' is removed because it is merged to 'buffer_pmp_reg[38]'. (OPT-1215)
+Information: In design 'Top', the register 'pmp_0_r_reg[16]' is removed because it is merged to 'buffer_pmp_reg[37]'. (OPT-1215)
+Information: In design 'Top', the register 'pmp_0_r_reg[15]' is removed because it is merged to 'buffer_pmp_reg[36]'. (OPT-1215)
+Information: In design 'Top', the register 'pmp_0_r_reg[14]' is removed because it is merged to 'buffer_pmp_reg[35]'. (OPT-1215)
+Information: In design 'Top', the register 'pmp_0_r_reg[13]' is removed because it is merged to 'buffer_pmp_reg[34]'. (OPT-1215)
+Information: In design 'Top', the register 'pmp_0_r_reg[12]' is removed because it is merged to 'buffer_pmp_reg[33]'. (OPT-1215)
+Information: In design 'Top', the register 'pmp_0_r_reg[11]' is removed because it is merged to 'buffer_pmp_reg[32]'. (OPT-1215)
+Information: In design 'Top', the register 'pmp_0_r_reg[10]' is removed because it is merged to 'buffer_pmp_reg[31]'. (OPT-1215)
+Information: In design 'Top', the register 'pmp_0_r_reg[9]' is removed because it is merged to 'buffer_pmp_reg[30]'. (OPT-1215)
+Information: In design 'Top', the register 'pmp_0_r_reg[8]' is removed because it is merged to 'buffer_pmp_reg[29]'. (OPT-1215)
+Information: In design 'Top', the register 'pmp_0_r_reg[7]' is removed because it is merged to 'buffer_pmp_reg[28]'. (OPT-1215)
+Information: In design 'Top', the register 'pmp_0_r_reg[6]' is removed because it is merged to 'buffer_pmp_reg[27]'. (OPT-1215)
+Information: In design 'Top', the register 'pmp_0_r_reg[5]' is removed because it is merged to 'buffer_pmp_reg[26]'. (OPT-1215)
+Information: In design 'Top', the register 'pmp_0_r_reg[4]' is removed because it is merged to 'buffer_pmp_reg[25]'. (OPT-1215)
+Information: In design 'Top', the register 'pmp_0_r_reg[3]' is removed because it is merged to 'buffer_pmp_reg[24]'. (OPT-1215)
+Information: In design 'Top', the register 'pmp_0_r_reg[2]' is removed because it is merged to 'buffer_pmp_reg[23]'. (OPT-1215)
+Information: In design 'Top', the register 'pmp_0_r_reg[1]' is removed because it is merged to 'buffer_pmp_reg[22]'. (OPT-1215)
+Information: In design 'Top', the register 'pmp_0_r_reg[0]' is removed because it is merged to 'buffer_pmp_reg[21]'. (OPT-1215)
+ Implement Synthetic for 'Top'.
+  Processing 'Adder_relu'
+Information: In design 'Adder_relu', the register 'data_sum_r_reg[27]' is removed because it is merged to 'data_sum_r_reg[26]'. (OPT-1215)
+ Implement Synthetic for 'Adder_relu'.
+Information: The register 'o_data_r_reg[20]' is a constant and will be removed. (OPT-1206)
+  Processing 'pMaxPool_1'
+ Implement Synthetic for 'pMaxPool_1'.
+  Processing 'pMaxPool_0'
+ Implement Synthetic for 'pMaxPool_0'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'TIE1' in the library 'fsa0m_a_generic_core_tt1p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIE0' in the library 'fsa0m_a_generic_core_tt1p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'BHD1' in the library 'fsa0m_a_generic_core_tt1p8v25c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: The register 'buffer_conv_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_conv_reg[41]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_conv_reg[62]' is a constant and will be removed. (OPT-1206)
+Information: The register 'conv_1_r_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'pMaxPool/comp_r_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[20]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[41]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[62]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[83]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[104]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[125]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[146]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[167]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[188]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[209]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[230]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[251]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[272]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[293]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[314]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[335]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[356]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[377]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[398]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[419]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[440]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[461]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[482]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[503]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[524]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[545]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[566]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[587]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[608]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[629]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[650]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[671]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[692]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[713]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[734]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[755]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[776]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[797]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[818]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[839]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[860]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[881]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[902]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[923]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[944]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[965]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[986]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[1007]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[1028]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[1049]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[1070]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[1091]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[1112]' is a constant and will be removed. (OPT-1206)
+Information: The register 'pmp_1_r_reg[20]' is a constant and will be removed. (OPT-1206)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: The wire load model of the parent cell Top is different from that of the child cell Adder_relu in the design Adder_relu. The child cell will not be ungrouped. (OPT-779)
+Information: The wire load model of the parent cell Top is different from that of the child cell pMaxPool in the design pMaxPool_1. The child cell will not be ungrouped. (OPT-779)
+Information: The wire load model of the parent cell Top is different from that of the child cell MaxPool in the design pMaxPool_0. The child cell will not be ungrouped. (OPT-779)
+Information: 2 other designs were not ungrouped because of differing wire load models. (OPT-779)
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+  Mapping Optimization (Phase 3)
+  Mapping Optimization (Phase 4)
+  Mapping Optimization (Phase 5)
+  Mapping Optimization (Phase 6)
+  Mapping Optimization (Phase 7)
+  Mapping Optimization (Phase 8)
+  Mapping Optimization (Phase 9)
+Information: Added key list 'DesignWare' to design 'pMaxPool_1'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'pMaxPool_0'. (DDB-72)
+Information: Added key list 'DesignWare' to design 'Adder_relu'. (DDB-72)
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:05:03  479609.9      1.38     539.0   86930.5                           2027977.2500      0.00  
+    0:05:04  478485.0      1.51     552.7   86951.5                           2024982.6250      0.00  
+
+  Beginning Constant Register Removal
+  -----------------------------------
+Information: In design 'Top', the register 'Adder_relu/data_sum_r_reg[26]' is removed because it is merged to 'Adder_relu/data_sum_r_reg[25]'. (OPT-1215)
+    0:05:05  478425.6      1.51     552.7   86951.5                           2024743.7500      0.00  
+    0:05:05  478131.9      1.51     552.9   86952.5                           2023404.1250      0.00  
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:05:14  376304.0      1.90     331.7   86951.5                           1540584.2500      0.00  
+    0:05:20  379806.9      1.49     296.3   86987.5                           1548985.6250      0.00  
+    0:05:20  379806.9      1.49     296.3   86987.5                           1548985.6250      0.00  
+    0:05:22  380425.7      1.48     298.9   86987.5                           1553203.5000      0.00  
+Information: The register 'Adder_relu/o_data_r_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_conv_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_conv_reg[40]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_conv_reg[61]' is a constant and will be removed. (OPT-1206)
+Information: The register 'conv_1_r_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'pMaxPool/comp_r_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[19]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[40]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[61]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[82]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[103]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[124]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[145]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[166]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[187]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[208]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[229]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[250]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[271]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[292]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[313]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[334]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[355]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[376]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[397]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[418]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[439]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[460]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[481]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[502]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[523]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[544]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[565]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[586]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[607]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[628]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[649]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[670]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[691]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[712]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[733]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[754]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[775]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[796]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[817]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[838]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[859]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[880]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[901]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[922]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[943]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[964]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[985]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[1006]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[1027]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[1048]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[1069]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[1090]' is a constant and will be removed. (OPT-1206)
+Information: The register 'buffer_pmp_reg[1111]' is a constant and will be removed. (OPT-1206)
+Information: The register 'pmp_1_r_reg[19]' is a constant and will be removed. (OPT-1206)
+    0:05:24  376613.4      1.48     298.9   86984.5                           1537799.7500      0.00  
+    0:05:24  376613.4      1.48     298.9   86984.5                           1537799.7500      0.00  
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:05:33  374588.5      1.48     298.4   86984.5                           1525418.7500      0.00  
+    0:05:33  374588.5      1.48     298.4   86984.5                           1525418.7500      0.00  
+    0:05:36  375854.1      1.45     290.0   86984.5                           1529110.7500      0.00  
+    0:05:36  375854.1      1.45     290.0   86984.5                           1529110.7500      0.00  
+    0:05:37  376144.7      1.45     298.2   86984.5                           1531269.2500      0.00  
+    0:05:37  376144.7      1.45     298.2   86984.5                           1531269.2500      0.00  
+    0:06:49  395137.2      1.30     286.3   86938.5                           1604310.3750      0.00  
+    0:06:49  395137.2      1.30     286.3   86938.5                           1604310.3750      0.00  
+    0:06:50  396371.5      1.28     283.0   86938.5                           1609772.7500      0.00  
+    0:06:50  396371.5      1.28     283.0   86938.5                           1609772.7500      0.00  
+    0:07:22  399874.4      1.26     279.9   86934.5                           1623604.1250      0.00  
+    0:07:22  399874.4      1.26     279.9   86934.5                           1623604.1250      0.00  
+    0:07:51  410192.5      1.11     266.4   86906.5                           1665859.3750      0.00  
+    0:07:51  410192.5      1.11     266.4   86906.5                           1665859.3750      0.00  
+    0:08:03  410936.2      1.10     265.9   86910.5                           1668532.7500      0.00  
+    0:08:03  410936.2      1.10     265.9   86910.5                           1668532.7500      0.00  
+    0:08:18  415129.7      1.07     261.2   86890.5                           1687358.2500      0.00  
+    0:08:18  415129.7      1.07     261.2   86890.5                           1687358.2500      0.00  
+    0:08:19  415129.7      1.07     261.2   86890.5                           1687358.2500      0.00  
+    0:08:19  415129.7      1.07     261.2   86890.5                           1687358.2500      0.00  
+    0:08:19  415129.7      1.07     261.2   86890.5                           1687358.2500      0.00  
+    0:08:19  415129.7      1.07     261.2   86890.5                           1687358.2500      0.00  
+    0:08:19  415129.7      1.07     261.2   86890.5                           1687358.2500      0.00  
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_fanout)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:08:20  415129.7      1.07     261.2   86890.5                           1687358.2500      0.00  
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:08:24  422323.0      1.14     264.6   42773.3 net62819                  1726104.0000      0.00  
+    0:08:26  423322.9      1.08     262.3   42755.3 pConv_1/product_0_r_reg[18]/D 1731848.0000      0.00  
+    0:08:28  424007.2      1.07     261.5   42749.3 pConv_1/product_2_r_reg[14]/D 1734757.3750      0.00  
+    0:08:29  424954.1      1.05     260.0   42746.3 Adder_relu/net65532       1739149.0000      0.00  
+    0:08:31  427044.5      1.05     260.0   42604.3 pConv_1/product_0_r_reg[13]/D 1750032.5000      0.00  
+    0:08:32  427875.7      1.05     259.2   42600.3 pConv_1/product_2_r_reg[14]/D 1754290.8750      0.00  
+    0:08:34  428853.8      1.04     258.4   42597.3 pConv_2/product_0_r_reg[19]/D 1758182.2500      0.00  
+    0:08:35  429128.8      1.03     258.0   42589.3 pConv_2/product_0_r_reg[21]/D 1759204.5000      0.00  
+    0:08:37  430925.5      1.04     258.4   42500.3 pConv_2/product_0_r_reg[19]/D 1768411.3750      0.00  
+    0:08:38  431497.4      1.03     257.4   42500.3                           1771357.0000      0.00  
+    0:08:54  431994.2      1.04     257.3   42521.3                           1772933.5000      0.00  
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:08:54  431994.2      1.04     257.3   42521.3                           1772933.5000      0.00  
+    0:08:55  432078.6      1.02     256.7   42521.3                           1773436.3750      0.00  
+    0:09:08  433019.2      1.02     256.1   42522.3                           1777171.6250      0.00  
+    0:09:08  433019.2      1.02     256.1   42522.3                           1777171.6250      0.00  
+    0:09:09  430256.8      1.02     255.2   42522.0                           1758557.0000      0.00  
+    0:09:10  430256.8      1.02     255.2   42522.0                           1758557.0000      0.00  
+    0:09:13  430528.7      1.02     254.9   42529.0                           1760041.2500      0.00  
+    0:09:13  430528.7      1.02     254.9   42529.0                           1760041.2500      0.00  
+    0:09:13  430700.6      1.02     254.8   42529.0                           1760944.0000      0.00  
+    0:09:13  430700.6      1.02     254.8   42529.0                           1760944.0000      0.00  
+    0:10:02  434397.2      1.01     253.8   42572.0                           1776228.3750      0.00  
+    0:10:02  434397.2      1.01     253.8   42572.0                           1776228.3750      0.00  
+    0:10:28  441246.8      0.96     246.5   42694.0                           1805279.3750      0.00  
+    0:10:28  441246.8      0.96     246.5   42694.0                           1805279.3750      0.00  
+    0:10:28  441246.8      0.96     246.5   42694.0                           1805279.3750      0.00  
+    0:10:28  441246.8      0.96     246.5   42694.0                           1805279.3750      0.00  
+    0:10:28  441246.8      0.96     246.5   42694.0                           1805279.3750      0.00  
+    0:10:28  441246.8      0.96     246.5   42694.0                           1805279.3750      0.00  
+    0:10:29  441246.8      0.96     246.5   42694.0                           1805279.3750      0.00  
+    0:10:29  441246.8      0.96     246.5   42694.0                           1805279.3750      0.00  
+    0:10:29  441246.8      0.96     246.5   42694.0                           1805279.3750      0.00  
+    0:10:29  441246.8      0.96     246.5   42694.0                           1805279.3750      0.00  
+    0:10:30  441246.8      0.96     246.5   42694.0                           1805279.3750      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:10:31  441165.5      0.96     246.5   42694.0                           1805156.0000      0.00  
+    0:10:33  436725.2      0.96     239.8   42694.1                           1779603.3750      0.00  
+    0:10:33  436678.3      0.96     239.8   42694.1                           1779477.6250      0.00  
+    0:10:33  436678.3      0.96     239.8   42694.1                           1779477.6250      0.00  
+    0:10:35  436947.0      0.96     240.2   42694.1                           1781117.3750      0.00  
+    0:10:41  436047.1      0.96     239.2   42694.1                           1776884.8750      0.00  
+    0:10:42  435165.9      0.96     215.7   42669.1 net69976                  1772442.3750      0.00  
+    0:10:43  435284.6      0.96     215.4   42629.1 pConv_0/product_1_r_reg[14]/D 1773898.5000      0.00  
+    0:10:45  436056.5      1.01     217.9   42559.1 net66335                  1777987.2500      0.00  
+    0:10:46  436593.9      0.97     216.7   42523.1 pConv_0/product_2_r_reg[20]/D 1780899.2500      0.00  
+    0:10:48  437806.4      0.95     215.7   42523.1 pConv_0/product_2_r_reg[20]/D 1787231.0000      0.00  
+    0:10:49  438362.6      0.95     215.1   42523.1 pConv_2/product_0_r_reg[20]/D 1790271.6250      0.00  
+    0:10:50  439075.0      0.95     214.9   42520.1 pConv_1/product_0_r_reg[20]/D 1793611.0000      0.00  
+    0:10:51  439621.9      0.94     214.6   42520.1 pConv_2/product_1_r_reg[18]/D 1796304.2500      0.00  
+    0:10:53  440303.1      0.94     214.1   42518.1 pConv_2/product_0_r_reg[20]/D 1799761.6250      0.00  
+    0:10:54  441099.9      0.98     215.9   42459.1                           1804101.7500      0.00  
+    0:10:58  441224.9      0.94     213.9   42480.1                           1804322.5000      0.00  
+    0:10:58  441224.9      0.94     213.9   42480.1                           1804322.5000      0.00  
+    0:11:00  441578.0      0.94     213.1   42480.1                           1806600.6250      0.00  
+    0:11:01  441578.0      0.94     213.1   42480.1                           1806600.6250      0.00  
+    0:11:01  441746.7      0.94     213.0   42480.1                           1807601.8750      0.00  
+    0:11:06  429294.4      0.94     212.7   42480.1                           1736091.1250      0.00  
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/fsa0m_a_generic_core_tt1p8v25c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/fsa0m_a_generic_core_ss1p62v125c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/fsa0m_a_generic_core_ff1p98vm40c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/fsa0m_a_t33_generic_io_tt1p8v25c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/fsa0m_a_t33_generic_io_ss1p62v125c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/fsa0m_a_t33_generic_io_ff1p98vm40c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'Top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'MaxPool/clk': 2997 load(s), 1 driver(s)
+  Loading target library 'fsa0m_a_generic_core_ss1p62v125c'
+  Loading target library 'fsa0m_a_generic_core_ff1p98vm40c'
+  Loading target library 'fsa0m_a_t33_generic_io_tt1p8v25c'
+  Loading target library 'fsa0m_a_t33_generic_io_ss1p62v125c'
+  Loading target library 'fsa0m_a_t33_generic_io_ff1p98vm40c'
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+# Analyze and debug the design
+report_area > area_Top.out
+report_power > power_Top.out
+report_timing -path full -delay max > timing_Top.out
+#write -format db -hierarchy -output $active_design.db
+write -format verilog -hierarchy -output Top_syn.v
+Writing verilog file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/Top_syn.v'.
+Warning: Verilog writer has added 10 nets to module Top using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+1
+write_sdf -version 2.1 -context verilog Top.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/Top.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+Warning: Design 'Top' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+1
+write_sdc Top.sdc
+1
+1
+dc_shell> 

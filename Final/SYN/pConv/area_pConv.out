@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : pConv
+Version: U-2022.12
+Date   : Wed Jun  5 16:56:57 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    fsa0m_a_generic_core_tt1p8v25c (File: /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/pConv/fsa0m_a_generic_core_tt1p8v25c.db)
+
+Number of ports:                           99
+Number of nets:                          2710
+Number of cells:                         2541
+Number of combinational cells:           2451
+Number of sequential cells:                90
+Number of macros/black boxes:               0
+Number of buf/inv:                        714
+Number of references:                      98
+
+Combinational area:              70776.719990
+Buf/Inv area:                    11546.135895
+Noncombinational area:            5712.134342
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 76488.854332
+Total area:                 undefined
+1

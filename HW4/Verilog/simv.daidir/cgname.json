@@ -1,0 +1,242 @@
+{
+    "ALU_test": [
+        "ALU_test",
+        "WNjR5",
+        "module",
+        1
+    ],
+    "XMC": [
+        "XMC",
+        "DJ6Ed",
+        "module",
+        2
+    ],
+    "XMD": [
+        "XMD",
+        "ZnePa",
+        "module",
+        3
+    ],
+    "YA2GSC": [
+        "YA2GSC",
+        "V9i98",
+        "module",
+        4
+    ],
+    "YA2GSD": [
+        "YA2GSD",
+        "pRkTU",
+        "module",
+        5
+    ],
+    "ZMA2GSC": [
+        "ZMA2GSC",
+        "x94rp",
+        "module",
+        6
+    ],
+    "ZMA2GSD": [
+        "ZMA2GSD",
+        "uF3kG",
+        "module",
+        7
+    ],
+    "dffrb_pri": [
+        "dffrb_pri",
+        "vUYHx",
+        "module",
+        8
+    ],
+    "dffsb_pri": [
+        "dffsb_pri",
+        "dEgCG",
+        "module",
+        9
+    ],
+    "pulldown_IO": [
+        "pulldown_IO",
+        "LHIGm",
+        "module",
+        10
+    ],
+    "pullup2_down_IO": [
+        "pullup2_down_IO",
+        "gddJt",
+        "module",
+        11
+    ],
+    "pullup_IO": [
+        "pullup_IO",
+        "Q2Z2h",
+        "module",
+        12
+    ],
+    "pullup_down_IO": [
+        "pullup_down_IO",
+        "QevUm",
+        "module",
+        13
+    ],
+    "pullup_down_IO_IEO": [
+        "pullup_down_IO_IEO",
+        "qEdvZ",
+        "module",
+        14
+    ],
+    "pullup_down_IO_PSCN": [
+        "pullup_down_IO_PSCN",
+        "vUqPt",
+        "module",
+        15
+    ],
+    "pullup_down_ene_IO": [
+        "pullup_down_ene_IO",
+        "J4ZAw",
+        "module",
+        16
+    ],
+    "pullup_down_keep_IO": [
+        "pullup_down_keep_IO",
+        "d8gdd",
+        "module",
+        17
+    ],
+    "pullup_down_keep_IO_03us": [
+        "pullup_down_keep_IO_03us",
+        "MSHGP",
+        "module",
+        18
+    ],
+    "pullup_down_keep_IO_IE": [
+        "pullup_down_keep_IO_IE",
+        "hGcMN",
+        "module",
+        19
+    ],
+    "pullup_down_keep_IO_IG": [
+        "pullup_down_keep_IO_IG",
+        "zRjsA",
+        "module",
+        20
+    ],
+    "pullup_inv_IO": [
+        "pullup_inv_IO",
+        "br5eJ",
+        "module",
+        21
+    ],
+    "AO222": [
+        "AO222",
+        "A27gf",
+        "module",
+        22
+    ],
+    "AOI22S": [
+        "AOI22S",
+        "wrIhr",
+        "module",
+        23
+    ],
+    "BUF1": [
+        "BUF1",
+        "VpcM6",
+        "module",
+        24
+    ],
+    "FA1S": [
+        "FA1S",
+        "ibUqY",
+        "module",
+        27
+    ],
+    "HA1": [
+        "HA1",
+        "b9apy",
+        "module",
+        28
+    ],
+    "INV1S": [
+        "INV1S",
+        "wqgB3",
+        "module",
+        29
+    ],
+    "MOAI1S": [
+        "MOAI1S",
+        "dKZ8Z",
+        "module",
+        30
+    ],
+    "ND2": [
+        "ND2",
+        "TxenJ",
+        "module",
+        31
+    ],
+    "ND3": [
+        "ND3",
+        "PbbMh",
+        "module",
+        32
+    ],
+    "NR2": [
+        "NR2",
+        "DUIFi",
+        "module",
+        33
+    ],
+    "OA12": [
+        "OA12",
+        "IYdLc",
+        "module",
+        34
+    ],
+    "OAI112HS": [
+        "OAI112HS",
+        "RgSDU",
+        "module",
+        35
+    ],
+    "OAI22S": [
+        "OAI22S",
+        "g6FeY",
+        "module",
+        36
+    ],
+    "OR3B2": [
+        "OR3B2",
+        "PsTg8",
+        "module",
+        37
+    ],
+    "QDFFRBN": [
+        "QDFFRBN",
+        "WAsjt",
+        "module",
+        38
+    ],
+    "QDFFRBS": [
+        "QDFFRBS",
+        "v1qZ5",
+        "module",
+        39
+    ],
+    "XOR2HS": [
+        "XOR2HS",
+        "UifS7",
+        "module",
+        40
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        41
+    ],
+    "dffrsb_udp": [
+        "dffrsb_udp",
+        "qndjy",
+        "udp",
+        42
+    ]
+}

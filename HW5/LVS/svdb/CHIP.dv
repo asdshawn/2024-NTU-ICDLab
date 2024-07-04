@@ -1,0 +1,62 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/CHIP.dv
+dv_start matched                                  
+dv_cell {AN2} {AN2} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {AO112} {AO112} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {AO222} {AO222} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {9 9}
+dv_cell {AOI12HS} {AOI12HS} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {AOI22S} {AOI22S} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {BUF1} {BUF1} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {FA1S} {FA1S} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {HA1} {HA1} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {INV12CK} {INV12CK} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {INV1S} {INV1S} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {MAOI1} {MAOI1} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {MOAI1S} {MOAI1S} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {ND2} {ND2} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {ND3} {ND3} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {NR2} {NR2} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {NR3} {NR3} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {OA222} {OA222} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {9 9}
+dv_cell {OAI112HS} {OAI112HS} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {OAI12HS} {OAI12HS} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {OR2} {OR2} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {OR3B2} {OR3B2} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {QDFFRBN} {QDFFRBN} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {TIE0} {TIE0} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {3 3}
+dv_cell {TIE1} {TIE1} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {3 3}
+dv_cell {XMD} {XMD} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {XNR2HS} {XNR2HS} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {XOR2HS} {XOR2HS} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {YA2GSD} {YA2GSD} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {CHIP} {CHIP} matched
+dv_obj_count -transformed_nets {506 506} -transformed_inst {406 406} -transformed_port {39 39}
+dv_end

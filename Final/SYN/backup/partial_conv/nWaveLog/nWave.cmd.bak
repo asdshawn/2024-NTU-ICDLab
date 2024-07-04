@@ -1,0 +1,174 @@
+wvConvertFile -win $_nWave1 -o \
+           "/home/raid7_2/user12/r2945050/ICDLab/Final/partial_conv/partial_conv.fsdb.fsdb" \
+           "/home/raid7_2/user12/r2945050/ICDLab/Final/partial_conv/partial_conv.fsdb"
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/home/raid7_2/user12/r2945050/ICDLab/Final/partial_conv/partial_conv.fsdb.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/partial_conv_tb"
+wvGetSignalSetScope -win $_nWave1 "/partial_conv_tb/Test"
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/partial_conv_tb"
+wvGetSignalSetScope -win $_nWave1 "/partial_conv_tb/Test"
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/partial_conv_tb/clk} \
+{/partial_conv_tb/Test/data_0\[15:0\]} \
+{/partial_conv_tb/Test/data_1\[15:0\]} \
+{/partial_conv_tb/Test/data_2\[15:0\]} \
+{/partial_conv_tb/Test/weight_0\[15:0\]} \
+{/partial_conv_tb/Test/weight_1\[15:0\]} \
+{/partial_conv_tb/Test/weight_2\[15:0\]} \
+{/partial_conv_tb/Test/product_0_temp\[31:0\]} \
+{/partial_conv_tb/Test/product_1_temp\[31:0\]} \
+{/partial_conv_tb/Test/product_2_temp\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvGetSignalClose -win $_nWave1
+wvScrollDown -win $_nWave1 0
+wvResizeWindow -win $_nWave1 0 23 1152 649
+wvSelectSignal -win $_nWave1 {( "G1" 2 3 4 5 6 7 8 9 10 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 2 3 4 5 6 7 8 9 10 )} 
+wvSetRadix -win $_nWave1 -format Bin
+wvSetRadix -win $_nWave1 -2Com
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 2 3 4 5 6 7 8 9 10 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvZoomIn -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 8 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSelectSignal -win $_nWave1 {( "G1" 8 )} 
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvSetCursor -win $_nWave1 145.469304 -snap {("G2" 0)}
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/partial_conv_tb"
+wvGetSignalSetScope -win $_nWave1 "/partial_conv_tb/Test"
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/partial_conv_tb"
+wvGetSignalSetScope -win $_nWave1 "/partial_conv_tb/Test"
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/partial_conv_tb/clk} \
+{/partial_conv_tb/Test/product_0_temp\[31:0\]} \
+{/partial_conv_tb/Test/product_1_temp\[31:0\]} \
+{/partial_conv_tb/Test/product_2_temp\[31:0\]} \
+{/partial_conv_tb/Test/product_0\[15:0\]} \
+{/partial_conv_tb/Test/product_1\[15:0\]} \
+{/partial_conv_tb/Test/product_2\[15:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 2 3 4 5 6 7 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 2 3 4 5 6 7 )} 
+wvSetRadix -win $_nWave1 -format Bin
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSetRadix -win $_nWave1 -Unsigned
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetCursor -win $_nWave1 159.776915 -snap {("G2" 0)}
+wvSetCursor -win $_nWave1 160.274668 -snap {("G1" 4)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/partial_conv_tb"
+wvGetSignalSetScope -win $_nWave1 "/partial_conv_tb/Test"
+wvGetSignalSetScope -win $_nWave1 "/partial_conv_tb/Test"
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/partial_conv_tb/clk} \
+{/partial_conv_tb/Test/product_0\[15:0\]} \
+{/partial_conv_tb/Test/product_0_ext\[18:0\]} \
+{/partial_conv_tb/Test/product_1\[15:0\]} \
+{/partial_conv_tb/Test/product_1_ext\[18:0\]} \
+{/partial_conv_tb/Test/product_2\[15:0\]} \
+{/partial_conv_tb/Test/product_2_ext\[18:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectGroup -win $_nWave1 {G2}
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 2 3 4 5 6 7 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 2 3 4 5 6 7 )} 
+wvSetRadix -win $_nWave1 -format Bin
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/partial_conv_tb"
+wvGetSignalSetScope -win $_nWave1 "/partial_conv_tb/Test"
+wvGetSignalSetScope -win $_nWave1 "/partial_conv_tb/Test"
+wvGetSignalSetScope -win $_nWave1 "/partial_conv_tb"
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/partial_conv_tb/clk} \
+{/partial_conv_tb/Test/product_0_ext\[18:0\]} \
+{/partial_conv_tb/Test/product_1_ext\[18:0\]} \
+{/partial_conv_tb/Test/product_2_ext\[18:0\]} \
+{/partial_conv_tb/o_pconv\[18:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSetRadix -win $_nWave1 -format Bin
+wvSelectSignal -win $_nWave1 {( "G1" 2 3 4 5 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 2 3 4 5 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSetRadix -win $_nWave1 -2Com
+wvExit

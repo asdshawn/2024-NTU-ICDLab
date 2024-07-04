@@ -1,0 +1,63 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Top
+Version: U-2022.12
+Date   : Wed Jun  5 17:50:14 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: Buffer/weight_2_r_reg[7]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: pConv_2/product_0_r_reg[18]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Top                G200K                 fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  Buffer/weight_2_r_reg[7]/CK (QDFFRBT)                   0.00 #     0.50 r
+  Buffer/weight_2_r_reg[7]/Q (QDFFRBT)                    0.42       0.92 r
+  U3558/O (BUF6CK)                                        0.16       1.08 r
+  U8693/O (XOR2HS)                                        0.20       1.28 r
+  U8694/O (INV1S)                                         0.14       1.42 f
+  U3266/O (NR2P)                                          0.15       1.57 r
+  U6215/O (NR2T)                                          0.12       1.69 f
+  U6214/O (MOAI1H)                                        0.14       1.83 r
+  U8703/S (FA1)                                           0.23       2.06 f
+  U7116/CO (FA1)                                          0.38       2.45 f
+  U6621/O (NR2T)                                          0.13       2.58 r
+  U2093/O (INV1S)                                         0.26       2.84 f
+  U4726/O (ND3P)                                          0.21       3.05 r
+  U6449/O (ND3HT)                                         0.08       3.13 f
+  U5829/O (XOR2H)                                         0.14       3.27 f
+  pConv_2/product_0_r_reg[18]/D (DFFRBP)                  0.00       3.27 f
+  data arrival time                                                  3.27
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.50       2.50
+  clock uncertainty                                      -0.10       2.40
+  pConv_2/product_0_r_reg[18]/CK (DFFRBP)                 0.00       2.40 r
+  library setup time                                     -0.07       2.33
+  data required time                                                 2.33
+  --------------------------------------------------------------------------
+  data required time                                                 2.33
+  data arrival time                                                 -3.27
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.94
+
+
+1

@@ -1,0 +1,18 @@
+rc file Version 1.0
+
+[Design]
+COMPILE_PATH=/home/raid7_2/user12/r2945050/ICDLab/Final/APR/Verilog
+VCS_HOME=/usr/cad/synopsys/vcs/2022.06/
+VERDI_HOME=/usr/cad/synopsys/verdi/cur
+SystemC=FALSE
+UUM=FALSE
+KDB=FALSE
+USE_NOVAS_HOME=FALSE
+COSIM=FALSE
+TOP=Top_tb CHIP XMC YA2GSC ZMA2GSC ZMA2GSD dffrb_pri dffsb_pri pulldown_IO pullup2_down_IO pullup_IO pullup_down_IO pullup_down_IO_IEO pullup_down_IO_PSCN pullup_down_ene_IO pullup_down_keep_IO_03us pullup_down_keep_IO_IE pullup_down_keep_IO_IG pullup_inv_IO 
+OPTION=-ssv -ssy 
+ELAB_OPTION=-ssv -ssy 
+
+[Value]
+WREALX=ffff534e50535f58
+WREALZ=ffff534e50535f5a

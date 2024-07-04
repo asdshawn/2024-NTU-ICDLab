@@ -1,0 +1,71 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : alu
+Version: U-2022.12
+Date   : Sat Mar  9 02:15:54 2024
+****************************************
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: reg_data_b_reg[0]
+              (rising edge-triggered flip-flop clocked by clk_p_i)
+  Endpoint: ALU_d2_r_reg[14]
+            (rising edge-triggered flip-flop clocked by clk_p_i)
+  Path Group: clk_p_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  alu                G200K                 fsa0m_a_generic_core_tt1p8v25c
+  alu_DW_mult_uns_0  enG5K                 fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_p_i (rise edge)                               0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  reg_data_b_reg[0]/CK (QDFFRBN)                          0.00       0.50 r
+  reg_data_b_reg[0]/Q (QDFFRBN)                           0.43       0.93 f
+  mult_99/b[0] (alu_DW_mult_uns_0)                        0.00       0.93 f
+  mult_99/U166/O (INV1S)                                  0.32       1.25 r
+  mult_99/U147/O (INV1S)                                  0.10       1.35 f
+  mult_99/U148/O (INV1S)                                  0.24       1.60 r
+  mult_99/U183/O (NR2)                                    0.11       1.70 f
+  mult_99/U15/C (HA1)                                     0.22       1.92 f
+  mult_99/U14/CO (FA1S)                                   0.41       2.33 f
+  mult_99/U13/CO (FA1S)                                   0.43       2.76 f
+  mult_99/U12/CO (FA1S)                                   0.40       3.16 f
+  mult_99/U11/CO (FA1S)                                   0.40       3.56 f
+  mult_99/U10/CO (FA1S)                                   0.40       3.96 f
+  mult_99/U9/CO (FA1S)                                    0.40       4.35 f
+  mult_99/U8/CO (FA1S)                                    0.40       4.75 f
+  mult_99/U7/CO (FA1S)                                    0.40       5.15 f
+  mult_99/U6/CO (FA1S)                                    0.40       5.55 f
+  mult_99/U5/CO (FA1S)                                    0.40       5.95 f
+  mult_99/U4/CO (FA1S)                                    0.40       6.35 f
+  mult_99/U3/CO (FA1S)                                    0.40       6.74 f
+  mult_99/U2/S (FA1S)                                     0.53       7.27 r
+  mult_99/product[14] (alu_DW_mult_uns_0)                 0.00       7.27 r
+  U144/O (AOI22S)                                         0.08       7.36 f
+  U104/O (ND2)                                            0.14       7.50 r
+  ALU_d2_r_reg[14]/D (QDFFRBS)                            0.00       7.50 r
+  data arrival time                                                  7.50
+
+  clock clk_p_i (rise edge)                               7.60       7.60
+  clock network delay (ideal)                             0.50       8.10
+  clock uncertainty                                      -0.10       8.00
+  ALU_d2_r_reg[14]/CK (QDFFRBS)                           0.00       8.00 r
+  library setup time                                     -0.10       7.90
+  data required time                                                 7.90
+  --------------------------------------------------------------------------
+  data required time                                                 7.90
+  data arrival time                                                 -7.50
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.40
+
+
+1

@@ -1,0 +1,478 @@
+
+
+==================================================================================
+=== CALIBRE::ERC-H SUMMARY REPORT
+===
+Execution Date/Time:          Fri Mar 22 11:18:19 2024
+Calibre Version:              v2022.3_33.19    Tue Sep 6 12:10:05 PDT 2022
+Rule File Pathname:           G-DF-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_CALIBRE-LVS-2.1-P8.txt
+Rule File Title:              LVS of UMC 0.18um 1.8V/3.3V 1P6M MMC Mixed Mode/RFCMOS Process
+Layout System:                GDSII
+Layout Path(s):               CHIP.gds
+Layout Primary Cell:          CHIP
+Current Directory:            /home/raid7_2/user12/r2945050/ICDLab/HW5_LVS
+User Name:                    r2945050
+Maximum Results/ERC Check:    1000
+Maximum ERC Result Vertices:  4096
+ERC Results Database:         calibre_erc.db (ASCII)
+Layout Depth:                 ALL
+Text Depth:                   PRIMARY
+Summary Report File:          erc_test.rep (REPLACE)
+Geometry Flagging:            ACUTE = NO  SKEW = NO  ANGLED = NO  OFFGRID = NO
+                              NONSIMPLE POLYGON = NO  NONSIMPLE PATH = NO
+Excluded Cells:              
+CheckText Mapping:            COMMENT TEXT + RULE FILE INFORMATION
+Layers:                       MEMORY-BASED
+Keep Empty Checks:            YES
+----------------------------------------------------------------------------------
+--- RUNTIME WARNINGS
+---
+LVS BOX cell "AN2B1" not located or not allowed.
+LVS BOX cell "AN2B1P" not located or not allowed.
+LVS BOX cell "AN2B1S" not located or not allowed.
+LVS BOX cell "AN2B1T" not located or not allowed.
+LVS BOX cell "AN2P" not located or not allowed.
+LVS BOX cell "AN2S" not located or not allowed.
+LVS BOX cell "AN2T" not located or not allowed.
+LVS BOX cell "AN3" not located or not allowed.
+LVS BOX cell "AN3B1" not located or not allowed.
+LVS BOX cell "AN3B1P" not located or not allowed.
+LVS BOX cell "AN3B1S" not located or not allowed.
+LVS BOX cell "AN3B1T" not located or not allowed.
+LVS BOX cell "AN3B2" not located or not allowed.
+LVS BOX cell "AN3B2P" not located or not allowed.
+LVS BOX cell "AN3B2S" not located or not allowed.
+LVS BOX cell "AN3B2T" not located or not allowed.
+LVS BOX cell "AN3P" not located or not allowed.
+LVS BOX cell "AN3S" not located or not allowed.
+LVS BOX cell "AN3T" not located or not allowed.
+LVS BOX cell "AN4" not located or not allowed.
+LVS BOX cell "AN4B1" not located or not allowed.
+LVS BOX cell "AN4B1P" not located or not allowed.
+LVS BOX cell "AN4B1S" not located or not allowed.
+LVS BOX cell "AN4B1T" not located or not allowed.
+LVS BOX cell "AN4P" not located or not allowed.
+LVS BOX cell "AN4S" not located or not allowed.
+LVS BOX cell "AN4T" not located or not allowed.
+LVS BOX cell "ANTENNA" not located or not allowed.
+LVS BOX cell "AO112P" not located or not allowed.
+LVS BOX cell "AO112S" not located or not allowed.
+LVS BOX cell "AO112T" not located or not allowed.
+LVS BOX cell "AO12" not located or not allowed.
+LVS BOX cell "AO12P" not located or not allowed.
+LVS BOX cell "AO12S" not located or not allowed.
+LVS BOX cell "AO12T" not located or not allowed.
+LVS BOX cell "AO13" not located or not allowed.
+LVS BOX cell "AO13P" not located or not allowed.
+LVS BOX cell "AO13S" not located or not allowed.
+LVS BOX cell "AO13T" not located or not allowed.
+LVS BOX cell "AO22" not located or not allowed.
+LVS BOX cell "AO222P" not located or not allowed.
+LVS BOX cell "AO222S" not located or not allowed.
+LVS BOX cell "AO222T" not located or not allowed.
+LVS BOX cell "AO22P" not located or not allowed.
+LVS BOX cell "AO22S" not located or not allowed.
+LVS BOX cell "AO22T" not located or not allowed.
+LVS BOX cell "AOI112H" not located or not allowed.
+LVS BOX cell "AOI112HP" not located or not allowed.
+LVS BOX cell "AOI112HS" not located or not allowed.
+LVS BOX cell "AOI112HT" not located or not allowed.
+LVS BOX cell "AOI12H" not located or not allowed.
+LVS BOX cell "AOI12HP" not located or not allowed.
+LVS BOX cell "AOI12HT" not located or not allowed.
+LVS BOX cell "AOI13H" not located or not allowed.
+LVS BOX cell "AOI13HP" not located or not allowed.
+LVS BOX cell "AOI13HS" not located or not allowed.
+LVS BOX cell "AOI13HT" not located or not allowed.
+LVS BOX cell "AOI222H" not located or not allowed.
+LVS BOX cell "AOI222HP" not located or not allowed.
+LVS BOX cell "AOI222HS" not located or not allowed.
+LVS BOX cell "AOI22H" not located or not allowed.
+LVS BOX cell "AOI22HP" not located or not allowed.
+LVS BOX cell "AOI22HT" not located or not allowed.
+LVS BOX cell "BHD1" not located or not allowed.
+LVS BOX cell "BUF12CK" not located or not allowed.
+LVS BOX cell "BUF1CK" not located or not allowed.
+LVS BOX cell "BUF1S" not located or not allowed.
+LVS BOX cell "BUF2" not located or not allowed.
+LVS BOX cell "BUF2CK" not located or not allowed.
+LVS BOX cell "BUF3" not located or not allowed.
+LVS BOX cell "BUF3CK" not located or not allowed.
+LVS BOX cell "BUF4" not located or not allowed.
+LVS BOX cell "BUF4CK" not located or not allowed.
+LVS BOX cell "BUF6" not located or not allowed.
+LVS BOX cell "BUF6CK" not located or not allowed.
+LVS BOX cell "BUF8" not located or not allowed.
+LVS BOX cell "BUF8CK" not located or not allowed.
+LVS BOX cell "BUFB1" not located or not allowed.
+LVS BOX cell "BUFB2" not located or not allowed.
+LVS BOX cell "BUFB3" not located or not allowed.
+LVS BOX cell "BUFT1" not located or not allowed.
+LVS BOX cell "BUFT2" not located or not allowed.
+LVS BOX cell "BUFT3" not located or not allowed.
+LVS BOX cell "BUFT4" not located or not allowed.
+LVS BOX cell "CMPE4" not located or not allowed.
+LVS BOX cell "CMPE4S" not located or not allowed.
+LVS BOX cell "DBFRBN" not located or not allowed.
+LVS BOX cell "DBFRSBN" not located or not allowed.
+LVS BOX cell "DBHRBN" not located or not allowed.
+LVS BOX cell "DBHRBS" not located or not allowed.
+LVS BOX cell "DBZRBN" not located or not allowed.
+LVS BOX cell "DBZRSBN" not located or not allowed.
+LVS BOX cell "DELA" not located or not allowed.
+LVS BOX cell "DELB" not located or not allowed.
+LVS BOX cell "DELC" not located or not allowed.
+LVS BOX cell "DFCLRBN" not located or not allowed.
+LVS BOX cell "DFCRBN" not located or not allowed.
+LVS BOX cell "DFFN" not located or not allowed.
+LVS BOX cell "DFFP" not located or not allowed.
+LVS BOX cell "DFFRBN" not located or not allowed.
+LVS BOX cell "DFFRBP" not located or not allowed.
+LVS BOX cell "DFFRBS" not located or not allowed.
+LVS BOX cell "DFFRBT" not located or not allowed.
+LVS BOX cell "DFFRSBN" not located or not allowed.
+LVS BOX cell "DFFS" not located or not allowed.
+LVS BOX cell "DFFSBN" not located or not allowed.
+LVS BOX cell "DFTRBN" not located or not allowed.
+LVS BOX cell "DFTRBS" not located or not allowed.
+LVS BOX cell "DFZCLRBN" not located or not allowed.
+LVS BOX cell "DFZCRBN" not located or not allowed.
+LVS BOX cell "DFZN" not located or not allowed.
+LVS BOX cell "DFZP" not located or not allowed.
+LVS BOX cell "DFZRBN" not located or not allowed.
+LVS BOX cell "DFZRBP" not located or not allowed.
+LVS BOX cell "DFZRBS" not located or not allowed.
+LVS BOX cell "DFZRBT" not located or not allowed.
+LVS BOX cell "DFZRSBN" not located or not allowed.
+LVS BOX cell "DFZS" not located or not allowed.
+LVS BOX cell "DFZSBN" not located or not allowed.
+LVS BOX cell "DFZTRBN" not located or not allowed.
+LVS BOX cell "DFZTRBS" not located or not allowed.
+LVS BOX cell "DLHN" not located or not allowed.
+LVS BOX cell "DLHP" not located or not allowed.
+LVS BOX cell "DLHRBN" not located or not allowed.
+LVS BOX cell "DLHRBP" not located or not allowed.
+LVS BOX cell "DLHRBS" not located or not allowed.
+LVS BOX cell "DLHS" not located or not allowed.
+LVS BOX cell "FA1" not located or not allowed.
+LVS BOX cell "FA1P" not located or not allowed.
+LVS BOX cell "FA1T" not located or not allowed.
+LVS BOX cell "FA2" not located or not allowed.
+LVS BOX cell "FA2P" not located or not allowed.
+LVS BOX cell "FA2S" not located or not allowed.
+LVS BOX cell "FA3" not located or not allowed.
+LVS BOX cell "FA3P" not located or not allowed.
+LVS BOX cell "FA3S" not located or not allowed.
+LVS BOX cell "FACS1" not located or not allowed.
+LVS BOX cell "FACS1P" not located or not allowed.
+LVS BOX cell "FACS1S" not located or not allowed.
+LVS BOX cell "FACS2" not located or not allowed.
+LVS BOX cell "FACS2P" not located or not allowed.
+LVS BOX cell "FACS2S" not located or not allowed.
+LVS BOX cell "GCKETF" not located or not allowed.
+LVS BOX cell "GCKETN" not located or not allowed.
+LVS BOX cell "GCKETP" not located or not allowed.
+LVS BOX cell "GCKETT" not located or not allowed.
+LVS BOX cell "HA1P" not located or not allowed.
+LVS BOX cell "HA1S" not located or not allowed.
+LVS BOX cell "HA1T" not located or not allowed.
+LVS BOX cell "HA2" not located or not allowed.
+LVS BOX cell "HA2P" not located or not allowed.
+LVS BOX cell "HA2T" not located or not allowed.
+LVS BOX cell "HA3" not located or not allowed.
+LVS BOX cell "HA3P" not located or not allowed.
+LVS BOX cell "HA3T" not located or not allowed.
+LVS BOX cell "INV1" not located or not allowed.
+LVS BOX cell "INV12" not located or not allowed.
+LVS BOX cell "INV1CK" not located or not allowed.
+LVS BOX cell "INV2" not located or not allowed.
+LVS BOX cell "INV2CK" not located or not allowed.
+LVS BOX cell "INV3" not located or not allowed.
+LVS BOX cell "INV3CK" not located or not allowed.
+LVS BOX cell "INV4" not located or not allowed.
+LVS BOX cell "INV4CK" not located or not allowed.
+LVS BOX cell "INV6" not located or not allowed.
+LVS BOX cell "INV6CK" not located or not allowed.
+LVS BOX cell "INV8" not located or not allowed.
+LVS BOX cell "INV8CK" not located or not allowed.
+LVS BOX cell "INVT1" not located or not allowed.
+LVS BOX cell "INVT2" not located or not allowed.
+LVS BOX cell "INVT4" not located or not allowed.
+LVS BOX cell "JKFN" not located or not allowed.
+LVS BOX cell "JKFRBN" not located or not allowed.
+LVS BOX cell "JKFRBP" not located or not allowed.
+LVS BOX cell "JKZN" not located or not allowed.
+LVS BOX cell "JKZRBN" not located or not allowed.
+LVS BOX cell "JKZRBP" not located or not allowed.
+LVS BOX cell "MAO222" not located or not allowed.
+LVS BOX cell "MAO222P" not located or not allowed.
+LVS BOX cell "MAO222S" not located or not allowed.
+LVS BOX cell "MAO222T" not located or not allowed.
+LVS BOX cell "MAOI1H" not located or not allowed.
+LVS BOX cell "MAOI1HP" not located or not allowed.
+LVS BOX cell "MAOI1HT" not located or not allowed.
+LVS BOX cell "MAOI1S" not located or not allowed.
+LVS BOX cell "MOAI1" not located or not allowed.
+LVS BOX cell "MOAI1H" not located or not allowed.
+LVS BOX cell "MOAI1HP" not located or not allowed.
+LVS BOX cell "MOAI1HT" not located or not allowed.
+LVS BOX cell "MULBE" not located or not allowed.
+LVS BOX cell "MULBEP" not located or not allowed.
+LVS BOX cell "MULBET" not located or not allowed.
+LVS BOX cell "MULPA" not located or not allowed.
+LVS BOX cell "MULPAP" not located or not allowed.
+LVS BOX cell "MULPAT" not located or not allowed.
+LVS BOX cell "MUX2" not located or not allowed.
+LVS BOX cell "MUX2F" not located or not allowed.
+LVS BOX cell "MUX2P" not located or not allowed.
+LVS BOX cell "MUX2S" not located or not allowed.
+LVS BOX cell "MUX2T" not located or not allowed.
+LVS BOX cell "MUX3" not located or not allowed.
+LVS BOX cell "MUX3P" not located or not allowed.
+LVS BOX cell "MUX3S" not located or not allowed.
+LVS BOX cell "MUX3T" not located or not allowed.
+LVS BOX cell "MUX4" not located or not allowed.
+LVS BOX cell "MUX4P" not located or not allowed.
+LVS BOX cell "MUX4S" not located or not allowed.
+LVS BOX cell "MUX4T" not located or not allowed.
+LVS BOX cell "MUXB2" not located or not allowed.
+LVS BOX cell "MUXB2P" not located or not allowed.
+LVS BOX cell "MUXB2S" not located or not allowed.
+LVS BOX cell "MUXB2T" not located or not allowed.
+LVS BOX cell "MUXB4" not located or not allowed.
+LVS BOX cell "MUXB4P" not located or not allowed.
+LVS BOX cell "MUXB4S" not located or not allowed.
+LVS BOX cell "MUXB4T" not located or not allowed.
+LVS BOX cell "MXL2H" not located or not allowed.
+LVS BOX cell "MXL2HF" not located or not allowed.
+LVS BOX cell "MXL2HP" not located or not allowed.
+LVS BOX cell "MXL2HS" not located or not allowed.
+LVS BOX cell "MXL2HT" not located or not allowed.
+LVS BOX cell "MXL3" not located or not allowed.
+LVS BOX cell "MXL3P" not located or not allowed.
+LVS BOX cell "MXL3S" not located or not allowed.
+LVS BOX cell "MXL3T" not located or not allowed.
+LVS BOX cell "ND2F" not located or not allowed.
+LVS BOX cell "ND2P" not located or not allowed.
+LVS BOX cell "ND2S" not located or not allowed.
+LVS BOX cell "ND2T" not located or not allowed.
+LVS BOX cell "ND3HT" not located or not allowed.
+LVS BOX cell "ND3P" not located or not allowed.
+LVS BOX cell "ND3S" not located or not allowed.
+LVS BOX cell "ND4" not located or not allowed.
+LVS BOX cell "ND4P" not located or not allowed.
+LVS BOX cell "ND4S" not located or not allowed.
+LVS BOX cell "ND4T" not located or not allowed.
+LVS BOX cell "NR2F" not located or not allowed.
+LVS BOX cell "NR2P" not located or not allowed.
+LVS BOX cell "NR2T" not located or not allowed.
+LVS BOX cell "NR3H" not located or not allowed.
+LVS BOX cell "NR3HP" not located or not allowed.
+LVS BOX cell "NR3HT" not located or not allowed.
+LVS BOX cell "NR4" not located or not allowed.
+LVS BOX cell "NR4P" not located or not allowed.
+LVS BOX cell "NR4S" not located or not allowed.
+LVS BOX cell "NR4T" not located or not allowed.
+LVS BOX cell "OA112" not located or not allowed.
+LVS BOX cell "OA112P" not located or not allowed.
+LVS BOX cell "OA112S" not located or not allowed.
+LVS BOX cell "OA112T" not located or not allowed.
+LVS BOX cell "OA12" not located or not allowed.
+LVS BOX cell "OA12P" not located or not allowed.
+LVS BOX cell "OA12S" not located or not allowed.
+LVS BOX cell "OA12T" not located or not allowed.
+LVS BOX cell "OA13" not located or not allowed.
+LVS BOX cell "OA13P" not located or not allowed.
+LVS BOX cell "OA13S" not located or not allowed.
+LVS BOX cell "OA13T" not located or not allowed.
+LVS BOX cell "OA22" not located or not allowed.
+LVS BOX cell "OA222P" not located or not allowed.
+LVS BOX cell "OA222S" not located or not allowed.
+LVS BOX cell "OA222T" not located or not allowed.
+LVS BOX cell "OA22P" not located or not allowed.
+LVS BOX cell "OA22S" not located or not allowed.
+LVS BOX cell "OA22T" not located or not allowed.
+LVS BOX cell "OAI112H" not located or not allowed.
+LVS BOX cell "OAI112HP" not located or not allowed.
+LVS BOX cell "OAI112HT" not located or not allowed.
+LVS BOX cell "OAI12H" not located or not allowed.
+LVS BOX cell "OAI12HP" not located or not allowed.
+LVS BOX cell "OAI12HT" not located or not allowed.
+LVS BOX cell "OAI13H" not located or not allowed.
+LVS BOX cell "OAI13HP" not located or not allowed.
+LVS BOX cell "OAI13HS" not located or not allowed.
+LVS BOX cell "OAI13HT" not located or not allowed.
+LVS BOX cell "OAI222H" not located or not allowed.
+LVS BOX cell "OAI222HP" not located or not allowed.
+LVS BOX cell "OAI222HT" not located or not allowed.
+LVS BOX cell "OAI222S" not located or not allowed.
+LVS BOX cell "OAI22H" not located or not allowed.
+LVS BOX cell "OAI22HP" not located or not allowed.
+LVS BOX cell "OAI22HT" not located or not allowed.
+LVS BOX cell "OAI22S" not located or not allowed.
+LVS BOX cell "OR2B1" not located or not allowed.
+LVS BOX cell "OR2B1P" not located or not allowed.
+LVS BOX cell "OR2B1S" not located or not allowed.
+LVS BOX cell "OR2B1T" not located or not allowed.
+LVS BOX cell "OR2P" not located or not allowed.
+LVS BOX cell "OR2S" not located or not allowed.
+LVS BOX cell "OR2T" not located or not allowed.
+LVS BOX cell "OR3" not located or not allowed.
+LVS BOX cell "OR3B1" not located or not allowed.
+LVS BOX cell "OR3B1P" not located or not allowed.
+LVS BOX cell "OR3B1S" not located or not allowed.
+LVS BOX cell "OR3B1T" not located or not allowed.
+LVS BOX cell "OR3B2P" not located or not allowed.
+LVS BOX cell "OR3B2S" not located or not allowed.
+LVS BOX cell "OR3B2T" not located or not allowed.
+LVS BOX cell "OR3P" not located or not allowed.
+LVS BOX cell "OR3S" not located or not allowed.
+LVS BOX cell "OR3T" not located or not allowed.
+LVS BOX cell "PDI" not located or not allowed.
+LVS BOX cell "PDIX" not located or not allowed.
+LVS BOX cell "PUI" not located or not allowed.
+LVS BOX cell "QDBHN" not located or not allowed.
+LVS BOX cell "QDBHS" not located or not allowed.
+LVS BOX cell "QDFFN" not located or not allowed.
+LVS BOX cell "QDFFP" not located or not allowed.
+LVS BOX cell "QDFFRBP" not located or not allowed.
+LVS BOX cell "QDFFRBS" not located or not allowed.
+LVS BOX cell "QDFFRBT" not located or not allowed.
+LVS BOX cell "QDFFRSBN" not located or not allowed.
+LVS BOX cell "QDFFS" not located or not allowed.
+LVS BOX cell "QDFZN" not located or not allowed.
+LVS BOX cell "QDFZP" not located or not allowed.
+LVS BOX cell "QDFZRBN" not located or not allowed.
+LVS BOX cell "QDFZRBP" not located or not allowed.
+LVS BOX cell "QDFZRBS" not located or not allowed.
+LVS BOX cell "QDFZRBT" not located or not allowed.
+LVS BOX cell "QDFZRSBN" not located or not allowed.
+LVS BOX cell "QDFZS" not located or not allowed.
+LVS BOX cell "QDLHN" not located or not allowed.
+LVS BOX cell "QDLHP" not located or not allowed.
+LVS BOX cell "QDLHRBN" not located or not allowed.
+LVS BOX cell "QDLHRBP" not located or not allowed.
+LVS BOX cell "QDLHRBS" not located or not allowed.
+LVS BOX cell "QDLHS" not located or not allowed.
+LVS BOX cell "QDLHSN" not located or not allowed.
+LVS BOX cell "RAM2" not located or not allowed.
+LVS BOX cell "RAM2S" not located or not allowed.
+LVS BOX cell "RAM3" not located or not allowed.
+LVS BOX cell "RAM3S" not located or not allowed.
+LVS BOX cell "RAM5" not located or not allowed.
+LVS BOX cell "RAM5S" not located or not allowed.
+LVS BOX cell "XMC" not located or not allowed.
+LVS BOX cell "XNR2H" not located or not allowed.
+LVS BOX cell "XNR2HP" not located or not allowed.
+LVS BOX cell "XNR2HT" not located or not allowed.
+LVS BOX cell "XNR3" not located or not allowed.
+LVS BOX cell "XNR3P" not located or not allowed.
+LVS BOX cell "XNR3S" not located or not allowed.
+LVS BOX cell "XNR3T" not located or not allowed.
+LVS BOX cell "XNR4" not located or not allowed.
+LVS BOX cell "XNR4P" not located or not allowed.
+LVS BOX cell "XNR4S" not located or not allowed.
+LVS BOX cell "XNR4T" not located or not allowed.
+LVS BOX cell "XOR2H" not located or not allowed.
+LVS BOX cell "XOR2HP" not located or not allowed.
+LVS BOX cell "XOR2HT" not located or not allowed.
+LVS BOX cell "XOR3" not located or not allowed.
+LVS BOX cell "XOR3P" not located or not allowed.
+LVS BOX cell "XOR3S" not located or not allowed.
+LVS BOX cell "XOR3T" not located or not allowed.
+LVS BOX cell "XOR4" not located or not allowed.
+LVS BOX cell "XOR4P" not located or not allowed.
+LVS BOX cell "XOR4S" not located or not allowed.
+LVS BOX cell "XOR4T" not located or not allowed.
+LVS BOX cell "YA2GSC" not located or not allowed.
+LVS BOX cell "ZMA2GSC" not located or not allowed.
+LVS BOX cell "ZMA2GSD" not located or not allowed.
+There is no data for layout net name ?VSS?.
+There is no data for layout net name ?VDD?.
+There is no data for layout net name ?VSS?.
+There is no data for layout net name ?VDD?.
+There is no data for layout net name ?VSS?.
+There is no data for layout net name ?VDD?.
+There is no data for layout net name ?VDD?.
+There is no data for layout net name ?VSS?.
+There is no data for layout net name ?VDD?.
+There is no data for layout net name ?VDD?.
+There is no data for layout net name ?VSS?.
+----------------------------------------------------------------------------------
+--- ORIGINAL LAYER STATISTICS
+---
+LAYER ME6 ......... TOTAL Original Geometry Count = 180   (180)
+LAYER ME5 ......... TOTAL Original Geometry Count = 2464  (2499)
+LAYER RFSYMBOL .... TOTAL Original Geometry Count = 0     (0)
+LAYER M6RESMK ..... TOTAL Original Geometry Count = 0     (0)
+LAYER SIZE2 ....... TOTAL Original Geometry Count = 0     (0)
+LAYER SIZE1 ....... TOTAL Original Geometry Count = 0     (0)
+LAYER LSYMBOL ..... TOTAL Original Geometry Count = 0     (0)
+LAYER M5RESMK ..... TOTAL Original Geometry Count = 0     (0)
+LAYER VI5 ......... TOTAL Original Geometry Count = 0     (0)
+LAYER MMC ......... TOTAL Original Geometry Count = 0     (0)
+LAYER SEPGND ...... TOTAL Original Geometry Count = 0     (0)
+LAYER TWEL ........ TOTAL Original Geometry Count = 0     (0)
+LAYER NWEL ........ TOTAL Original Geometry Count = 0     (0)
+LAYER PPLUS ....... TOTAL Original Geometry Count = 0     (0)
+LAYER DIFF ........ TOTAL Original Geometry Count = 0     (0)
+LAYER NPLUS ....... TOTAL Original Geometry Count = 0     (0)
+LAYER PO_LVS ...... TOTAL Original Geometry Count = 0     (0)
+LAYER PO1 ......... TOTAL Original Geometry Count = 0     (0)
+LAYER MMSYMBOL .... TOTAL Original Geometry Count = 0     (0)
+LAYER RSYMBOL ..... TOTAL Original Geometry Count = 0     (0)
+LAYER SAB ......... TOTAL Original Geometry Count = 0     (0)
+LAYER PSYMBOL ..... TOTAL Original Geometry Count = 0     (0)
+LAYER HR .......... TOTAL Original Geometry Count = 0     (0)
+LAYER NWR ......... TOTAL Original Geometry Count = 0     (0)
+LAYER M1RESMK ..... TOTAL Original Geometry Count = 0     (0)
+LAYER ME1 ......... TOTAL Original Geometry Count = 93705 (100030)
+LAYER M2RESMK ..... TOTAL Original Geometry Count = 0     (0)
+LAYER ME2 ......... TOTAL Original Geometry Count = 17414 (17619)
+LAYER M3RESMK ..... TOTAL Original Geometry Count = 0     (0)
+LAYER ME3 ......... TOTAL Original Geometry Count = 14650 (14855)
+LAYER M4RESMK ..... TOTAL Original Geometry Count = 0     (0)
+LAYER ME4 ......... TOTAL Original Geometry Count = 8758  (8793)
+LAYER BLSP_1A ..... TOTAL Original Geometry Count = 0     (0)
+LAYER DP_ID ....... TOTAL Original Geometry Count = 0     (0)
+LAYER BLSP_ID1 .... TOTAL Original Geometry Count = 0     (0)
+LAYER VTPL ........ TOTAL Original Geometry Count = 0     (0)
+LAYER VTNI ........ TOTAL Original Geometry Count = 0     (0)
+LAYER TG .......... TOTAL Original Geometry Count = 0     (0)
+LAYER VTNL ........ TOTAL Original Geometry Count = 0     (0)
+LAYER VTPHL ....... TOTAL Original Geometry Count = 0     (0)
+LAYER VTNHL ....... TOTAL Original Geometry Count = 0     (0)
+LAYER SEALRMARK ... TOTAL Original Geometry Count = 0     (0)
+LAYER BJTSYMBOL ... TOTAL Original Geometry Count = 0     (0)
+LAYER XDIODE ...... TOTAL Original Geometry Count = 0     (0)
+LAYER CSYMBOL ..... TOTAL Original Geometry Count = 0     (0)
+LAYER DSYMBOL ..... TOTAL Original Geometry Count = 0     (0)
+LAYER MCAP ........ TOTAL Original Geometry Count = 0     (0)
+LAYER PAD ......... TOTAL Original Geometry Count = 0     (0)
+LAYER CONT ........ TOTAL Original Geometry Count = 0     (0)
+LAYER VI1 ......... TOTAL Original Geometry Count = 25308 (25308)
+LAYER VI2 ......... TOTAL Original Geometry Count = 24808 (24808)
+LAYER VI3 ......... TOTAL Original Geometry Count = 23890 (23890)
+LAYER VI4 ......... TOTAL Original Geometry Count = 23676 (23676)
+----------------------------------------------------------------------------------
+--- RULECHECK RESULTS STATISTICS
+---
+RULECHECK WRONG_NTAP ............ TOTAL Result Count = 0 (0)
+RULECHECK WRONG_PTAP ............ TOTAL Result Count = 0 (0)
+RULECHECK WRONG_TTAP ............ TOTAL Result Count = 0 (0)
+RULECHECK WRONG_FLOATING_NTAP ... TOTAL Result Count = 0 (0)
+RULECHECK WRONG_FLOATING_PTAP ... TOTAL Result Count = 0 (0)
+RULECHECK WRONG_FLOATING_TTAP ... TOTAL Result Count = 0 (0)
+RULECHECK WRONG_FLOATING_WEL .... TOTAL Result Count = 0 (0)
+RULECHECK PATHCHK_GND ........... TOTAL Result Count = 0 (0)
+RULECHECK PATHCHK_PWR ........... TOTAL Result Count = 0 (0)
+RULECHECK PATHCHK_NPWRGND ....... TOTAL Result Count = 0 (0)
+RULECHECK PATHCHK_NLABELED ...... TOTAL Result Count = 0 (0)
+----------------------------------------------------------------------------------
+--- SUMMARY
+---
+TOTAL CPU Time:                              1
+TOTAL REAL Time:                             1
+TOTAL Original Layer Geometries:             234853 (241658)
+TOTAL ERC RuleChecks Executed:               11
+TOTAL ERC RuleCheck Results Generated:       0 (0)

@@ -1,0 +1,55 @@
+# Conductor layers
+pro_layer=DIFF_diel       ext_layer=VARMIS_RF18_T2,VARMIS_RF18_T1,VARDIOPRF_T2,CMMC_RF_T1,TOP_MLC_T1,WRES_T2,NSNPYR_MM_T1,NSNPYR_RF_T1,NSPPYR_MM_T2,NSPPYR_RF_T2,NSHRPYR_MM_T2,NSHRPYR_RF_T2,DNDIOD_T1,DPDIOD_T2,NWNACT_T2,NWNACT_T1,DNDIOD_MM_T1,DPDIOD_MM_T2,NWNACT_MM_T2,NWNACT_MM_T1,ACTBJT5_T1,ACTBJT10_T1,ACTBJT5_T2,ACTBJT10_T2,ACTBJT5_MM_T2,ACTBJT5_MM_T1,ACTBJT10_MM_T2,ACTBJT10_MM_T1,PNVAR,WELL,WEL,PSUB,TWEL
+pro_layer=MMCTP_C         ext_layer=MMC_C          
+pro_layer=ME6_C           ext_layer=TOP_M_C        
+pro_layer=ME5_C           ext_layer=SEC_LAST_MET_C 
+pro_layer=ME4_C           ext_layer=ME4_C          
+pro_layer=ME3_C           ext_layer=ME3_C          
+pro_layer=ME2_C           ext_layer=ME2_C          
+pro_layer=ME1_C           ext_layer=ME1_C          
+pro_layer=PLY_C           ext_layer=PLY_C          
+pro_layer=MMCTP_C         ext_layer=MMC_I           sheet_res=0         
+pro_layer=ME6_C           ext_layer=TOP_M_I         sheet_res=0         
+pro_layer=ME5_C           ext_layer=SEC_LAST_MET_I  sheet_res=0         
+pro_layer=ME4_C           ext_layer=ME4_I           sheet_res=0         
+pro_layer=ME3_C           ext_layer=ME3_I           sheet_res=0         
+pro_layer=ME2_C           ext_layer=ME2_I           sheet_res=0         
+pro_layer=ME1_C           ext_layer=ME1_I           sheet_res=0         
+pro_layer=PLY_C           ext_layer=PLY_I           sheet_res=0         
+pro_layer=PLY_C           ext_layer=RBNGAT_G2      
+pro_layer=PLY_C           ext_layer=RBPGAT_G2      
+pro_layer=PLY_C           ext_layer=RBNGAT_MM      
+pro_layer=PLY_C           ext_layer=RBPGAT_MM      
+pro_layer=PLY_C           ext_layer=RBNGAT_LV_MM   
+pro_layer=PLY_C           ext_layer=RBPGAT_LV_MM   
+pro_layer=PLY_C           ext_layer=TRBNGAT_G2     
+pro_layer=PLY_C           ext_layer=TRBPGAT_G2     
+pro_layer=PLY_C           ext_layer=TRBNGAT_MM     
+pro_layer=PLY_C           ext_layer=TRBPGAT_MM     
+pro_layer=PLY_C           ext_layer=TRBNGAT_LV_MM  
+pro_layer=PLY_C           ext_layer=TRBPGAT_LV_MM  
+pro_layer=PLY_C           ext_layer=NVTNGAT_MM     
+pro_layer=PLY_C           ext_layer=TNVTNGAT_MM    
+pro_layer=PLY_C           ext_layer=BPWNGAT_MM     
+pro_layer=PLY_C           ext_layer=TBPWNGAT_MM    
+pro_layer=PLY_C           ext_layer=RBNPD_B6T400   
+pro_layer=PLY_C           ext_layer=RBNPG_B6T400   
+pro_layer=PLY_C           ext_layer=RBPGAT_B6T400  
+pro_layer=PLY_C           ext_layer=RBNPG_B8T1020  
+pro_layer=PLY_C           ext_layer=RBNPD_B8T1020  
+pro_layer=PLY_C           ext_layer=RBPGAT_B8T1020 
+pro_layer=PSD_C           ext_layer=PSD_I          
+pro_layer=PSD_C           ext_layer=NSD_I          
+pro_layer=PSD_C           ext_layer=PSD_C          
+pro_layer=PSD_C           ext_layer=NSD_C          
+#  VI5		Mvia5
+
+# Via layers
+pro_cont=VIA1             ext_cont=VI1             
+pro_cont=VIA2             ext_cont=VI2             
+pro_cont=VIA3             ext_cont=VI3             
+pro_cont=VIA4             ext_cont=VI4             
+pro_cont=VIATP            ext_cont=TOP_VIA_MMC     
+pro_cont=VIA5             ext_cont=TOP_VIA_SLM     
+pro_cont=PLYCONT          ext_cont=PLYCONT         
+pro_cont=DIFFCONT         ext_cont=DIFCONT         

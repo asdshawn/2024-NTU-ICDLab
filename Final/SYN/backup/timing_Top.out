@@ -1,0 +1,71 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Top
+Version: U-2022.12
+Date   : Thu May 23 17:39:41 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: buffer_data_reg[17]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: CHIPS[1].core/buffer_pconv_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Top                G200K                 fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  buffer_data_reg[17]/CK (QDFFRBT)                        0.00 #     0.50 r
+  buffer_data_reg[17]/Q (QDFFRBT)                         0.41       0.91 f
+  U2307/O (BUF12CK)                                       0.16       1.06 f
+  U1168/O (XOR2HT)                                        0.16       1.23 f
+  U1599/O (NR2F)                                          0.18       1.40 r
+  U1139/O (INV3)                                          0.09       1.50 f
+  U1777/O (OAI22HT)                                       0.21       1.71 r
+  U1491/O (INV4)                                          0.05       1.76 f
+  U2173/O (OAI12HP)                                       0.12       1.88 r
+  U3080/S (FA1)                                           0.47       2.35 f
+  U2130/O (OR2T)                                          0.19       2.54 f
+  U915/O (ND3HT)                                          0.09       2.63 r
+  U2436/O (ND3HT)                                         0.14       2.77 f
+  U2435/O (AOI12HP)                                       0.16       2.94 r
+  U957/O (XNR2HP)                                         0.09       3.02 f
+  U1982/O (XNR2HP)                                        0.15       3.17 f
+  U1981/O (XNR2HP)                                        0.15       3.32 f
+  U2452/O (NR2F)                                          0.17       3.50 r
+  U3130/O (NR2F)                                          0.08       3.57 f
+  U1571/O (ND2F)                                          0.11       3.69 r
+  U1955/O (ND2T)                                          0.07       3.75 f
+  U3212/O (AOI12H)                                        0.13       3.88 r
+  U3213/O (XOR2HS)                                        0.14       4.02 r
+  CHIPS[1].core/buffer_pconv_reg[15]/D (DFFRBP)           0.00       4.02 r
+  data arrival time                                                  4.02
+
+  clock clk (rise edge)                                   2.00       2.00
+  clock network delay (ideal)                             0.50       2.50
+  clock uncertainty                                      -0.10       2.40
+  CHIPS[1].core/buffer_pconv_reg[15]/CK (DFFRBP)          0.00       2.40 r
+  library setup time                                     -0.10       2.30
+  data required time                                                 2.30
+  --------------------------------------------------------------------------
+  data required time                                                 2.30
+  data arrival time                                                 -4.02
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.72
+
+
+1

@@ -1,0 +1,12 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1711076111 1711076120
+lvs_ExtOutFile RUNDIR /home/raid7_2/user12/r2945050/ICDLab/Lab5_LVS
+lvs_ExtOutFile RULES_FILE G-DF-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_CALIBRE-LVS-2.1-P8.txt
+lvs_ExtInfoExtSummary {0 0 0 0 28 0 0 0 0 28 0}
+lvs_ExtInfoErcSummary {11 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST svdb/CHIP.sp
+lvs_ExtOutFile EXTRACTION_REPORT lvs_test.rep.ext
+lvs_ExtOutFile ERC_DATABASE calibre_erc.db
+lvs_ExtOutFile ERC_SUMMARY erc_test.rep

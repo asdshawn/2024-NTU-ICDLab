@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1717082968.038674704, "rt":0.95, "ut":0.17, "st":0.16}}
+{"vcselab":{"timestamp_begin":1717082969.063722271, "rt":0.99, "ut":0.37, "st":0.16}}
+{"link":{"timestamp_begin":1717082970.112830889, "rt":0.35, "ut":0.17, "st":0.12}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1717082967.631752981}
+{"VCS_COMP_START_TIME": 1717082967.631752981}
+{"VCS_COMP_END_TIME": 1717082972.263583971}
+{"VCS_USER_OPTIONS": "pMaxPool.v -full64 -R -debug_access+all +v2k"}
+{"vcs1": {"peak_mem": 328096}}
+{"stitch_vcselab": {"peak_mem": 229048}}

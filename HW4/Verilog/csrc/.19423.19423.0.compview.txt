@@ -1,0 +1,5 @@
+{"vcs1":{"timestamp_begin":1711041811.424888070, "rt":0.53, "ut":0.09, "st":0.08}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1711041810.902709795}
+{"VCS_COMP_START_TIME": 1711041810.902709795}
+{"VCS_COMP_END_TIME": 1711041813.038503120}
+{"VCS_USER_OPTIONS": "HW3_alu_tb.v /home/raid7_2/user12/r2945050/ICDLab/HW4/CHIP.v -v fsa0m_a_generic_core_21.lib.src fsa0m_a_t33_generic_io_21.lib.src -full64 -R -debug_access+all +v2k+define+SDF"}

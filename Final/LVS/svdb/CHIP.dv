@@ -1,0 +1,220 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/CHIP.dv
+dv_start matched                                  
+dv_cell {AN2} {AN2} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {AN3} {AN3} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {AO12P} {AO12P} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {AO22} {AO22} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {AOI12H} {AOI12H} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {AOI12HP} {AOI12HP} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {AOI12HS} {AOI12HS} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {AOI13HS} {AOI13HS} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {AOI22H} {AOI22H} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {AOI22S} {AOI22S} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {BUF1} {BUF1} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {BUF1CK} {BUF1CK} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {BUF1S} {BUF1S} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {BUF2} {BUF2} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {BUF2CK} {BUF2CK} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {BUF3} {BUF3} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {BUF3CK} {BUF3CK} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {BUF4} {BUF4} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {BUF4CK} {BUF4CK} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {BUF6} {BUF6} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {BUF6CK} {BUF6CK} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {BUF8} {BUF8} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {BUF8CK} {BUF8CK} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {DFFRBN} {DFFRBN} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {DFFRBP} {DFFRBP} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {DFFRBS} {DFFRBS} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {DFFRBT} {DFFRBT} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {FA1} {FA1} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {FA1S} {FA1S} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {HA1} {HA1} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {INV12} {INV12} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {INV12CK} {INV12CK} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {INV1CK} {INV1CK} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {INV1S} {INV1S} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {INV2} {INV2} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {INV2CK} {INV2CK} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {INV3} {INV3} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {INV3CK} {INV3CK} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {INV4} {INV4} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {INV4CK} {INV4CK} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {INV6} {INV6} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {INV6CK} {INV6CK} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {INV8} {INV8} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {INV8CK} {INV8CK} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {4 4}
+dv_cell {MAO222} {MAO222} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {MAO222P} {MAO222P} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {MAOI1} {MAOI1} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {MAOI1H} {MAOI1H} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {MAOI1HP} {MAOI1HP} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {MOAI1} {MOAI1} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {MOAI1H} {MOAI1H} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {MOAI1HP} {MOAI1HP} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {MOAI1S} {MOAI1S} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {MUX2} {MUX2} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {MUX2S} {MUX2S} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {MXL2H} {MXL2H} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {MXL2HP} {MXL2HP} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {MXL2HS} {MXL2HS} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {ND2} {ND2} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {ND2F} {ND2F} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {ND2P} {ND2P} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {ND2S} {ND2S} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {ND2T} {ND2T} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {ND3} {ND3} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {ND3HT} {ND3HT} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {ND3P} {ND3P} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {ND3S} {ND3S} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {NR2} {NR2} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {NR2F} {NR2F} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {NR2P} {NR2P} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {NR2T} {NR2T} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {NR3} {NR3} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {NR3H} {NR3H} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {NR3HP} {NR3HP} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {OA12} {OA12} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {OA12P} {OA12P} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {OA12S} {OA12S} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {OAI112H} {OAI112H} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {OAI112HS} {OAI112HS} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {OAI12H} {OAI12H} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {OAI12HP} {OAI12HP} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {OAI12HS} {OAI12HS} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {OAI12HT} {OAI12HT} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {OAI222H} {OAI222H} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {9 9}
+dv_cell {OAI222S} {OAI222S} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {9 9}
+dv_cell {OAI22H} {OAI22H} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {OAI22HP} {OAI22HP} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {OAI22S} {OAI22S} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {OR2} {OR2} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {OR2B1S} {OR2B1S} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {OR2P} {OR2P} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {OR2T} {OR2T} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {QDFFRBN} {QDFFRBN} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {QDFFRBP} {QDFFRBP} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {QDFFRBS} {QDFFRBS} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {QDFFRBT} {QDFFRBT} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {TIE0} {TIE0} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {3 3}
+dv_cell {TIE1} {TIE1} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {3 3}
+dv_cell {XMD} {XMD} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {XNR2H} {XNR2H} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {XNR2HP} {XNR2HP} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {XNR2HS} {XNR2HS} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {XNR3} {XNR3} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {XOR2H} {XOR2H} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {XOR2HS} {XOR2HS} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {5 5}
+dv_cell {XOR3} {XOR3} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {6 6}
+dv_cell {YA2GSD} {YA2GSD} lvsbox
+dv_obj_count -transformed_nets {0 0} -transformed_inst {0 0} -transformed_port {7 7}
+dv_cell {CHIP} {CHIP} matched
+dv_obj_count -transformed_nets {14175 14175} -transformed_inst {13887 13887} -transformed_port {29 29}
+dv_end

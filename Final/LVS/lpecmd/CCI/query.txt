@@ -1,0 +1,46 @@
+# Define property numbers in annotated GDSII
+GDS NETPROP NUMBER 5
+GDS PLACEPROP NUMBER 6
+GDS DEVPROP NUMBER 7
+
+# Output seed polygon with net ID
+GDS SEED PROPERTY ORIGINAL
+
+# Output annotated GDSII mapping file for Star-RCXT
+# RESPONSE FILE ./CCI/GDS_MAP
+RESPONSE FILE ./CCI/topcell.gds.map
+GDS MAP
+RESPONSE DIRECT
+
+# Output annotated GDSII file for Star-RCXT
+GDS WRITE ./CCI/topcell.agf
+
+# Output device table file containing descriptions of device layers
+# for Star-RCXT
+RESPONSE FILE ./CCI/topcell.devtab
+DEVICE TABLE
+RESPONSE DIRECT
+
+# Output layout net name / net ID mapping table for Star-RCXT
+LAYOUT NETLIST TRIVIAL PINS YES
+LAYOUT NETLIST EMPTY CELLS YES
+LAYOUT NETLIST NAMES NONE
+LAYOUT NAMETABLE WRITE ./CCI/topcell.lnn
+
+# Output ideal layout netlist for Star-RCXT
+LAYOUT NETLIST PRIMITIVE DEVICE SUBCKTS YES
+LAYOUT NETLIST PIN LOCATIONS YES
+LAYOUT NETLIST HIERARCHY AGF
+LAYOUT NETLIST WRITE ./CCI/topcell.nl
+
+# Output net / device instance cross referencing tables for Star-RCXT
+NET XREF WRITE ./CCI/topcell.nxf
+INSTANCE XREF WRITE ./CCI/topcell.ixf
+
+# Output ports file for Star-RCXT
+PORT TABLE CELLS WRITE ./CCI/topcell.ports_cells
+
+# Output cell extents file for Star-RCXT
+CELL EXTENTS WRITE ./CCI/extents.txt
+
+

@@ -1,0 +1,87 @@
+## The following commands log the query for troubleshooting if needed.
+echo
+status
+
+## Note that the output directory and file name prefix are consistent
+## for all output files. This is an important consideration for running
+## QRC with the Calibre input data.
+## The QRC input_db -directory_name command argument equates to the
+## query output directory (query_output)
+## The QRC input_db -run_name command equates to the file name
+## prefix (Design) for all query output files.
+
+## If applicable, the query output log file will report the (filename) of the
+## LVS PUSH DEVICES SEPARATE PROPERTIES "(file_name)"
+## The (filename) is relative to the Calibre LVS rundir.
+## RULES LVS PDSP
+
+## CALIBRE QUERY SERVER Script for HCCI
+
+   gds         netprop     number   5
+   gds         placeprop   number   6
+   gds         devprop     number   7
+
+## Write out GDS Map
+
+   response    file                       query_output/Design.gds.map
+   gds	       seed property device original
+   gds         map
+   response    direct
+
+## Write the AGF File (Annotated GDS File)
+
+#  GDS UNITS 1 0.000000001   # only avaialble since Calibre 2006.3 release
+   gds         write                      query_output/Design.agf
+
+## Include trivial pins and empty cells in the layout netlist
+## Use only Node Numbers for netlists
+## Do not write empty subcircuits for generic devices
+
+   layout      netlist     trivial pins   YES
+   layout      netlist     empty cells    YES
+   layout      netlist     names          NONE
+   layout      netlist     primitive device subckts  NO
+
+## Write the Node to Net Name mapping
+
+   layout      nametable   write          query_output/Design.lnn
+
+## Write the Layout Netlist
+
+   layout      netlist     hierarchy      AGF
+   layout      netlist     write          query_output/Design.spi
+
+## Write a Layout Netlist with Hierarchy and $PIN_XY info
+
+   layout      netlist     pin locations  YES
+   layout      netlist     write          query_output/Design_pin_xy.spi
+
+## Write X feference file
+## Write the source and layout placement hierarchy files (sph,lph) 
+
+## Default behavior is "ON" for both xref xname layout and schematic,
+## which inserts extra "X" for every hierarchy. This is desired for 
+## extracted view (qrc deals with it automatically) and Ultrasim 
+## stitching flow. For cell level timing analysis flow where verilog 
+## does not have extra "X", users can turn on below two options.
+#   xref xname layout ON
+#   xref xname source OFF
+
+   source       hierarchy   write         query_output/Design.sph
+   layout       hierarchy   write         query_output/Design.lph
+
+## Write Cross Reference Files
+   net         xref        write          query_output/Design.nxf BOX
+   instance    xref        write          query_output/Design.ixf
+
+## Write the TOP Level and CELL Level Port Tables
+   port        table       write          query_output/Design.ports
+   port        table cells write          query_output/Design.ports_cells
+
+## Generate Device Table for all device info
+   response    file 			  query_output/Design.devtab
+   device      table
+   response    direct
+
+   terminate
+

@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1711026246.052200333, "rt":2.04, "ut":0.91, "st":0.26}}
+{"vcselab":{"timestamp_begin":1711026248.165845581, "rt":1.40, "ut":0.52, "st":0.18}}
+{"link":{"timestamp_begin":1711026249.625247795, "rt":0.51, "ut":0.21, "st":0.15}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1711026245.507690247}
+{"VCS_COMP_START_TIME": 1711026245.507690247}
+{"VCS_COMP_END_TIME": 1711026252.342695023}
+{"VCS_USER_OPTIONS": "HW3_alu_tb.v /home/raid7_2/user12/r2945050/ICDLab/Lab4/CHIP.v -v fsa0m_a_generic_core_21.lib.src fsa0m_a_t33_generic_io_21.lib.src -full64 -R -debug_access+all +v2k +define+SDF"}
+{"vcs1": {"peak_mem": 332208}}
+{"stitch_vcselab": {"peak_mem": 221008}}

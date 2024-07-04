@@ -1,0 +1,86 @@
+wvConvertFile -win $_nWave1 -o \
+           "/home/raid7_2/user12/r2945050/ICDLab/Final_SYN/Top_tb.fsdb.fsdb" \
+           "/home/raid7_2/user12/r2945050/ICDLab/Final_SYN/Top_tb.fsdb"
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/home/raid7_2/user12/r2945050/ICDLab/Final_SYN/Top_tb.fsdb.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/Top_tb"
+wvGetSignalSetScope -win $_nWave1 "/Top_tb/Test"
+wvGetSignalSetScope -win $_nWave1 "/Top_tb/Test/Buffer"
+wvGetSignalSetScope -win $_nWave1 "/Top_tb/Test"
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/Top_tb/clk} \
+{/Top_tb/rst_n} \
+{/Top_tb/time_} \
+{/Top_tb/i_data\[7:0\]} \
+{/Top_tb/Test/weight_0\[23:0\]} \
+{/Top_tb/Test/weight_1\[23:0\]} \
+{/Top_tb/Test/weight_2\[23:0\]} \
+{/Top_tb/Test/data_0\[47:0\]} \
+{/Top_tb/Test/data_1\[47:0\]} \
+{/Top_tb/Test/data_2\[47:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 4 5 6 7 8 9 10 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 4 5 6 7 8 9 10 )} 
+wvSetRadix -win $_nWave1 -format Bin
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvZoomIn -win $_nWave1
+wvSetCursor -win $_nWave1 104842.079098 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 1654600.614220 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 1664911.195275 -snap {("G1" 1)}
+wvResizeWindow -win $_nWave1 8 31 1536 793
+wvResizeWindow -win $_nWave1 8 31 1536 793
+wvResizeWindow -win $_nWave1 8 31 1536 793
+wvSetCursor -win $_nWave1 1674517.463227 -snap {("G1" 1)}
+wvResizeWindow -win $_nWave1 8 31 1536 793
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/Top_tb"
+wvGetSignalSetScope -win $_nWave1 "/Top_tb/Test"
+wvGetSignalSetScope -win $_nWave1 "/Top_tb/Test"
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/Top_tb/clk} \
+{/Top_tb/rst_n} \
+{/Top_tb/time_} \
+{/Top_tb/i_data\[7:0\]} \
+{/Top_tb/Test/weight_0\[23:0\]} \
+{/Top_tb/Test/weight_1\[23:0\]} \
+{/Top_tb/Test/weight_2\[23:0\]} \
+{/Top_tb/Test/data_0\[47:0\]} \
+{/Top_tb/Test/data_1\[47:0\]} \
+{/Top_tb/Test/data_2\[47:0\]} \
+{/Top_tb/Test/o_data\[14:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 11 )} 
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 11 )} 
+wvSetRadix -win $_nWave1 -format Bin
+wvSetCursor -win $_nWave1 2234937.573570 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 2244814.995511 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 2254991.733269 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 2244665.337603 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 2250501.996023 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 2240025.942449 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 2244814.995511 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 2234787.915662 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 2224611.177905 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 2233889.968213 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 2245413.627144 -snap {("G1" 1)}

@@ -1,0 +1,56 @@
+CHIP 1000
+WRONG_NTAP
+0 0 3 Mar 22 11:18:21 2024                                                      
+Rule File Pathname: G-DF-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_CALIBRE-LVS-2.1-P8.txt
+Rule File Title: LVS of UMC 0.18um 1.8V/3.3V 1P6M MMC Mixed Mode/RFCMOS Process
+Check NTAP WITH WRONG TEXT ?VSS? ?GND? EXCEPT DIODE and BJT
+WRONG_PTAP
+0 0 3 Mar 22 11:18:21 2024                                                      
+Rule File Pathname: G-DF-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_CALIBRE-LVS-2.1-P8.txt
+Rule File Title: LVS of UMC 0.18um 1.8V/3.3V 1P6M MMC Mixed Mode/RFCMOS Process
+Check PTAP WITH WRONG TEXT ?VDD? ?VCC? EXCEPT DIODE and BJT
+WRONG_TTAP
+0 0 3 Mar 22 11:18:21 2024                                                      
+Rule File Pathname: G-DF-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_CALIBRE-LVS-2.1-P8.txt
+Rule File Title: LVS of UMC 0.18um 1.8V/3.3V 1P6M MMC Mixed Mode/RFCMOS Process
+Check TTAP WITH WRONG TEXT ?VDD? ?VCC? EXCEPT DIODE and BJT
+WRONG_FLOATING_NTAP
+0 0 3 Mar 22 11:18:21 2024                                                      
+Rule File Pathname: G-DF-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_CALIBRE-LVS-2.1-P8.txt
+Rule File Title: LVS of UMC 0.18um 1.8V/3.3V 1P6M MMC Mixed Mode/RFCMOS Process
+Check NTAP WITHOUT TEXT ?VDD? ?VCC? ?VSS? ?GND? EXCEPT DIODE and BJT
+WRONG_FLOATING_PTAP
+0 0 3 Mar 22 11:18:21 2024                                                      
+Rule File Pathname: G-DF-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_CALIBRE-LVS-2.1-P8.txt
+Rule File Title: LVS of UMC 0.18um 1.8V/3.3V 1P6M MMC Mixed Mode/RFCMOS Process
+Check PTAP WITHOUT TEXT ?VDD? ?VCC? ?VSS? ?GND? EXCEPT DIODE and BJT
+WRONG_FLOATING_TTAP
+0 0 3 Mar 22 11:18:21 2024                                                      
+Rule File Pathname: G-DF-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_CALIBRE-LVS-2.1-P8.txt
+Rule File Title: LVS of UMC 0.18um 1.8V/3.3V 1P6M MMC Mixed Mode/RFCMOS Process
+Check TTAP WITHOUT TEXT ?VDD? ?VCC? ?VSS? ?GND? EXCEPT DIODE and BJT
+WRONG_FLOATING_WEL
+0 0 3 Mar 22 11:18:21 2024                                                      
+Rule File Pathname: G-DF-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_CALIBRE-LVS-2.1-P8.txt
+Rule File Title: LVS of UMC 0.18um 1.8V/3.3V 1P6M MMC Mixed Mode/RFCMOS Process
+Check WEL WITHOUT TEXT ?VDD? ?VCC? ?VSS? ?GND? EXCEPT DIODE and BJT
+PATHCHK_GND
+0 0 3 Mar 22 11:18:21 2024                                                      
+Rule File Pathname: G-DF-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_CALIBRE-LVS-2.1-P8.txt
+Rule File Title: LVS of UMC 0.18um 1.8V/3.3V 1P6M MMC Mixed Mode/RFCMOS Process
+To check nets with a path to ground not power
+PATHCHK_PWR
+0 0 3 Mar 22 11:18:21 2024                                                      
+Rule File Pathname: G-DF-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_CALIBRE-LVS-2.1-P8.txt
+Rule File Title: LVS of UMC 0.18um 1.8V/3.3V 1P6M MMC Mixed Mode/RFCMOS Process
+To check nets with a path to power not ground
+PATHCHK_NPWRGND
+0 0 3 Mar 22 11:18:21 2024                                                      
+Rule File Pathname: G-DF-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_CALIBRE-LVS-2.1-P8.txt
+Rule File Title: LVS of UMC 0.18um 1.8V/3.3V 1P6M MMC Mixed Mode/RFCMOS Process
+To check nets with no path to power and ground
+PATHCHK_NLABELED
+0 0 3 Mar 22 11:18:21 2024                                                      
+Rule File Pathname: G-DF-MIXED_MODE_RFCMOS18-1.8V_3.3V-1P6M-MMC_CALIBRE-LVS-2.1-P8.txt
+Rule File Title: LVS of UMC 0.18um 1.8V/3.3V 1P6M MMC Mixed Mode/RFCMOS Process
+To check nets with no path to any labeled net

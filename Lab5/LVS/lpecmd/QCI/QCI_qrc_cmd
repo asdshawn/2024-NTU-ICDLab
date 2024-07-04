@@ -1,0 +1,49 @@
+process_technology \
+        -technology_library_file ./assura_tech_aci.lib \
+        -technology_name tech
+input_db \
+        -type calibre \
+        -directory_name ./query_output \
+        -run_name Design \
+        -layer_map_file ./query_output/Design.gds.map \
+        # -design_cell_name test \
+        -device_property_value 7 \
+        -instance_property_value 6 \
+        -net_property_value 5
+output_setup \
+        -net_name_space schematic \
+        -directory_name ./output \
+        -file_name test.spice \
+        -temporary_directory_name tmp \
+        -keep_temporary_files false 
+extraction_setup \
+        -max_fracture_length infinite \
+        -net_name_space schematic \
+        #-parasitic_blocking_device_cells_file test.txt \
+        -max_fracture_length_unit microns
+output_db \
+        -type spice \
+        -sub_node_char "#" \
+        -hierarchy_delimiter "/" \
+        -include_cap_model false \
+        -add_explicit_vias true \
+#        -include_parasitic_res_temp_coeff true \
+#        -include_parasitic_res_length true \
+        -output_xy canonical_cap parasitic_cap canonical_res parasitic_res mos \
+        -include_res_model true 
+extract \
+        -selection all \
+# If users set CCTGFLAG = 1 in MOS SPICE models or there is no CCTGFLAG option in model
+# card, the contact to poly gate capacitances have been considered in models,	
+# please adopt this option : -extract_via_cap false
+# If users set CCTGFLAG = 0 in MOS SPICE models , the contact to poly gate capacitance
+# haven't been considered in model,						
+# please adopt this option :-extract_via_cap true
+        -extract_via_cap true \
+        -type rc_coupled
+filter_res -min_res 0.001
+filter_cap -exclude_floating_nets true
+#filter_cap -exclude_floating_nets false
+capacitance \
+        -ground_net 0 \
+        -decoupling_factor 1.0

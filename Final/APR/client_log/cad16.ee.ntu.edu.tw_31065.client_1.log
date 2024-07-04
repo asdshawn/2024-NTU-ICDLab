@@ -1,0 +1,103 @@
+#################  nanoroute  ################
+#Copyright (c) 1999 - 2010
+#Cadence Design Systems, Inc.
+#All rights reserved. This work may not be copied, modified, 
+#re-published, uploaded, executed, or distributed in any way, 
+#in any medium, whether in whole or in part, without prior 
+#written permission from Cadence Design Systems, Inc.
+#http://www.cadence.com
+#
+#Product Version : 21.13-s100_1 NR220220-0140/21_13-UB
+#Database Version : 18.20 {superthreading v2.17}
+#Checkout Date : 02/20/2022:01:40:25 from 21_13
+#Compiled Date : 03/04/2022 14:01:27 using tools-
+#Hostname : cad16 (x86_64 w/Linux 3.10.0-1160.88.1.el7.x86_64 Xeon E5-2620_0 2.30GHz 6Core 24CPU 15MB cache 40GB)
+#Current Working Directory : /home/raid7_2/user12/r2945050/ICDLab/APR
+#nanoroute Executable : /usr/cad/innovus/cur/tools.lnx86/plato/bin/64bit/nanoroute
+#Current Date and Time : Tue Jun  4 00:03:25 2024
+#
+#number of cpu = 8.
+#client index = 1717430860.
+#Connected to server cad16.ee.ntu.edu.tw on port 52993. (8 threads)
+#WARNING (NRIF-47) This option supports a feature that is under development and experimental, use at your own risk.
+#WARNING (NRIF-47) This option supports a feature that is under development and experimental, use at your own risk.
+#Loading library ...
+#    loading LIBRARY_HEADER ...
+#    loading TECHNOLOGY ...
+#    loading 12 LAYERS ...
+#    loading 80 VIAS ...
+#    loading 15 VIA_RULES ...
+#    loading 1 RULES ...
+#    loading TIMING ...
+#    receiving 427 CELLS ...
+#setNanoRouteMode -droute_auto_stop false
+#setNanoRouteMode -droute_end_iteration 20
+#setNanoRouteMode -droute_post_route_spread_wire "1"
+#setNanoRouteMode -route_allow_pin_as_feedthrough "false"
+#setNanoRouteMode -route_selected_net_only true
+#setNanoRouteMode -route_strictly_honor_non_default_rule "false"
+#setNanoRouteMode -route_with_eco false
+#setNanoRouteMode -route_with_si_driven false
+#setNanoRouteMode -route_with_timing_driven false
+#Loading design CHIP init ...
+#    loading DESIGN_VIEW CHIP,init ... 
+#    loading 122 CHILD CELL_VIEWS ...
+#    loading 18 VIAS ...
+#    loading 14129 INSTANCES ...
+#    loading 2 SPECIAL_NETS ...
+#    loading 14226 NETS ...
+#setNanoRouteMode -droute_auto_stop false
+#setNanoRouteMode -droute_end_iteration 20
+#setNanoRouteMode -droute_post_route_spread_wire "1"
+#setNanoRouteMode -route_allow_pin_as_feedthrough "false"
+#setNanoRouteMode -route_selected_net_only true
+#setNanoRouteMode -route_strictly_honor_non_default_rule "false"
+#setNanoRouteMode -route_with_eco false
+#setNanoRouteMode -route_with_si_driven false
+#setNanoRouteMode -route_with_timing_driven false
+#cpu time = 00:00:00, elapsed time = 00:00:00, memory = 41.37 (MB), peak = 41.38 (MB)
+#Start routing data preparation on Tue Jun  4 00:03:25 2024
+#
+#Minimum voltage of a net in the design = 0.000.
+#Maximum voltage of a net in the design = 1.980.
+#Voltage range [0.000 - 1.980] has 14224 nets.
+#Voltage range [0.000 - 0.000] has 1 net.
+#Voltage range [1.620 - 1.980] has 1 net.
+#Build and mark too close pins for the same net.
+### receiving APA data from server ...
+#Restoring pin access data from file (null) ...
+#Done restoring pin access data
+#Initial pin access analysis.
+#Detail pin access analysis.
+# metal1       H   Track-Pitch = 0.5600    Line-2-Via Pitch = 0.5000
+# metal2       V   Track-Pitch = 0.6200    Line-2-Via Pitch = 0.5600
+# metal3       H   Track-Pitch = 0.5600    Line-2-Via Pitch = 0.5600
+# metal4       V   Track-Pitch = 0.6200    Line-2-Via Pitch = 0.5600
+# metal5       H   Track-Pitch = 0.5600    Line-2-Via Pitch = 0.5600
+# metal6       V   Track-Pitch = 2.4800    Line-2-Via Pitch = 2.2000
+#Regenerating Ggrids automatically.
+#Auto generating G-grids with size=15 tracks, using layer metal3's pitch = 0.5600.
+#Using automatically generated G-grids.
+#(check_and_prepare_match_target_file) no match_target_file in constraint. quit
+#Done routing data preparation.
+#cpu time = 00:00:02, elapsed time = 00:00:02, memory = 70.06 (MB), peak = 70.23 (MB)
+### drc_pitch = 14800 ( 14.8000 um) drc_range = 8400 (  8.4000 um) route_pitch = 14800 ( 14.8000 um) patch_pitch = 16000 ( 16.0000 um) top_route_layer = 6 top_pin_layer = 6
+#build: cpu time = 00:00:02, elapsed time = 00:00:02, memory = 71.09 (MB), peak = 71.09 (MB)
+#
+#Start client routing ...
+#
+#start initial detail routing ...
+#cpu time = 00:00:09, elapsed time = 00:00:02, memory = 71.81 (MB), peak = 228.48 (MB)
+#Cpu time = 00:00:11
+#Elapsed time = 00:00:03
+#Increased memory = 30.44 (MB)
+#Total memory = 71.80 (MB)
+#Peak memory = 228.48 (MB)
+#
+#Cpu time = 00:00:11
+#Elapsed time = 00:00:05
+#Increased memory = 70.61 (MB)
+#Total memory = 71.79 (MB)
+#Peak memory = 228.48 (MB)
+#Finished client route on Tue Jun  4 00:03:30 2024
+#

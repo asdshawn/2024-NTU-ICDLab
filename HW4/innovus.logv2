@@ -1,0 +1,728 @@
+[03/21 21:39:43      0s] 
+[03/21 21:39:43      0s] Cadence Innovus(TM) Implementation System.
+[03/21 21:39:43      0s] Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+[03/21 21:39:43      0s] 
+[03/21 21:39:43      0s] Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+[03/21 21:39:43      0s] Options:	
+[03/21 21:39:43      0s] Date:		Thu Mar 21 21:39:43 2024
+[03/21 21:39:43      0s] Host:		cad17 (x86_64 w/Linux 3.10.0-1160.88.1.el7.x86_64) (4cores*16cpus*Intel(R) Xeon(R) CPU E5520 @ 2.27GHz 8192KB)
+[03/21 21:39:43      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[03/21 21:39:43      0s] 
+[03/21 21:39:43      0s] License:
+[03/21 21:39:44      0s] 		invs	Innovus Implementation System	17.1	checkout succeeded
+[03/21 21:39:44      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[03/21 21:40:02     17s] @(#)CDS: Innovus v17.11-s080_1 (64bit) 08/04/2017 11:13 (Linux 2.6.18-194.el5)
+[03/21 21:40:02     17s] @(#)CDS: NanoRoute 17.11-s080_1 NR170721-2155/17_11-UB (database version 2.30, 390.7.1) {superthreading v1.44}
+[03/21 21:40:02     17s] @(#)CDS: AAE 17.11-s034 (64bit) 08/04/2017 (Linux 2.6.18-194.el5)
+[03/21 21:40:02     17s] @(#)CDS: CTE 17.11-s053_1 () Aug  1 2017 23:31:41 ( )
+[03/21 21:40:02     17s] @(#)CDS: SYNTECH 17.11-s012_1 () Jul 21 2017 02:29:12 ( )
+[03/21 21:40:02     17s] @(#)CDS: CPE v17.11-s095
+[03/21 21:40:02     17s] @(#)CDS: IQRC/TQRC 16.1.1-s215 (64bit) Thu Jul  6 20:18:10 PDT 2017 (Linux 2.6.18-194.el5)
+[03/21 21:40:02     17s] @(#)CDS: OA 22.50-p063 Fri Feb  3 19:45:13 2017
+[03/21 21:40:02     17s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[03/21 21:40:02     17s] @(#)CDS: RCDB 11.10
+[03/21 21:40:02     17s] --- Running on cad17 (x86_64 w/Linux 3.10.0-1160.88.1.el7.x86_64) (4cores*16cpus*Intel(R) Xeon(R) CPU E5520 @ 2.27GHz 8192KB) ---
+[03/21 21:40:02     17s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_7988_cad17_r2945050_QaE7O1.
+
+[03/21 21:40:02     17s] Change the soft stacksize limit to 0.2%RAM (23 mbytes). Set global soft_stack_size_limit to change the value.
+[03/21 21:40:02     18s] 
+[03/21 21:40:02     18s] **INFO:  MMMC transition support version v31-84 
+[03/21 21:40:02     18s] 
+[03/21 21:40:02     18s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[03/21 21:40:02     18s] <CMD> suppressMessage ENCEXT-2799
+[03/21 21:40:03     18s] <CMD> getDrawView
+[03/21 21:40:03     18s] <CMD> loadWorkspace -name Physical
+[03/21 21:40:03     18s] <CMD> win
+[03/21 21:41:45     29s] <CMD> set init_gnd_net GND
+[03/21 21:41:45     29s] <CMD> set init_lef_file {lef/header6_V55_20ka_cic.lef lef/fsa0m_a_generic_core.lef lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef lef/fsa0m_a_t33_generic_io.lef lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef}
+[03/21 21:41:45     29s] <CMD> set init_verilog design/HW3_alu_syn.v
+[03/21 21:41:45     29s] <CMD> set init_mmmc_file mmmc.view
+[03/21 21:41:45     29s] <CMD> set init_io_file design/CHIP.ioc
+[03/21 21:41:45     29s] <CMD> set init_top_cell CHIP
+[03/21 21:41:45     29s] <CMD> set init_pwr_net VCC
+[03/21 21:41:45     29s] <CMD> init_design
+[03/21 21:41:45     29s] #% Begin Load MMMC data ... (date=03/21 21:41:45, mem=433.1M)
+[03/21 21:41:45     29s] #% End Load MMMC data ... (date=03/21 21:41:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=433.2M, current mem=433.2M)
+[03/21 21:41:45     29s] 
+[03/21 21:41:45     29s] Loading LEF file lef/header6_V55_20ka_cic.lef ...
+[03/21 21:41:45     29s] WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+[03/21 21:41:45     29s] Without DIVIDECHAR defined, the LEF file is technically incorrect.
+[03/21 21:41:45     29s] Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file lef/header6_V55_20ka_cic.lef at line 1290.
+[03/21 21:41:45     29s] 
+[03/21 21:41:45     29s] Loading LEF file lef/fsa0m_a_generic_core.lef ...
+[03/21 21:41:45     29s] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+[03/21 21:41:45     29s] The LEF parser will ignore this statement.
+[03/21 21:41:45     29s] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file lef/fsa0m_a_generic_core.lef at line 1.
+[03/21 21:41:45     29s] Set DBUPerIGU to M2 pitch 620.
+[03/21 21:41:46     29s] WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file lef/fsa0m_a_generic_core.lef at line 40071.
+[03/21 21:41:46     29s] 
+[03/21 21:41:46     29s] Loading LEF file lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef ...
+[03/21 21:41:46     29s] **WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-119' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-119' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-119' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-119' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-119' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-119' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-58):	MACRO 'AN2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-58' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-58):	MACRO 'AN2B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-58' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-58):	MACRO 'AN2B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-58' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-58):	MACRO 'AN2B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-58' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-58):	MACRO 'AN2B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-58' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-58):	MACRO 'AN2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-58' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-58):	MACRO 'AN2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-58' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-58):	MACRO 'AN2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-58' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-58):	MACRO 'AN3' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-58' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-58):	MACRO 'AN3B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-58' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-58):	MACRO 'AN3B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-58' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-58):	MACRO 'AN3B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-58' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-58):	MACRO 'AN3B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-58' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-58):	MACRO 'AN3B2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-58' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-58):	MACRO 'AN3B2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-58' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-58):	MACRO 'AN3B2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-58' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-58):	MACRO 'AN3B2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-58' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-58):	MACRO 'AN3P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-58' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-58):	MACRO 'AN3S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-58' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-58):	MACRO 'AN3T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-58' for more detail.
+[03/21 21:41:46     29s] **WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+[03/21 21:41:46     29s] To increase the message display limit, refer to the product command reference manual.
+[03/21 21:41:46     29s] WARNING (LEFPARS-2003): BUSBITCHARS is a required statement on LEF file with version 5.5 and earlier.
+[03/21 21:41:46     29s] Without BUSBITCHARS defined, the LEF file is technically incorrect.
+[03/21 21:41:46     29s] Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef at line 16493.
+[03/21 21:41:46     29s] WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+[03/21 21:41:46     29s] Without DIVIDECHAR defined, the LEF file is technically incorrect.
+[03/21 21:41:46     29s] Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef at line 16493.
+[03/21 21:41:46     29s] 
+[03/21 21:41:46     29s] Loading LEF file lef/fsa0m_a_t33_generic_io.lef ...
+[03/21 21:41:46     29s] WARNING (LEFPARS-2007): NAMESCASESENSITIVE statement is obsolete in version 5.6 and later.
+[03/21 21:41:46     29s] The LEF parser will ignore this statement.
+[03/21 21:41:46     29s] To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file lef/fsa0m_a_t33_generic_io.lef at line 1.
+[03/21 21:41:46     29s] WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file lef/fsa0m_a_t33_generic_io.lef at line 2034.
+[03/21 21:41:46     29s] 
+[03/21 21:41:46     29s] Loading LEF file lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef ...
+[03/21 21:41:46     29s] **WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-119' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-119' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-119' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-119' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-119' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-119' for more detail.
+[03/21 21:41:46     29s] WARNING (LEFPARS-2003): BUSBITCHARS is a required statement on LEF file with version 5.5 and earlier.
+[03/21 21:41:46     29s] Without BUSBITCHARS defined, the LEF file is technically incorrect.
+[03/21 21:41:46     29s] Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef at line 791.
+[03/21 21:41:46     29s] WARNING (LEFPARS-2004): DIVIDERCHAR is a required statementon LEF file with version 5.5 and earlier.
+[03/21 21:41:46     29s] Without DIVIDECHAR defined, the LEF file is technically incorrect.
+[03/21 21:41:46     29s] Refer the LEF/DEF 5.5 or earlier Language Referece manual on how to define this statement. See file lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef at line 791.
+[03/21 21:41:46     29s] **WARN: (IMPLF-61):	392 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data have been ignored.
+[03/21 21:41:46     29s] Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+[03/21 21:41:46     29s] Type 'man IMPLF-61' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-200):	Pin 'IO' in macro 'ZMA2GSD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 21:41:46     29s] Type 'man IMPLF-200' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-200):	Pin 'IO' in macro 'ZMA2GSC' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 21:41:46     29s] Type 'man IMPLF-200' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-200):	Pin 'I' in macro 'XMD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 21:41:46     29s] Type 'man IMPLF-200' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-200):	Pin 'I' in macro 'XMC' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 21:41:46     29s] Type 'man IMPLF-200' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-200):	Pin 'GNDO' in macro 'GNDIOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 21:41:46     29s] Type 'man IMPLF-200' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-200):	Pin 'GNDO' in macro 'GNDIOC' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 21:41:46     29s] Type 'man IMPLF-200' for more detail.
+[03/21 21:41:46     29s] **WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[03/21 21:41:46     29s] Type 'man IMPLF-200' for more detail.
+[03/21 21:41:46     29s] 
+[03/21 21:41:46     29s] viaInitial starts at Thu Mar 21 21:41:46 2024
+viaInitial ends at Thu Mar 21 21:41:46 2024
+Loading view definition file from mmmc.view
+[03/21 21:41:46     29s] Reading lib_max timing library '/home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_generic_core_ss1p62v125c.lib' ...
+[03/21 21:41:47     31s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_generic_core_ss1p62v125c.lib)
+[03/21 21:41:47     31s] Read 382 cells in library 'fsa0m_a_generic_core_ss1p62v125c' 
+[03/21 21:41:47     31s] Reading lib_max timing library '/home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_t33_generic_io_ss1p62v125c.lib' ...
+[03/21 21:41:47     31s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'O' of cell 'YA2GSC' is not defined in the library. (File /home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_t33_generic_io_ss1p62v125c.lib)
+[03/21 21:41:47     31s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'O' of cell 'YA2GSD' is not defined in the library. (File /home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_t33_generic_io_ss1p62v125c.lib)
+[03/21 21:41:47     31s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'IO' of cell 'ZMA2GSC' is not defined in the library. (File /home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_t33_generic_io_ss1p62v125c.lib)
+[03/21 21:41:47     31s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'IO' of cell 'ZMA2GSD' is not defined in the library. (File /home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_t33_generic_io_ss1p62v125c.lib)
+[03/21 21:41:47     31s] Read 6 cells in library 'fsa0m_a_t33_generic_io_ss1p62v125c' 
+[03/21 21:41:47     31s] Reading lib_min timing library '/home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_generic_core_ff1p98vm40c.lib' ...
+[03/21 21:41:48     32s] **WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_generic_core_ff1p98vm40c.lib)
+[03/21 21:41:48     32s] Read 382 cells in library 'fsa0m_a_generic_core_ff1p98vm40c' 
+[03/21 21:41:48     32s] Reading lib_min timing library '/home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_t33_generic_io_ff1p98vm40c.lib' ...
+[03/21 21:41:48     32s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'O' of cell 'YA2GSC' is not defined in the library. (File /home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_t33_generic_io_ff1p98vm40c.lib)
+[03/21 21:41:48     32s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'O' of cell 'YA2GSD' is not defined in the library. (File /home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_t33_generic_io_ff1p98vm40c.lib)
+[03/21 21:41:48     32s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'IO' of cell 'ZMA2GSC' is not defined in the library. (File /home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_t33_generic_io_ff1p98vm40c.lib)
+[03/21 21:41:49     32s] **WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'IO' of cell 'ZMA2GSD' is not defined in the library. (File /home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_t33_generic_io_ff1p98vm40c.lib)
+[03/21 21:41:49     32s] Read 6 cells in library 'fsa0m_a_t33_generic_io_ff1p98vm40c' 
+[03/21 21:41:49     32s] *** End library_loading (cpu=0.05min, real=0.05min, mem=21.6M, fe_cpu=0.54min, fe_real=2.10min, fe_mem=550.2M) ***
+[03/21 21:41:49     32s] #% Begin Load netlist data ... (date=03/21 21:41:49, mem=531.7M)
+[03/21 21:41:49     32s] *** Begin netlist parsing (mem=550.2M) ***
+[03/21 21:41:49     32s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4T' is defined in LEF but not in the timing library.
+[03/21 21:41:49     32s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4T' is defined in LEF but not in the timing library.
+[03/21 21:41:49     32s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4S' is defined in LEF but not in the timing library.
+[03/21 21:41:49     32s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4S' is defined in LEF but not in the timing library.
+[03/21 21:41:49     32s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4P' is defined in LEF but not in the timing library.
+[03/21 21:41:49     32s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4P' is defined in LEF but not in the timing library.
+[03/21 21:41:49     32s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4' is defined in LEF but not in the timing library.
+[03/21 21:41:49     32s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4' is defined in LEF but not in the timing library.
+[03/21 21:41:49     32s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3T' is defined in LEF but not in the timing library.
+[03/21 21:41:49     32s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3T' is defined in LEF but not in the timing library.
+[03/21 21:41:49     32s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3S' is defined in LEF but not in the timing library.
+[03/21 21:41:49     32s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3S' is defined in LEF but not in the timing library.
+[03/21 21:41:49     32s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3P' is defined in LEF but not in the timing library.
+[03/21 21:41:49     32s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3P' is defined in LEF but not in the timing library.
+[03/21 21:41:49     32s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3' is defined in LEF but not in the timing library.
+[03/21 21:41:49     32s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3' is defined in LEF but not in the timing library.
+[03/21 21:41:49     32s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+[03/21 21:41:49     32s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+[03/21 21:41:49     32s] **WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+[03/21 21:41:49     32s] **WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+[03/21 21:41:49     32s] **WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+[03/21 21:41:49     32s] To increase the message display limit, refer to the product command reference manual.
+[03/21 21:41:49     32s] Created 388 new cells from 4 timing libraries.
+[03/21 21:41:49     32s] Reading netlist ...
+[03/21 21:41:49     32s] Backslashed names will retain backslash and a trailing blank character.
+[03/21 21:41:49     32s] Reading verilog netlist 'design/HW3_alu_syn.v'
+[03/21 21:41:49     32s] **WARN: (IMPVL-346):	Module 'alu_DW01_sub_0' is instantiated in the netlist, but is not defined in the LEF files.  Since there is no real cell definition for such a cell, it will be treated as an empty module.
+[03/21 21:41:49     32s] Type 'man IMPVL-346' for more detail.
+[03/21 21:41:49     32s] Undeclared bus A in module alu_DW01_sub_0 ... created as [8:0].
+[03/21 21:41:49     32s] Undeclared bus B in module alu_DW01_sub_0 ... created as [8:0].
+[03/21 21:41:49     32s] Undeclared bus DIFF in module alu_DW01_sub_0 ... created as [8:0].
+[03/21 21:41:49     32s] 
+[03/21 21:41:49     32s] *** Memory Usage v#1 (Current mem = 550.172M, initial mem = 187.691M) ***
+[03/21 21:41:49     32s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=550.2M) ***
+[03/21 21:41:49     32s] #% End Load netlist data ... (date=03/21 21:41:49, total cpu=0:00:00.0, real=0:00:00.0, peak res=531.7M, current mem=465.4M)
+[03/21 21:41:49     32s] Set top cell to CHIP.
+[03/21 21:41:49     33s] Hooked 776 DB cells to tlib cells.
+[03/21 21:41:49     33s] **WARN: (IMPDB-2504):	Cell 'alu_DW01_sub_0' is instantiated in the Verilog netlist, but it is not defined in the library or design data.  Its pin directions may be derived incorrectly.  Provide the cell definition or its pin information in the library or design data and reload the design to avoid potential issues.
+[03/21 21:41:49     33s] Cell 'alu_DW01_sub_0' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'DIFF[8]' of cell 'alu_DW01_sub_0' as output for net 'out_inst_1_15' in module 'alu'.
+[03/21 21:41:49     33s] Cell 'alu_DW01_sub_0' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'DIFF[7]' of cell 'alu_DW01_sub_0' as output for net 'out_inst_1[7]' in module 'alu'.
+[03/21 21:41:49     33s] Cell 'alu_DW01_sub_0' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'DIFF[6]' of cell 'alu_DW01_sub_0' as output for net 'out_inst_1[6]' in module 'alu'.
+[03/21 21:41:49     33s] Cell 'alu_DW01_sub_0' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'DIFF[5]' of cell 'alu_DW01_sub_0' as output for net 'out_inst_1[5]' in module 'alu'.
+[03/21 21:41:49     33s] Cell 'alu_DW01_sub_0' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'DIFF[4]' of cell 'alu_DW01_sub_0' as output for net 'out_inst_1[4]' in module 'alu'.
+[03/21 21:41:49     33s] Cell 'alu_DW01_sub_0' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'DIFF[3]' of cell 'alu_DW01_sub_0' as output for net 'out_inst_1[3]' in module 'alu'.
+[03/21 21:41:49     33s] Cell 'alu_DW01_sub_0' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'DIFF[2]' of cell 'alu_DW01_sub_0' as output for net 'out_inst_1[2]' in module 'alu'.
+[03/21 21:41:49     33s] Cell 'alu_DW01_sub_0' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'DIFF[1]' of cell 'alu_DW01_sub_0' as output for net 'out_inst_1[1]' in module 'alu'.
+[03/21 21:41:49     33s] Cell 'alu_DW01_sub_0' is referenced in the netlist but not defined in netlist, lef or timing library. Using the net connection data to mark the pin 'DIFF[0]' of cell 'alu_DW01_sub_0' as output for net 'out_inst_1[0]' in module 'alu'.
+[03/21 21:41:49     33s] 1 empty module found.
+[03/21 21:41:49     33s] Starting recursive module instantiation check.
+[03/21 21:41:49     33s] No recursion found.
+[03/21 21:41:49     33s] Term dir updated for 0 vinsts of 1 cells.
+[03/21 21:41:49     33s] Building hierarchical netlist for Cell CHIP ...
+[03/21 21:41:49     33s] *** Netlist is unique.
+[03/21 21:41:49     33s] ** info: there are 817 modules.
+[03/21 21:41:49     33s] ** info: there are 19 stdCell insts.
+[03/21 21:41:49     33s] 
+[03/21 21:41:49     33s] *** Memory Usage v#1 (Current mem = 591.844M, initial mem = 187.691M) ***
+[03/21 21:41:49     33s] Reading IO assignment file "design/CHIP.ioc" ...
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 5: Pad: ipad_clk_p_i     N   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 6: Pad: ipad_reset_n_i   N    
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 7: Pad: ipad_inst_i_0    N   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 8: Pad: ipad_inst_i_1    N   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 9: Pad: ipad_inst_i_2    N   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 12: Pad: ipad_data_a_i_0  N   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 13: Pad: ipad_data_a_i_1  N   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 14: Pad: ipad_data_a_i_2  N   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 15: Pad: ipad_data_a_i_3  N   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 16: Pad: ipad_data_a_i_4  N   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 20: Pad: ipad_data_a_i_5  W   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 21: Pad: ipad_data_a_i_6  W   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 22: Pad: ipad_data_a_i_7  W   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 23: Pad: ipad_data_b_i_0  W   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 24: Pad: ipad_data_b_i_1  W   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 27: Pad: ipad_data_b_i_2  W   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 28: Pad: ipad_data_b_i_3  W    
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 29: Pad: ipad_data_b_i_4  W   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 30: Pad: ipad_data_b_i_5  W   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 31: Pad: ipad_data_b_i_6  W   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 32: Pad: ipad_data_b_i_7  W   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 36: Pad: ipad_data_o_0    S   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 37: Pad: ipad_data_o_1    S   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 38: Pad: ipad_data_o_2    S   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 39: Pad: ipad_data_o_3    S   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 42: Pad: ipad_data_o_4    S   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 43: Pad: ipad_data_o_5    S   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 44: Pad: ipad_data_o_6    S   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 45: Pad: ipad_data_o_7    S   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 49: Pad: ipad_data_o_8    E   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 50: Pad: ipad_data_o_9    E   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 51: Pad: ipad_data_o_10   E   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 52: Pad: ipad_data_o_11   E    
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 55: Pad: ipad_data_o_12   E   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 56: Pad: ipad_data_o_13   E    
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 57: Pad: ipad_data_o_14   E   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] **Warn: ignored IO file "design/CHIP.ioc" line 58: Pad: ipad_data_o_15   E   
+  Reason: unable to determine object from name.
+[03/21 21:41:49     33s] Adjusting Core to Bottom to: 0.4400.
+[03/21 21:41:49     33s] **WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[03/21 21:41:49     33s] Type 'man IMPFP-3961' for more detail.
+[03/21 21:41:49     33s] **WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[03/21 21:41:49     33s] Type 'man IMPFP-3961' for more detail.
+[03/21 21:41:49     33s] **WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[03/21 21:41:49     33s] Type 'man IMPFP-3961' for more detail.
+[03/21 21:41:49     33s] **WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[03/21 21:41:49     33s] Type 'man IMPFP-3961' for more detail.
+[03/21 21:41:49     33s] **WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[03/21 21:41:49     33s] Type 'man IMPFP-3961' for more detail.
+[03/21 21:41:49     33s] **WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[03/21 21:41:49     33s] Type 'man IMPFP-3961' for more detail.
+[03/21 21:41:49     33s] **WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[03/21 21:41:49     33s] Type 'man IMPFP-3961' for more detail.
+[03/21 21:41:49     33s] **WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[03/21 21:41:49     33s] Type 'man IMPFP-3961' for more detail.
+[03/21 21:41:49     33s] Generated pitch 2.48 in metal6 is different from 2.4 defined in technology file in preferred direction.
+[03/21 21:41:49     33s] Set Default Net Delay as 1000 ps.
+[03/21 21:41:49     33s] Set Default Net Load as 0.5 pF. 
+[03/21 21:41:49     33s] Set Default Input Pin Transition as 0.1 ps.
+[03/21 21:41:49     33s] Extraction setup Delayed 
+[03/21 21:41:49     33s] *Info: initialize multi-corner CTS.
+[03/21 21:41:50     33s] Reading timing constraints file 'design/CHIP.sdc' ...
+[03/21 21:41:50     33s] Current (total cpu=0:00:33.6, real=0:02:07, peak res=617.7M, current mem=617.7M)
+[03/21 21:41:50     33s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_o[15]' (File design/CHIP.sdc, Line 11).
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'data_o[15]' (File design/CHIP.sdc, Line 11).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File design/CHIP.sdc, Line 11).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_o[14]' (File design/CHIP.sdc, Line 12).
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'data_o[14]' (File design/CHIP.sdc, Line 12).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File design/CHIP.sdc, Line 12).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_o[13]' (File design/CHIP.sdc, Line 13).
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'data_o[13]' (File design/CHIP.sdc, Line 13).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File design/CHIP.sdc, Line 13).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_o[12]' (File design/CHIP.sdc, Line 14).
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'data_o[12]' (File design/CHIP.sdc, Line 14).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File design/CHIP.sdc, Line 14).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_o[11]' (File design/CHIP.sdc, Line 15).
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'data_o[11]' (File design/CHIP.sdc, Line 15).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File design/CHIP.sdc, Line 15).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_o[10]' (File design/CHIP.sdc, Line 16).
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'data_o[10]' (File design/CHIP.sdc, Line 16).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File design/CHIP.sdc, Line 16).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_o[9]' (File design/CHIP.sdc, Line 17).
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'data_o[9]' (File design/CHIP.sdc, Line 17).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File design/CHIP.sdc, Line 17).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_o[8]' (File design/CHIP.sdc, Line 18).
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'data_o[8]' (File design/CHIP.sdc, Line 18).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File design/CHIP.sdc, Line 18).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_o[7]' (File design/CHIP.sdc, Line 19).
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'data_o[7]' (File design/CHIP.sdc, Line 19).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File design/CHIP.sdc, Line 19).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_o[6]' (File design/CHIP.sdc, Line 20).
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] **ERROR: (TCLCMD-917):	Cannot find 'ports' that match 'data_o[6]' (File design/CHIP.sdc, Line 20).
+
+**ERROR: (TCLCMD-917):	Cannot find 'ports or nets' that match '' (File design/CHIP.sdc, Line 20).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_o[5]' (File design/CHIP.sdc, Line 21).
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] Message <TCLCMD-917> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit. (File design/CHIP.sdc, Line 21).
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_o[4]' (File design/CHIP.sdc, Line 22).
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_o[3]' (File design/CHIP.sdc, Line 23).
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_o[2]' (File design/CHIP.sdc, Line 24).
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_o[1]' (File design/CHIP.sdc, Line 25).
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'data_o[0]' (File design/CHIP.sdc, Line 26).
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'clk_p_i' (File design/CHIP.sdc, Line 27).
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] **ERROR: (TCLCMD-1109):	Could not find source for create_clock command (File design/CHIP.sdc, Line 27).
+
+**WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'clk_p_i' (File design/CHIP.sdc, Line 28).
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'clk_p_i' (File design/CHIP.sdc, Line 29).
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] **WARN: (TCLCMD-513):	The software could not find a matching object of the specified type for the pattern 'clk_p_i' (File design/CHIP.sdc, Line 30).
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] Message <TCLCMD-513> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit. (File design/CHIP.sdc, Line 30).
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] **ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 67).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 68).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 69).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 70).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 71).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 72).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 73).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 74).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 75).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 76).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 77).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 78).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 79).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 80).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 81).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 82).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 83).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 84).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 85).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 86).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 87).
+
+INFO (CTE): Reading of timing constraints file design/CHIP.sdc completed, with 20 Warnings and 42 Errors.
+[03/21 21:41:50     33s] WARNING (CTE-25): Line: 10 of File design/CHIP.sdc : Skipped unsupported command: set_max_area
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] WARNING (CTE-25): Line: 8 of File design/CHIP.sdc : Skipped unsupported command: set_units
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=621.2M, current mem=621.2M)
+[03/21 21:41:50     33s] Current (total cpu=0:00:33.7, real=0:02:07, peak res=621.2M, current mem=621.2M)
+[03/21 21:41:50     33s] Reading timing constraints file 'design/CHIP.sdc' ...
+[03/21 21:41:50     33s] Current (total cpu=0:00:33.7, real=0:02:07, peak res=621.2M, current mem=621.2M)
+[03/21 21:41:50     33s] **ERROR: (TCLCMD-1109):	Could not find source for create_clock command (File design/CHIP.sdc, Line 27).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 67).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 68).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 69).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 70).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 71).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 72).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 73).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 74).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 75).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 76).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 77).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 78).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 79).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 80).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 81).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 82).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 83).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 84).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 85).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 86).
+
+**ERROR: (TCLNL-312):	set_drive: Invalid list of pins: '' (File design/CHIP.sdc, Line 87).
+
+INFO (CTE): Reading of timing constraints file design/CHIP.sdc completed, with 0 Warnings and 22 Errors.
+[03/21 21:41:50     33s] WARNING (CTE-25): Line: 10 of File design/CHIP.sdc : Skipped unsupported command: set_max_area
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] WARNING (CTE-25): Line: 8 of File design/CHIP.sdc : Skipped unsupported command: set_units
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=621.5M, current mem=621.5M)
+[03/21 21:41:50     33s] Current (total cpu=0:00:33.8, real=0:02:07, peak res=621.5M, current mem=621.5M)
+[03/21 21:41:50     33s] Creating Cell Server ...(0, 1, 1, 1)
+[03/21 21:41:50     33s] Summary for sequential cells identification: 
+[03/21 21:41:50     33s]   Identified SBFF number: 42
+[03/21 21:41:50     33s]   Identified MBFF number: 0
+[03/21 21:41:50     33s]   Identified SB Latch number: 0
+[03/21 21:41:50     33s]   Identified MB Latch number: 0
+[03/21 21:41:50     33s]   Not identified SBFF number: 10
+[03/21 21:41:50     33s]   Not identified MBFF number: 0
+[03/21 21:41:50     33s]   Not identified SB Latch number: 0
+[03/21 21:41:50     33s]   Not identified MB Latch number: 0
+[03/21 21:41:50     33s]   Number of sequential cells which are not FFs: 27
+[03/21 21:41:50     33s] Total number of combinational cells: 290
+[03/21 21:41:50     33s] Total number of sequential cells: 79
+[03/21 21:41:50     33s] Total number of tristate cells: 13
+[03/21 21:41:50     33s] Total number of level shifter cells: 0
+[03/21 21:41:50     33s] Total number of power gating cells: 0
+[03/21 21:41:50     33s] Total number of isolation cells: 0
+[03/21 21:41:50     33s] Total number of power switch cells: 0
+[03/21 21:41:50     33s] Total number of pulse generator cells: 0
+[03/21 21:41:50     33s] Total number of always on buffers: 0
+[03/21 21:41:50     33s] Total number of retention cells: 0
+[03/21 21:41:50     33s] List of usable buffers: BUF1 BUF12CK BUF1S BUF1CK BUF2CK BUF2 BUF3 BUF4 BUF3CK BUF4CK BUF6CK BUF6 BUF8 BUF8CK
+[03/21 21:41:50     33s] Total number of usable buffers: 14
+[03/21 21:41:50     33s] List of unusable buffers:
+[03/21 21:41:50     33s] Total number of unusable buffers: 0
+[03/21 21:41:50     33s] List of usable inverters: INV1 INV12 INV12CK INV1CK INV1S INV2 INV3 INV2CK INV4 INV3CK INV4CK INV6 INV6CK INV8 INV8CK
+[03/21 21:41:50     33s] Total number of usable inverters: 15
+[03/21 21:41:50     33s] List of unusable inverters:
+[03/21 21:41:50     33s] Total number of unusable inverters: 0
+[03/21 21:41:50     33s] List of identified usable delay cells: DELA DELC DELB
+[03/21 21:41:50     33s] Total number of identified usable delay cells: 3
+[03/21 21:41:50     33s] List of identified unusable delay cells:
+[03/21 21:41:50     33s] Total number of identified unusable delay cells: 0
+[03/21 21:41:50     33s] Creating Cell Server, finished. 
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] Deleting Cell Server ...
+[03/21 21:41:50     33s] Patterns Extraction called explicitly through PreRoutePatternsIfNeeded call 
+[03/21 21:41:50     33s] Extraction setup Started 
+[03/21 21:41:50     33s] Initializing multi-corner RC extraction with 2 active RC Corners ...
+[03/21 21:41:50     33s] **WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+[03/21 21:41:50     33s] Type 'man IMPEXT-6202' for more detail.
+[03/21 21:41:50     33s] Reading Capacitance Table File u18_Faraday.CapTbl ...
+[03/21 21:41:50     33s] Cap table was created using Encounter 13.13-s017_1.
+[03/21 21:41:50     33s] Process name: MIXED_MODE_RFCMOS18_1P6M_MMC_TOP_METAL20_6K.
+[03/21 21:41:50     33s] Reading Capacitance Table File u18_Faraday.CapTbl ...
+[03/21 21:41:50     33s] Cap table was created using Encounter 13.13-s017_1.
+[03/21 21:41:50     33s] Process name: MIXED_MODE_RFCMOS18_1P6M_MMC_TOP_METAL20_6K.
+[03/21 21:41:50     33s] Importing multi-corner RC tables ... 
+[03/21 21:41:50     33s] Summary of Active RC-Corners : 
+[03/21 21:41:50     33s]  
+[03/21 21:41:50     33s]  Analysis View: av_func_mode_max
+[03/21 21:41:50     33s]     RC-Corner Name        : RC_worst
+[03/21 21:41:50     33s]     RC-Corner Index       : 0
+[03/21 21:41:50     33s]     RC-Corner Temperature : 25 Celsius
+[03/21 21:41:50     33s]     RC-Corner Cap Table   : 'u18_Faraday.CapTbl'
+[03/21 21:41:50     33s]     RC-Corner PreRoute Res Factor         : 1
+[03/21 21:41:50     33s]     RC-Corner PreRoute Cap Factor         : 1
+[03/21 21:41:50     33s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[03/21 21:41:50     33s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[03/21 21:41:50     33s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[03/21 21:41:50     33s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[03/21 21:41:50     33s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[03/21 21:41:50     33s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[03/21 21:41:50     33s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[03/21 21:41:50     33s]     RC-Corner Technology file: 'FireIce/icecaps.tch'
+[03/21 21:41:50     33s]  
+[03/21 21:41:50     33s]  Analysis View: av_scan_mode_max
+[03/21 21:41:50     33s]     RC-Corner Name        : RC_worst
+[03/21 21:41:50     33s]     RC-Corner Index       : 0
+[03/21 21:41:50     33s]     RC-Corner Temperature : 25 Celsius
+[03/21 21:41:50     33s]     RC-Corner Cap Table   : 'u18_Faraday.CapTbl'
+[03/21 21:41:50     33s]     RC-Corner PreRoute Res Factor         : 1
+[03/21 21:41:50     33s]     RC-Corner PreRoute Cap Factor         : 1
+[03/21 21:41:50     33s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[03/21 21:41:50     33s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[03/21 21:41:50     33s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[03/21 21:41:50     33s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[03/21 21:41:50     33s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[03/21 21:41:50     33s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[03/21 21:41:50     33s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[03/21 21:41:50     33s]     RC-Corner Technology file: 'FireIce/icecaps.tch'
+[03/21 21:41:50     33s]  
+[03/21 21:41:50     33s]  Analysis View: av_func_mode_min
+[03/21 21:41:50     33s]     RC-Corner Name        : RC_best
+[03/21 21:41:50     33s]     RC-Corner Index       : 1
+[03/21 21:41:50     33s]     RC-Corner Temperature : 25 Celsius
+[03/21 21:41:50     33s]     RC-Corner Cap Table   : 'u18_Faraday.CapTbl'
+[03/21 21:41:50     33s]     RC-Corner PreRoute Res Factor         : 1
+[03/21 21:41:50     33s]     RC-Corner PreRoute Cap Factor         : 1
+[03/21 21:41:50     33s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[03/21 21:41:50     33s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[03/21 21:41:50     33s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[03/21 21:41:50     33s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[03/21 21:41:50     33s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[03/21 21:41:50     33s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[03/21 21:41:50     33s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[03/21 21:41:50     33s]     RC-Corner Technology file: 'FireIce/icecaps.tch'
+[03/21 21:41:50     33s]  
+[03/21 21:41:50     33s]  Analysis View: av_scan_mode_min
+[03/21 21:41:50     33s]     RC-Corner Name        : RC_best
+[03/21 21:41:50     33s]     RC-Corner Index       : 1
+[03/21 21:41:50     33s]     RC-Corner Temperature : 25 Celsius
+[03/21 21:41:50     33s]     RC-Corner Cap Table   : 'u18_Faraday.CapTbl'
+[03/21 21:41:50     33s]     RC-Corner PreRoute Res Factor         : 1
+[03/21 21:41:50     33s]     RC-Corner PreRoute Cap Factor         : 1
+[03/21 21:41:50     33s]     RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+[03/21 21:41:50     33s]     RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+[03/21 21:41:50     33s]     RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+[03/21 21:41:50     33s]     RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+[03/21 21:41:50     33s]     RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+[03/21 21:41:50     33s]     RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+[03/21 21:41:50     33s]     RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+[03/21 21:41:50     33s]     RC-Corner Technology file: 'FireIce/icecaps.tch'
+[03/21 21:41:50     33s] Technology file 'FireIce/icecaps.tch' associated with first view 'av_func_mode_max' will be used as the primary corner for the multi-corner extraction.
+[03/21 21:41:50     33s] 
+[03/21 21:41:50     33s] *** Summary of all messages that are not suppressed in this session:
+[03/21 21:41:50     33s] Severity  ID               Count  Summary                                  
+[03/21 21:41:50     33s] WARNING   IMPLF-58           392  MACRO '%s' has been found in the databas...
+[03/21 21:41:50     33s] WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+[03/21 21:41:50     33s] WARNING   IMPLF-200            7  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[03/21 21:41:50     33s] WARNING   IMPLF-119           12  LAYER '%s' has been found in the databas...
+[03/21 21:41:50     33s] WARNING   IMPFP-3961           8  The techSite '%s' has no related standar...
+[03/21 21:41:50     33s] WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+[03/21 21:41:50     33s] WARNING   IMPVL-346            1  Module '%s' is instantiated in the netli...
+[03/21 21:41:50     33s] WARNING   IMPVL-159          764  Pin '%s' of cell '%s' is defined in LEF ...
+[03/21 21:41:50     33s] WARNING   IMPDB-2504           1  Cell '%s' is instantiated in the Verilog...
+[03/21 21:41:50     33s] WARNING   TCLCMD-513          20  The software could not find a matching o...
+[03/21 21:41:50     33s] ERROR     TCLCMD-917          20  Cannot find '%s' that match '%s'         
+[03/21 21:41:50     33s] ERROR     TCLCMD-1109          2  Could not find source for %s command     
+[03/21 21:41:50     33s] ERROR     TCLNL-312           42  %s: Invalid list of pins: '%s'           
+[03/21 21:41:50     33s] WARNING   TECHLIB-302          2  No function defined for cell '%s'. The c...
+[03/21 21:41:50     33s] WARNING   TECHLIB-436          8  Attribute '%s' on '%s' pin '%s' of cell ...
+[03/21 21:41:50     33s] *** Message Summary: 1217 warning(s), 64 error(s)
+[03/21 21:41:50     33s] 
+[03/21 21:43:41     46s] <CMD> clearGlobalNets
+[03/21 21:43:41     46s] <CMD> globalNetConnect VCC -type pgpin -pin VCC -inst *
+[03/21 21:43:41     46s] <CMD> globalNetConnect GND -type pgpin -pin GND -inst *
+[03/21 21:46:22     64s] 
+[03/21 21:46:22     64s] *** Memory Usage v#1 (Current mem = 884.383M, initial mem = 187.691M) ***
+[03/21 21:46:22     64s] 
+[03/21 21:46:22     64s] *** Summary of all messages that are not suppressed in this session:
+[03/21 21:46:22     64s] Severity  ID               Count  Summary                                  
+[03/21 21:46:22     64s] WARNING   IMPLF-58           392  MACRO '%s' has been found in the databas...
+[03/21 21:46:22     64s] WARNING   IMPLF-61             1  %d duplicated MACRO definitions have bee...
+[03/21 21:46:22     64s] WARNING   IMPLF-200            7  Pin '%s' in macro '%s' has no ANTENNAGAT...
+[03/21 21:46:22     64s] WARNING   IMPLF-119           12  LAYER '%s' has been found in the databas...
+[03/21 21:46:22     64s] WARNING   IMPFP-3961           8  The techSite '%s' has no related standar...
+[03/21 21:46:22     64s] WARNING   IMPEXT-6202          1  In addition to the technology file, the ...
+[03/21 21:46:22     64s] WARNING   IMPVL-346            1  Module '%s' is instantiated in the netli...
+[03/21 21:46:22     64s] WARNING   IMPVL-159          764  Pin '%s' of cell '%s' is defined in LEF ...
+[03/21 21:46:22     64s] WARNING   IMPDB-2504           1  Cell '%s' is instantiated in the Verilog...
+[03/21 21:46:22     64s] WARNING   TCLCMD-513          20  The software could not find a matching o...
+[03/21 21:46:22     64s] ERROR     TCLCMD-917          20  Cannot find '%s' that match '%s'         
+[03/21 21:46:22     64s] ERROR     TCLCMD-1109          2  Could not find source for %s command     
+[03/21 21:46:22     64s] ERROR     TCLNL-312           42  %s: Invalid list of pins: '%s'           
+[03/21 21:46:22     64s] WARNING   TECHLIB-302          2  No function defined for cell '%s'. The c...
+[03/21 21:46:22     64s] WARNING   TECHLIB-436          8  Attribute '%s' on '%s' pin '%s' of cell ...
+[03/21 21:46:22     64s] *** Message Summary: 1217 warning(s), 64 error(s)
+[03/21 21:46:22     64s] 
+[03/21 21:46:22     64s] --- Ending "Innovus" (totcpu=0:01:05, real=0:06:39, mem=884.4M) ---

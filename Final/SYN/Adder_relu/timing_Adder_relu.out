@@ -1,0 +1,57 @@
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Adder_relu
+Version: U-2022.12
+Date   : Wed Jun  5 17:15:38 2024
+****************************************
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: i_data_1[10]
+              (input port clocked by clk)
+  Endpoint: data_sum_r_reg[23]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Adder_relu         G200K                 fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  input external delay                     1.00       1.50 f
+  i_data_1[10] (in)                        0.01       1.51 f
+  U257/S (FA1P)                            0.55       2.06 f
+  U57/O (ND2)                              0.25       2.31 r
+  U307/O (OAI12HP)                         0.13       2.45 f
+  U313/O (AOI12HT)                         0.19       2.64 r
+  U316/O (OAI12HP)                         0.09       2.73 f
+  U188/O (AOI12HP)                         0.24       2.96 r
+  U400/O (OAI12H)                          0.08       3.04 f
+  U401/O (XNR2HS)                          0.12       3.16 r
+  data_sum_r_reg[23]/D (QDFFRBT)           0.00       3.16 r
+  data arrival time                                   3.16
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.50       1.50
+  clock uncertainty                       -0.10       1.40
+  data_sum_r_reg[23]/CK (QDFFRBT)          0.00       1.40 r
+  library setup time                      -0.10       1.30
+  data required time                                  1.30
+  -----------------------------------------------------------
+  data required time                                  1.30
+  data arrival time                                  -3.16
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -1.86
+
+
+1

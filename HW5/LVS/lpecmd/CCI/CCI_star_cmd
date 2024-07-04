@@ -1,0 +1,85 @@
+**The file is only the template of star command file, users must adjust the setting for some options to meet their needs. Then comment this line.
+BLOCK: 			topcell
+CALIBRE_RUNSET: 	lvs.rule
+CALIBRE_DEVTAB: 	CCI/topcell.devtab
+CALIBRE_AGF: 		CCI/topcell.agf
+CALIBRE_AGF_LAYER_MAP: 	CCI/topcell.gds.map
+CALIBRE_AGF_NETLIST: 	CCI/topcell.nl
+CALIBRE_AGF_CELL_EXTENTS: -10000 -10000 10000 10000 
+CALIBRE_AGF_NAME_MAP: 	CCI/topcell.lnn
+CALIBRE_CELLS_PORTS: 	CCI/topcell.ports_cells
+CALIBRE_IXF_FILE: 	CCI/topcell.ixf
+CALIBRE_NXF_FILE: 	CCI/topcell.nxf
+
+TCAD_GRD_FILE: 		./cci.nxtgrd
+MAPPING_FILE: 		./map.txt
+
+EXTRACTION: 		RC
+
+*****************************************************************************************
+* If users set CCTGFLAG = 1 in MOS SPICE models or there is no CCTGFLAG option in model *
+* card, the contact to poly gate capacitances have been considered in models,		*
+* please adopt this option : "EXTRACT_VIA_CAPS:	YES IGNORE_GATE_CONTACT_COUPLING"	*
+*											*
+* If users set CCTGFLAG = 0 in MOS SPICE models , the contact to poly gate capacitance 	*
+* haven't been considered in model,							*
+* please adopt this option : "EXTRACT_VIA_CAPS: YES"					*
+*****************************************************************************************
+*EXTRACT_VIA_CAPS:	YES
+EXTRACT_VIA_CAPS: 	YES IGNORE_GATE_CONTACT_COUPLING
+MODE: 			400
+
+*NETLIST_GROUND_NODE_NAME: GND
+COUPLE_TO_GROUND:   	NO
+POWER_EXTRACT: 		YES 
+POWER_NETS: 		*VDD* *VCC* *VSS* GND 
+
+*****************************************************************************************
+* For shrink process(except M110 process), please adopt these 2 options			*
+* "MAGNIFICATION_FACTOR: 0.X" (0.X is shrink factor) and 				*
+* "MAGNIFY_DEVICE_PARAMS: NO" 								*
+*											*
+* Otherwise, please keep these 2 option as:						*
+* "*MAGNIFICATION_FACTOR: 0.X"								*
+* "*MAGNIFY_DEVICE_PARAMS: NO"								*
+*****************************************************************************************
+**MAGNIFICATION_FACTOR:	0.9
+**MAGNIFY_DEVICE_PARAMS:	NO
+
+NETLIST_FORMAT: 	SPF
+NETLIST_FILE: 		topcell.spf 
+
+NETLIST_SELECT_NETS: 	*
+NETLIST_PASSIVE_PARAMS: YES
+DENSITY_BASED_THICKNESS:YES
+
+* FSCOMPARE
+REDUCTION:			NO
+COUPLING_ABS_THRESHOLD :	1e-17
+COUPLING_REL_THRESHOLD :	0.05
+FSCOMPARE_OPTIONS :		-perc_coup 1 -abs_coup 1e-18  -abs_self 1e-18 -perc_self 0.1
+FSCOMPARE_THRESHOLD : 		1e-17
+FSCOMPARE_COUPLING_RATIO : 	0.05
+
+* TechReport
+CASE_SENSITIVE:			YES
+HIERARCHICAL_SEPARATOR:		/
+BUS_BIT:			[]
+
+XREF: 				YES
+CELL_TYPE:			LAYOUT
+NET_TYPE:			LAYOUT
+SKIP_CELLS: 			!*
+
+TRANSLATE_RETAIN_BULK_LAYERS: 	YES
+REMOVE_FLOATING_NETS: 		YES
+REMOVE_DANGLING_NETS:		YES
+
+IGNORE_CAPACITANCE : 		ALL 
+COUPLING_REPORT_FILE: 		COUPLE.REP
+*SHORT_PINS:			YES
+*NETLIST_TAIL_COMMENTS:		YES
+*NETS:  			*OUT*
+NETLIST_MAX_LINE:		78
+
+*NETLIST_CONNECT_OPENS:		*VDD* *VCC* *VSS* GND

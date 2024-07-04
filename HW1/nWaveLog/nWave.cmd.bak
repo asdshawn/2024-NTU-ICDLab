@@ -1,0 +1,107 @@
+verdiSetActWin -win $_nWave1
+wvConvertFile -win $_nWave1 -o \
+           "/home/raid7_2/user12/r2945050/ICDLab/HW1/alu.fsdb.fsdb" \
+           "/home/raid7_2/user12/r2945050/ICDLab/HW1/alu.fsdb"
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 {/home/raid7_2/user12/r2945050/ICDLab/HW1/alu.fsdb.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/ALU_test"
+wvGetSignalSetScope -win $_nWave1 "/ALU_test/alu_0"
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/ALU_test/alu_0/clk_p_i} \
+{/ALU_test/alu_0/data_a_i\[7:0\]} \
+{/ALU_test/alu_0/data_b_i\[7:0\]} \
+{/ALU_test/alu_0/data_o\[15:0\]} \
+{/ALU_test/alu_0/inst_i\[2:0\]} \
+{/ALU_test/alu_0/next_state\[2:0\]} \
+{/ALU_test/alu_0/reset_n_i} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 7 )} 
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 7 )} 
+wvSetRadix -win $_nWave1 -format Bin
+wvResizeWindow -win $_nWave1 0 23 1152 649
+wvSetCursor -win $_nWave1 7661.877258 -snap {("G2" 0)}
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 4)}
+wvSetCursor -win $_nWave1 4035.974781 -snap {("G1" 4)}
+wvSetCursor -win $_nWave1 3992.809275 -snap {("G1" 2)}
+wvSetCursor -win $_nWave1 5352.522704 -snap {("G1" 5)}
+wvSetCursor -win $_nWave1 9982.023188 -snap {("G2" 0)}
+wvSetCursor -win $_nWave1 2568.347588 -snap {("G1" 5)}
+wvSetCursor -win $_nWave1 938.849748 -snap {("G1" 2)}
+wvSetCursor -win $_nWave1 1553.958204 -snap {("G1" 2)}
+wvSetCursor -win $_nWave1 53250.744813 -snap {("G1" 5)}
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
+wvSetCursor -win $_nWave1 5007.198659 -snap {("G2" 0)}
+wvSetCursor -win $_nWave1 8395.690854 -snap {("G1" 4)}
+wvSetCursor -win $_nWave1 7726.625516 -snap {("G2" 0)}
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetCursor -win $_nWave1 928.058372 -snap {("G1" 5)}
+wvSetCursor -win $_nWave1 2589.930341 -snap {("G1" 6)}
+wvSetCursor -win $_nWave1 3474.823207 -snap {("G1" 5)}
+wvSetCursor -win $_nWave1 992.806631 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 7176.265319 -snap {("G1" 5)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/ALU_test"
+wvGetSignalSetScope -win $_nWave1 "/ALU_test/alu_0"
+wvGetSignalSetScope -win $_nWave1 "/ALU_test"
+wvGetSignalSetScope -win $_nWave1 "/ALU_test/alu_0"
+wvGetSignalClose -win $_nWave1
+wvResizeWindow -win $_nWave1 0 23 1152 649
+wvResizeWindow -win $_nWave1 0 23 1152 649
+wvResizeWindow -win $_nWave1 0 23 1152 649
+wvResizeWindow -win $_nWave1 0 23 1152 649
+wvResizeWindow -win $_nWave1 0 23 1152 649
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvMoveSelected -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 3)}
+wvSetCursor -win $_nWave1 4334.129702 -snap {("G1" 4)}
+wvSetCursor -win $_nWave1 4139.580239 -snap {("G1" 5)}
+wvSetCursor -win $_nWave1 4020.688900 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 5015.052822 -snap {("G1" 1)}

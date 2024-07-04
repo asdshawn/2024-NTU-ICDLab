@@ -1,0 +1,6 @@
+{"vcs1":{"timestamp_begin":1715931436.804323801, "rt":0.52, "ut":0.10, "st":0.06}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1715931436.373375874}
+{"VCS_COMP_START_TIME": 1715931436.373375874}
+{"VCS_COMP_END_TIME": 1715931437.420331013}
+{"VCS_USER_OPTIONS": "partial_pooling.v partial_pooling_tb.v -full64 -R -debug_access+all +v2k"}
+{"vcs1": {"peak_mem": 313780}}

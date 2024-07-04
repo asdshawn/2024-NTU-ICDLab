@@ -1,0 +1,420 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+                 Version U-2022.12 for linux64 - Nov 22, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+# Read Design
+read_file -format verilog i_Buffer.v
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/i_Buffer/fsa0m_a_generic_core_tt1p8v25c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/i_Buffer/fsa0m_a_generic_core_ss1p62v125c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/i_Buffer/fsa0m_a_generic_core_ff1p98vm40c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/i_Buffer/fsa0m_a_t33_generic_io_tt1p8v25c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/i_Buffer/fsa0m_a_t33_generic_io_ss1p62v125c.db'
+Loading db file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/i_Buffer/fsa0m_a_t33_generic_io_ff1p98vm40c.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+  Loading link library 'fsa0m_a_generic_core_tt1p8v25c'
+  Loading link library 'fsa0m_a_generic_core_ss1p62v125c'
+  Loading link library 'fsa0m_a_generic_core_ff1p98vm40c'
+  Loading link library 'fsa0m_a_t33_generic_io_tt1p8v25c'
+  Loading link library 'fsa0m_a_t33_generic_io_ss1p62v125c'
+  Loading link library 'fsa0m_a_t33_generic_io_ff1p98vm40c'
+  Loading link library 'gtech'
+Loading verilog file '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/i_Buffer/i_Buffer.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/i_Buffer/i_Buffer.v
+
+Statistics for case statements in always block at line 68 in file
+	'/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/i_Buffer/i_Buffer.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            69            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine i_Buffer line 26 in file
+		'/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/i_Buffer/i_Buffer.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  counter_temp_reg   | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i_Buffer line 34 in file
+		'/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/i_Buffer/i_Buffer.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   data_buffer_reg   | Flip-flop | 1248  |  Y  | N  | Y  | N  | N  | N  | N  |
+|  weight_buffer_reg  | Flip-flop |  72   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine i_Buffer line 49 in file
+		'/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/i_Buffer/i_Buffer.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    data_1_r_reg     | Flip-flop |  48   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    data_2_r_reg     | Flip-flop |  48   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   weight_0_r_reg    | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   weight_1_r_reg    | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   weight_2_r_reg    | Flip-flop |  24   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    data_0_r_reg     | Flip-flop |  48   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/home/raid7_2/user12/r2945050/ICDLab/Final/SYN/i_Buffer/i_Buffer.db:i_Buffer'
+Loaded 1 design.
+Current design is 'i_Buffer'.
+i_Buffer
+current_design i_Buffer
+Current design is 'i_Buffer'.
+{i_Buffer}
+uniquify
+1
+link
+
+  Linking design 'i_Buffer'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
+  fsa0m_a_generic_core_tt1p8v25c (library) /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/i_Buffer/fsa0m_a_generic_core_tt1p8v25c.db
+  fsa0m_a_generic_core_ss1p62v125c (library) /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/i_Buffer/fsa0m_a_generic_core_ss1p62v125c.db
+  fsa0m_a_generic_core_ff1p98vm40c (library) /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/i_Buffer/fsa0m_a_generic_core_ff1p98vm40c.db
+  fsa0m_a_t33_generic_io_tt1p8v25c (library) /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/i_Buffer/fsa0m_a_t33_generic_io_tt1p8v25c.db
+  fsa0m_a_t33_generic_io_ss1p62v125c (library) /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/i_Buffer/fsa0m_a_t33_generic_io_ss1p62v125c.db
+  fsa0m_a_t33_generic_io_ff1p98vm40c (library) /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/i_Buffer/fsa0m_a_t33_generic_io_ff1p98vm40c.db
+
+1
+#source -echo -verbose ./your_design.sdc
+############in sdc file
+# Set the Optimization Constraints 
+create_clock -period 1 -name "clk" -waveform {0 0.5} "clk"
+1
+set_dont_touch_network [get_ports clk]
+1
+set_fix_hold [get_clocks clk]
+1
+# Define the design environment
+set_clock_uncertainty  0.1  [get_clocks clk]
+1
+set_clock_latency      0.5  [get_clocks clk]
+1
+set_input_delay -max 1 -clock clk [all_inputs]
+1
+set_output_delay -min 0.5 -clock clk [all_outputs]
+1
+set_drive 1  [all_inputs]
+1
+set_load  10 [all_outputs]
+1
+set_fix_multiple_port_nets -all -buffer_constants
+1
+set_operating_conditions -min_library fsa0m_a_generic_core_ff1p98vm40c -min BCCOM -max_library fsa0m_a_generic_core_ss1p62v125c -max WCCOM
+Using operating conditions 'WCCOM' found in library 'fsa0m_a_generic_core_ss1p62v125c'.
+Using operating conditions 'BCCOM' found in library 'fsa0m_a_generic_core_ff1p98vm40c'.
+1
+set_wire_load_model -name G200K -library fsa0m_a_generic_core_tt1p8v25c
+1
+set_max_area 0
+1
+set_max_fanout 6 i_Buffer
+1
+set_boundary_optimization {"*"}
+1
+#############in sdc file
+check_design
+ 
+****************************************
+check_design summary:
+Version:     U-2022.12
+Date:        Wed Jun  5 16:26:24 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               1
+    Cells do not drive (LINT-1)                                     1
+--------------------------------------------------------------------------------
+
+Warning: In design 'i_Buffer', cell 'C6074' does not drive any nets. (LINT-1)
+1
+# remove_attribute [find -hierarchy design {"*"}] dont_touch
+# Map and Optimize the Design
+compile_ultra
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Warning: Ignoring compile_fix_multiple_port_nets = TRUE. (UIO-60)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | U-2022.12-DWBB_202212.0 |     *     |
+| Licensed DW Building Blocks        | U-2022.12-DWBB_202212.0 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Comand Line  | compile_ultra                                                                     |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 1561                                   |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 1540                                   |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 10                                     |
+| Number of Dont Touch Nets                               | 1                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 1 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'i_Buffer'
+
+  Loading target library 'fsa0m_a_generic_core_ss1p62v125c'
+  Loading target library 'fsa0m_a_generic_core_ff1p98vm40c'
+  Loading target library 'fsa0m_a_t33_generic_io_tt1p8v25c'
+  Loading target library 'fsa0m_a_t33_generic_io_ss1p62v125c'
+  Loading target library 'fsa0m_a_t33_generic_io_ff1p98vm40c'
+Loaded alib file './alib-52/fsa0m_a_generic_core_tt1p8v25c.db.alib'
+Loaded alib file './alib-52/fsa0m_a_generic_core_ss1p62v125c.db.alib'
+Loaded alib file './alib-52/fsa0m_a_generic_core_ff1p98vm40c.db.alib'
+Loaded alib file './alib-52/fsa0m_a_t33_generic_io_tt1p8v25c.db.alib' (placeholder)
+Loaded alib file './alib-52/fsa0m_a_t33_generic_io_ss1p62v125c.db.alib' (placeholder)
+Loaded alib file './alib-52/fsa0m_a_t33_generic_io_ff1p98vm40c.db.alib' (placeholder)
+Warning: Operating condition WCCOM set on design i_Buffer has different process,
+voltage and temperatures parameters than the parameters at which target library 
+fsa0m_a_generic_core_tt1p8v25c is characterized. Delays may be inaccurate as a result. (OPT-998)
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'i_Buffer'
+Information: Added key list 'DesignWare' to design 'i_Buffer'. (DDB-72)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'TIE1' in the library 'fsa0m_a_generic_core_tt1p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIE0' in the library 'fsa0m_a_generic_core_tt1p8v25c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'BHD1' in the library 'fsa0m_a_generic_core_tt1p8v25c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: compile falsified 146 infeasible paths. (OPT-1720)
+  Mapping Optimization (Phase 1)
+  Mapping Optimization (Phase 2)
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:01:36  188100.5      1.00    1168.7 1122021.7                           808229.3125      0.00  
+    0:01:36  188019.2      1.17    1491.8 1122030.7                           807875.3125      0.00  
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:01:37  188019.2      1.17    1491.8 1122030.7                           807875.3125      0.00  
+    0:01:37  187988.0      1.17    1488.8 1122030.7                           807737.6250      0.00  
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:01:41  159033.6      1.17    1342.0 1239820.0                           659768.6250      0.00  
+    0:03:16  161130.3      1.03    1312.1 1122296.7                           670897.1250      0.00  
+    0:03:16  161130.3      1.03    1312.1 1122296.7                           670897.1250      0.00  
+    0:03:17  161149.1      1.03    1315.6 1123114.7                           671100.6875      0.00  
+    0:03:18  161149.1      1.03    1315.6 1123114.7                           671100.6875      0.00  
+    0:03:18  161149.1      1.03    1315.6 1123114.7                           671100.6875      0.00  
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:03:23  159258.6      1.03    1304.0 1123113.7                           660694.4375      0.00  
+    0:03:31  159564.8      1.03    1290.6 1123113.7                           663486.0625      0.00  
+    0:03:31  159564.8      1.03    1290.6 1123113.7                           663486.0625      0.00  
+    0:03:31  159092.9      1.03    1290.5 1123113.7                           660497.1875      0.00  
+    0:03:32  159092.9      1.03    1290.5 1123113.7                           660497.1875      0.00  
+    0:04:28  159092.9      1.03    1290.5 1123113.7                           660497.1875      0.00  
+    0:04:28  159092.9      1.03    1290.5 1123113.7                           660497.1875      0.00  
+    0:04:28  159092.9      1.03    1290.5 1123113.7                           660497.1875      0.00  
+    0:04:28  159092.9      1.03    1290.5 1123113.7                           660497.1875      0.00  
+    0:05:23  159092.9      1.03    1290.5 1123113.7                           660497.1875      0.00  
+    0:05:23  159092.9      1.03    1290.5 1123113.7                           660497.1875      0.00  
+    0:06:06  159121.1      1.03    1290.3 1123119.7                           660322.2500      0.00  
+    0:06:06  159121.1      1.03    1290.3 1123119.7                           660322.2500      0.00  
+    0:06:36  159121.1      1.03    1290.3 1123119.7                           660322.2500      0.00  
+    0:06:36  159121.1      1.03    1290.3 1123119.7                           660322.2500      0.00  
+    0:06:51  159121.1      1.03    1290.3 1123119.7                           660322.2500      0.00  
+    0:06:51  159121.1      1.03    1290.3 1123119.7                           660322.2500      0.00  
+    0:07:19  159121.1      1.03    1290.3 1123119.7                           660322.2500      0.00  
+    0:07:19  159121.1      1.03    1290.3 1123119.7                           660322.2500      0.00  
+    0:07:34  159121.1      1.03    1290.3 1123119.7                           660322.2500      0.00  
+    0:07:34  159121.1      1.03    1290.3 1123119.7                           660322.2500      0.00  
+    0:08:03  159121.1      1.03    1290.3 1123119.7                           660322.2500      0.00  
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_fanout)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:08:03  159121.1      1.03    1290.3 1123119.7                           660322.2500      0.00  
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+    0:08:09  178238.6      1.03    1063.6  613397.7 net27264                  773670.5625      0.00  
+    0:08:14  178526.1      1.06    1067.6  613358.7 data_0_r_reg[44]/D        775281.3750      0.00  
+    0:08:18  178616.7      1.09    1071.1  613342.5 data_0_r_reg[35]/D        776143.2500      0.00  
+    0:08:22  178779.2      1.11    1071.9  613316.5 data_0_r_reg[44]/D        777911.5625      0.00  
+    0:08:24  179113.5      1.09    1070.9  613304.4 data_2_r_reg[45]/D        778818.8750      0.00  
+    0:08:28  178885.4      1.08    1070.2  613299.3 data_0_r_reg[24]/D        777490.7500      0.00  
+    0:08:32  177894.9      1.46    1082.7  612519.1 net27250                  771575.0625      0.00  
+    0:08:35  178901.0      1.21    1088.8  612369.1 data_2_r_reg[1]/D         776347.8125      0.00  
+    0:08:38  178947.9      1.13    1082.7  612369.1 data_0_r_reg[7]/D         776657.1875      0.00  
+    0:08:40  179060.4      1.12    1081.6  612369.1 data_2_r_reg[29]/D        776909.3125      0.00  
+    0:08:42  179041.7      1.11    1081.0  612356.7 net29989                  777069.9375      0.00  
+    0:08:44  178554.2      1.10    1078.7  611625.1 data_2_r_reg[18]/D        776248.8125      0.00  
+    0:08:47  178501.1      1.09    1076.9  611625.1 data_1_r_reg[13]/D        775988.1875      0.00  
+    0:08:49  178626.1      1.08    1076.1  611625.1                           776476.3125      0.00  
+    0:08:52  178876.1      1.08    1076.1  611629.1                           777501.1875      0.00  
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:08:52  178876.1      1.08    1076.1  611629.1                           777501.1875      0.00  
+    0:08:55  179210.4      1.07    1075.1  611629.1 data_0_r_reg[26]/D        778134.3750      0.00  
+    0:08:56  179232.3      1.07    1074.9  611625.1                           778371.3125      0.00  
+    0:09:00  179294.8      1.07    1074.6  611627.1                           778464.9375      0.00  
+    0:09:00  179294.8      1.07    1074.6  611627.1                           778464.9375      0.00  
+    0:09:01  175832.5      1.07    1073.5  611608.2                           758576.1250      0.00  
+    0:09:01  175832.5      1.07    1073.5  611608.2                           758576.1250      0.00  
+    0:09:02  175832.5      1.07    1073.5  611608.2                           758576.1250      0.00  
+    0:09:02  175832.5      1.07    1073.5  611608.2                           758576.1250      0.00  
+    0:09:02  175832.5      1.07    1073.5  611608.2                           758576.1250      0.00  
+    0:09:02  175832.5      1.07    1073.5  611608.2                           758576.1250      0.00  
+    0:09:03  175832.5      1.07    1073.5  611608.2                           758576.1250      0.00  
+    0:09:03  175832.5      1.07    1073.5  611608.2                           758576.1250      0.00  
+    0:09:43  176038.7      1.06    1073.2  611636.2                           758820.5000      0.00  
+    0:09:43  176038.7      1.06    1073.2  611636.2                           758820.5000      0.00  
+    0:09:46  176120.0      1.06    1073.1  611635.2                           759062.8750      0.00  
+    0:09:46  176120.0      1.06    1073.1  611635.2                           759062.8750      0.00  
+    0:10:16  176370.0      1.06    1072.9  611646.2                           759850.3750      0.00  
+    0:10:16  176370.0      1.06    1072.9  611646.2                           759850.3750      0.00  
+    0:10:18  176370.0      1.06    1072.9  611646.2                           759850.3750      0.00  
+    0:10:18  176370.0      1.06    1072.9  611646.2                           759850.3750      0.00  
+    0:10:27  176370.0      1.06    1072.9  611646.2                           759850.3750      0.00  
+    0:10:27  176370.0      1.06    1072.9  611646.2                           759850.3750      0.00  
+    0:10:29  176370.0      1.06    1072.9  611646.2                           759850.3750      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:10:29  176370.0      1.06    1072.9  611646.2                           759850.3750      0.00  
+    0:10:31  173517.0      1.06    1035.3  611646.5                           740195.4375      0.00  
+    0:10:32  173473.3      1.06    1034.9  611651.5                           739885.5625      0.00  
+    0:10:32  173473.3      1.06    1034.9  611651.5                           739885.5625      0.00  
+    0:10:33  173604.5      1.06    1030.0  611651.5                           740739.7500      0.00  
+    0:10:38  173788.9      1.06    1034.6  611018.8 net27262                  741397.5000      0.00  
+    0:10:41  173979.5      1.06    1034.1  611006.8 data_0_r_reg[30]/D        741710.6250      0.00  
+    0:10:43  174048.2      1.04    1032.1  611035.9 data_2_r_reg[19]/D        741892.7500      0.00  
+    0:10:46  174260.7      1.03    1031.5  611059.9 data_1_r_reg[21]/D        741899.3750      0.00  
+    0:10:48  174276.3      1.03    1030.5  611079.9 data_0_r_reg[15]/D        741576.0000      0.00  
+    0:10:52  174623.2      1.04    1033.5  611060.8 data_2_r_reg[10]/D        743782.8750      0.00  
+    0:10:55  174701.3      1.13    1041.3  610979.8 net27256                  747112.2500      0.00  
+    0:10:57  174542.0      1.10    1039.5  610979.8 data_2_r_reg[5]/D         746515.3125      0.00  
+    0:10:58  174735.7      1.10    1039.0  610979.8                           747120.3125      0.00  
+    0:11:08  174635.7      1.09    1038.5  610995.8                           746089.3125      0.00  

@@ -1,0 +1,386 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Thu Mar 21 22:07:22 2024                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v17.11-s080_1 (64bit) 08/04/2017 11:13 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute 17.11-s080_1 NR170721-2155/17_11-UB (database version 2.30, 390.7.1) {superthreading v1.44}
+#@(#)CDS: AAE 17.11-s034 (64bit) 08/04/2017 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 17.11-s053_1 () Aug  1 2017 23:31:41 ( )
+#@(#)CDS: SYNTECH 17.11-s012_1 () Jul 21 2017 02:29:12 ( )
+#@(#)CDS: CPE v17.11-s095
+#@(#)CDS: IQRC/TQRC 16.1.1-s215 (64bit) Thu Jul  6 20:18:10 PDT 2017 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getDrawView
+loadWorkspace -name Physical
+win
+set init_gnd_net GND
+set init_lef_file {lef/header6_V55_20ka_cic.lef lef/fsa0m_a_generic_core.lef lef/FSA0M_A_GENERIC_CORE_ANT_V55.lef lef/fsa0m_a_t33_generic_io.lef lef/FSA0M_A_T33_GENERIC_IO_ANT_V55.lef lef/BONDPAD.lef}
+set init_verilog design/HW3_alu_syn.v
+set init_mmmc_file mmmc.view
+set init_io_file design/CHIP.ioc
+set init_top_cell CHIP
+set init_pwr_net VCC
+init_design
+getIoFlowFlag
+setIoFlowFlag 0
+floorPlan -site core_5040 -r 1 0.01 80.0 80.0 80.0 80.0
+uiSetTool select
+getIoFlowFlag
+fit
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddRingMode -ring_target default -extend_over_row 0 -ignore_rows 0 -avoid_short 0 -skip_crossing_trunks none -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size 1 -orthogonal_only true -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+addRing -nets {VCC GND} -type core_rings -follow core -layer {top metal5 bottom metal5 left metal4 right metal4} -width {top 2 bottom 2 left 2 right 2} -spacing {top 0.28 bottom 0.28 left 0.28 right 0.28} -offset {top 1.8 bottom 1.8 left 1.8 right 1.8} -center 1 -extend_corner {} -threshold 0 -jog_distance 0 -snap_wire_center_to_grid None -use_wire_group 1 -use_wire_group_bits 15 -use_interleaving_wire_group 1
+setSrouteMode -viaConnectToShape { noshape }
+sroute -connect { padPin } -layerChangeRange { metal1(1) metal6(6) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal6(6) } -allowLayerChange 1 -targetViaLayerRange { metal1(1) metal6(6) }
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+set sprCreateIeRingLayers {}
+set sprCreateIeStripeWidth 10.0
+set sprCreateIeStripeThreshold 1.0
+setAddStripeMode -ignore_block_check false -break_at none -route_over_rows_only false -rows_without_stripes_only false -extend_to_closest_target none -stop_at_last_wire_for_area false -partial_set_thru_domain false -ignore_nondefault_domains false -trim_antenna_back_to_shape none -spacing_type edge_to_edge -spacing_from_block 0 -stripe_min_length 0 -stacked_via_top_layer metal6 -stacked_via_bottom_layer metal1 -via_using_exact_crossover_size false -split_vias false -orthogonal_only true -allow_jog { padcore_ring  block_ring }
+addStripe -nets {VCC GND} -layer metal4 -direction vertical -width 1 -spacing 0.28 -set_to_set_distance 400 -start_from left -start_offset 250 -switch_layer_over_obs false -max_same_layer_jog_length 2 -padcore_ring_top_layer_limit metal6 -padcore_ring_bottom_layer_limit metal1 -block_ring_top_layer_limit metal6 -block_ring_bottom_layer_limit metal1 -use_wire_group 0 -snap_wire_center_to_grid None -skip_via_on_pin {  standardcell } -skip_via_on_wire_shape {  noshape }
+setSrouteMode -viaConnectToShape { ring stripe }
+sroute -connect { corePin } -layerChangeRange { metal1(1) metal6(6) } -blockPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -allowJogging 1 -crossoverViaLayerRange { metal1(1) metal6(6) } -nets { GND VCC } -allowLayerChange 1 -targetViaLayerRange { metal1(1) metal6(6) }
+addIoFiller -cell EMPTY16D -prefix IOFILLER
+addIoFiller -cell EMPTY8D -prefix IOFILLER
+addIoFiller -cell EMPTY4D -prefix IOFILLER
+addIoFiller -cell EMPTY2D -prefix IOFILLER
+addIoFiller -cell EMPTY1D -prefix IOFILLER -fillAnyGap
+getMultiCpuUsage -localCpu
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_implant -quiet
+get_verify_drc_mode -check_implant_across_rows -quiet
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+setVerifyGeometryMode -area { 0 0 0 0 } -minWidth true -minSpacing true -minArea true -sameNet true -short true -overlap true -offRGrid false -offMGrid true -mergedMGridCheck true -minHole true -implantCheck true -minimumCut true -minStep true -viaEnclosure true -antenna false -insuffMetalOverlap true -pinInBlkg false -diffCellViol true -sameCellViol false -padFillerCellsOverlap true -routingBlkgPinOverlap true -routingCellBlkgOverlap true -regRoutingOnly false -stackedViasOnRegNet false -wireExt true -useNonDefaultSpacing false -maxWidth true -maxNonPrefLength -1 -error 1000
+verifyGeometry
+setVerifyGeometryMode -area { 0 0 0 0 }
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_implant -quiet
+get_verify_drc_mode -check_implant_across_rows -quiet
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_implant true -check_implant_across_rows false -check_ndr_spacing false -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -report CHIP.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+verifyConnectivity -nets {VCC GND} -type special -noUnroutedNet -error 1000 -warning 50
+saveDesign DBS/powerroute
+setRouteMode -earlyGlobalHonorMsvRouteConstraint false -earlyGlobalRoutePartitionPinGuide true
+setEndCapMode -reset
+setEndCapMode -boundary_tap false
+setNanoRouteMode -quiet -droutePostRouteSpreadWire 1
+setUsefulSkewMode -maxSkew false -noBoundary false -useCells {DELC DELB DELA BUF8CK BUF8 BUF6CK BUF6 BUF4CK BUF4 BUF3CK BUF3 BUF2CK BUF2 BUF1S BUF1CK BUF12CK BUF1 INV8CK INV8 INV6CK INV6 INV4CK INV4 INV3CK INV3 INV2CK INV2 INV1S INV1CK INV12CK INV12 INV1} -maxAllowedDelay 1
+setPlaceMode -reset
+setPlaceMode -congEffort auto -timingDriven 1 -modulePlan 1 -clkGateAware 1 -powerDriven 0 -ignoreScan 1 -reorderScan 1 -ignoreSpare 0 -placeIOPins 0 -moduleAwareSpare 0 -maxDensity 0.6 -preserveRouting 0 -rmAffectedRouting 0 -checkRoute 0 -swapEEQ 0
+setPlaceMode -fp false
+placeDesign
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -preCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix CHIP_preCTS -outDir timingReports
+setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+optDesign -preCTS
+saveDesign DBS/placement
+create_ccopt_clock_tree_spec -file ccopt.spec
+ccopt_check_and_flatten_ilms_no_restore
+set_ccopt_property case_analysis -pin ipad_clk_p_i/PD 0
+set_ccopt_property case_analysis -pin ipad_clk_p_i/PU 0
+set_ccopt_property case_analysis -pin ipad_clk_p_i/SMT 0
+create_ccopt_clock_tree -name clk_p_i -source clk_p_i -no_skew_group
+set_ccopt_property clock_period -pin clk_p_i 10
+create_ccopt_skew_group -name clk_p_i/func_mode -sources clk_p_i -auto_sinks
+set_ccopt_property include_source_latency -skew_group clk_p_i/func_mode true
+set_ccopt_property target_insertion_delay -skew_group clk_p_i/func_mode 0.500
+set_ccopt_property extracted_from_clock_name -skew_group clk_p_i/func_mode clk_p_i
+set_ccopt_property extracted_from_constraint_mode_name -skew_group clk_p_i/func_mode func_mode
+set_ccopt_property extracted_from_delay_corners -skew_group clk_p_i/func_mode {DC_max DC_min}
+create_ccopt_skew_group -name clk_p_i/scan_mode -sources clk_p_i -auto_sinks
+set_ccopt_property include_source_latency -skew_group clk_p_i/scan_mode true
+set_ccopt_property target_insertion_delay -skew_group clk_p_i/scan_mode 0.500
+set_ccopt_property extracted_from_clock_name -skew_group clk_p_i/scan_mode clk_p_i
+set_ccopt_property extracted_from_constraint_mode_name -skew_group clk_p_i/scan_mode scan_mode
+set_ccopt_property extracted_from_delay_corners -skew_group clk_p_i/scan_mode {DC_max DC_min}
+check_ccopt_clock_tree_convergence
+get_ccopt_property auto_design_state_for_ilms
+ccopt_design -cts
+getCTSMode -engine -quiet
+ctd_win -id ctd_window
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix CHIP_postCTS -outDir timingReports
+setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+optDesign -postCTS
+saveDesign DBS/cts
+setNanoRouteMode -quiet -routeInsertAntennaDiode 1
+setNanoRouteMode -quiet -routeAntennaCellName ANTENNA
+setNanoRouteMode -quiet -timingEngine {}
+setNanoRouteMode -quiet -routeWithTimingDriven 1
+setNanoRouteMode -quiet -routeWithSiDriven 1
+setNanoRouteMode -quiet -routeWithSiPostRouteFix 1
+setNanoRouteMode -quiet -drouteStartIteration default
+setNanoRouteMode -quiet -routeTopRoutingLayer default
+setNanoRouteMode -quiet -routeBottomRoutingLayer default
+setNanoRouteMode -quiet -drouteEndIteration default
+setNanoRouteMode -quiet -routeWithTimingDriven true
+setNanoRouteMode -quiet -routeWithSiDriven true
+routeDesign -globalDetail -viaOpt -wireOpt
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false
+violationBrowserClose
+setAnalysisMode -analysisType onChipVariation
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postCTS -pathReports -drvReports -slackReports -numPaths 50 -prefix CHIP_postCTS -outDir timingReports
+redirect -quiet {set honorDomain [getAnalysisMode -honorClockDomains]} > /dev/null
+timeDesign -postCTS -hold -pathReports -slackReports -numPaths 50 -prefix CHIP_postCTS -outDir timingReports
+setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+setDelayCalMode -engine default -siAware true
+optDesign -postRoute
+saveDesign DBS/route
+getFillerMode -quiet
+addFiller -cell FILLERCC FILLERBC FILLERAC FILLER8C FILLER4C FILLER2C -prefix FILLER
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false
+violationBrowserClose
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false
+zoomBox 1170.32 1258.82 1311.06 1539.06
+redraw
+violationBrowserClose
+setVerifyGeometryMode -area { 0 0 0 0 } -minWidth true -minSpacing true -minArea true -sameNet true -short true -overlap true -offRGrid false -offMGrid true -mergedMGridCheck true -minHole true -implantCheck true -minimumCut true -minStep true -viaEnclosure true -antenna false -insuffMetalOverlap true -pinInBlkg false -diffCellViol true -sameCellViol false -padFillerCellsOverlap true -routingBlkgPinOverlap true -routingCellBlkgOverlap true -regRoutingOnly false -stackedViasOnRegNet false -wireExt true -useNonDefaultSpacing false -maxWidth true -maxNonPrefLength -1 -error 1000
+verifyGeometry
+setVerifyGeometryMode -area { 0 0 0 0 }
+verifyProcessAntenna -reportfile CHIP.antenna.rpt -error 1000
+verifyConnectivity -nets {VCC GND} -type special -noUnroutedNet -error 1000 -warning 50
+setLayerPreference violation -isVisible 1
+violationBrowser -all -no_display_false
+zoomBox 586.45 924.22 587.89 925.46
+redraw
+zoomBox 697.76 860.94 699.2 862.18
+uiSetTool layerBlk
+createRouteBlk -box 698.245 861.350 698.866 861.738
+zoomOut
+zoomOut
+uiSetTool layerBlk
+zoomSelected
+zoomSelected
+zoomSelected
+redraw
+redraw
+redraw
+redraw
+redraw
+createRouteBlk -box 697.910 860.498 699.543 865.865
+setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+setDelayCalMode -engine default -siAware true
+optDesign -postRoute
+zoomOut
+zoomOut
+zoomOut
+zoomOut
+zoomOut
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_implant -quiet
+get_verify_drc_mode -check_implant_across_rows -quiet
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_implant true -check_implant_across_rows false -check_ndr_spacing false -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -report CHIP.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+fit
+zoomIn
+setOptMode -fixCap true -fixTran true -fixFanoutLoad true
+setDelayCalMode -engine default -siAware true
+optDesign -postRoute
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_implant -quiet
+get_verify_drc_mode -check_implant_across_rows -quiet
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_implant true -check_implant_across_rows false -check_ndr_spacing false -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -report CHIP.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+fit
+redraw
+zoomBox -297.6 563.78 1775.68 1601.18
+zoomIn
+zoomIn
+zoomBox -297.6 568.82 1775.68 1606.22
+zoomIn
+zoomIn
+zoomBox -297.6 583.94 1775.68 1621.34
+getCTSMode -engine -quiet
+verifyConnectivity -nets {VCC GND} -type special -noUnroutedNet -error 1000 -warning 50
+setVerifyGeometryMode -area { 0 0 0 0 } -minWidth true -minSpacing true -minArea true -sameNet true -short true -overlap true -offRGrid false -offMGrid true -mergedMGridCheck true -minHole true -implantCheck true -minimumCut true -minStep true -viaEnclosure true -antenna false -insuffMetalOverlap true -pinInBlkg false -diffCellViol true -sameCellViol false -padFillerCellsOverlap true -routingBlkgPinOverlap true -routingCellBlkgOverlap true -regRoutingOnly false -stackedViasOnRegNet false -wireExt true -useNonDefaultSpacing false -maxWidth true -maxNonPrefLength -1 -error 1000
+verifyGeometry
+setVerifyGeometryMode -area { 0 0 0 0 }
+saveDesign DBS/corefiller
+saveNetlist CHIP.v
+setAnalysisMode -analysisType bcwc
+write_sdf -max_view av_func_mode_max -min_view av_func_mode_min -edges noedge -splitsetuphold -remashold -splitrecrem -min_period_edges none CHIP.sdf
+set dbgLefDefOutVersion 5.8
+global dbgLefDefOutVersion
+set dbgLefDefOutVersion 5.8
+defOut -floorplan -netlist -scanChain -routing CHIP.def
+set dbgLefDefOutVersion 5.8
+set dbgLefDefOutVersion 5.8
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_0 -loc 192.09 -56.92 -ori R0
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_1 -loc 306.68 -56.92 -ori R0
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_2 -loc 421.27 -56.92 -ori R0
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_3 -loc 535.86 -56.92 -ori R0
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_CoreVSS2 -loc 650.44 -56.92 -ori R0
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_CoreVDD2 -loc 765.02 -56.92 -ori R0
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_4 -loc 879.6 -56.92 -ori R0
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_5 -loc 994.19 -56.92 -ori R0
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_6 -loc 1108.78 -56.92 -ori R0
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_7 -loc 1223.37 -56.92 -ori R0
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_8 -loc 1478.08 191.27 -ori R90
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_9 -loc 1478.08 305.03 -ori R90
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_10 -loc 1478.08 418.79 -ori R90
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_11 -loc 1478.08 532.55 -ori R90
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_IOVDD2 -loc 1478.08 646.31 -ori R90
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_IOVSS2 -loc 1478.08 760.07 -ori R90
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_12 -loc 1478.08 873.83 -ori R90
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_13 -loc 1478.08 987.59 -ori R90
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_14 -loc 1478.08 1101.35 -ori R90
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_15 -loc 1478.08 1215.11 -ori R90
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_a_i_4 -loc 1241 1469 -ori R180
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_a_i_3 -loc 1144.04 1469 -ori R180
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_a_i_2 -loc 1047.08 1469 -ori R180
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_a_i_1 -loc 950.12 1469 -ori R180
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_a_i_0 -loc 853.16 1469 -ori R180
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_CoreVSS1 -loc 756.21 1469 -ori R180
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_CoreVDD1 -loc 659.26 1469 -ori R180
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_inst_i_2 -loc 562.3 1469 -ori R180
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_inst_i_1 -loc 465.34 1469 -ori R180
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_inst_i_0 -loc 368.38 1469 -ori R180
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_reset_n_i -loc 271.42 1469 -ori R180
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_clk_p_i -loc 174.46 1469 -ori R180
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_b_i_7 -loc -56.92 1239.49 -ori R270
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_b_i_6 -loc -56.92 1150.1 -ori R270
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_b_i_5 -loc -56.92 1060.71 -ori R270
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_b_i_4 -loc -56.92 971.33 -ori R270
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_b_i_3 -loc -56.92 881.95 -ori R270
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_b_i_2 -loc -56.92 792.57 -ori R270
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_IOVSS1 -loc -56.92 703.19 -ori R270
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_IOVDD1 -loc -56.92 613.81 -ori R270
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_b_i_1 -loc -56.92 524.43 -ori R270
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_b_i_0 -loc -56.92 435.05 -ori R270
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_a_i_7 -loc -56.92 345.67 -ori R270
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_a_i_6 -loc -56.92 256.28 -ori R270
+addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_a_i_5 -loc -56.92 166.89 -ori R270
+setDrawView place
+redraw
+zoomSelected
+win
+dumpToGIF screen_cap
+violationBrowserClose
+win
+win
+createRouteBlk -box -314.344 -94.084 1880.995 1599.572
+zoomSelected
+createRouteBlk -box -925.418 1358.160 -699.094 1463.777
+uiSetTool cutWire
+set layerNameNoAbbreviation 0
+set layerNameNoAbbreviation 1
+editCutWire -only_visible_wires -line { 221.289 1048.851 -336.976 490.586 }
+set layerNameNoAbbreviation 0
+set layerNameNoAbbreviation 1
+editCutWire -only_visible_wires -line { -661.373 1539.219 153.392 1539.219 }
+set layerNameNoAbbreviation 0
+set layerNameNoAbbreviation 1
+editCutWire -only_visible_wires -line { -480.315 1082.799 -480.315 1380.792 }
+uiSetTool select
+setDrawView place
+setDrawView ameba
+setDrawView place
+setDrawView fplan
+setDrawView fplan
+setDrawView place
+setDrawView ameba
+setDrawView place
+gui_select -rect {-966.910 1712.733 -427.506 1384.564}
+gui_select -rect {-57.844 1539.219 945.524 679.189}
+gui_select -rect {-106.881 1407.196 1356.679 294.439}
+deselectAll
+selectRouteBlk -box 0.0000 0.0000 1478.0800 1469.0000 defLayerBlkName -layer metal3
+gui_select -rect {323.134 950.777 -416.190 1022.446}
+deselectAll
+dehighlight -select
+selectRouteBlk -box 0.0000 0.0000 1478.0800 1469.0000 defLayerBlkName -layer metal3
+gui_select -rect {-84.248 1576.939 1613.179 -67.679}
+deselectAll
+gui_select -rect {-178.550 1610.888 1665.988 -67.679}
+deleteSelectedFromFPlan
+deselectAll
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+restoreDesign /home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/route.dat CHIP
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1

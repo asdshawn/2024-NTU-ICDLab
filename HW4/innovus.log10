@@ -1,0 +1,492 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+Options:	
+Date:		Fri Mar 22 01:35:41 2024
+Host:		cad17 (x86_64 w/Linux 3.10.0-1160.88.1.el7.x86_64) (4cores*16cpus*Intel(R) Xeon(R) CPU E5520 @ 2.27GHz 8192KB)
+OS:		CentOS Linux release 7.9.2009 (Core)
+
+License:
+		invs	Innovus Implementation System	17.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (23 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getDrawView
+<CMD> loadWorkspace -name Physical
+<CMD> win
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+**ERROR: (TCLCMD-995):	Can not open file '/home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/Finish.dat/libs/mmmc/fsa0m_a_generic_core_tt1p8v25c.lib' for library set
+**ERROR: (TCLCMD-995):	Can not open file '/home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/Finish.dat/libs/mmmc/fsa0m_a_t33_generic_io_tt1p8v25c.lib' for library set
+**ERROR: (TCLCMD-995):	Can not open file '/home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/Finish.dat/libs/mmmc/u18_tt.cdb' for library set
+
+
+ERROR: 
+
+
+    while executing
+"error $catchMsg"
+    (procedure "restoreDesign" line 29)
+
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+**ERROR: (TCLCMD-995):	Can not open file '/home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/Finish.dat/libs/mmmc/fsa0m_a_generic_core_tt1p8v25c.lib' for library set
+**ERROR: (TCLCMD-995):	Can not open file '/home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/Finish.dat/libs/mmmc/fsa0m_a_t33_generic_io_tt1p8v25c.lib' for library set
+**ERROR: (TCLCMD-995):	Can not open file '/home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/Finish.dat/libs/mmmc/u18_tt.cdb' for library set
+
+
+ERROR: 
+
+
+    while executing
+"error $catchMsg"
+    (procedure "restoreDesign" line 29)
+
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+**ERROR: (TCLCMD-995):	Can not open file '/home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/Finish.dat/libs/mmmc/fsa0m_a_generic_core_tt1p8v25c.lib' for library set
+**ERROR: (TCLCMD-995):	Can not open file '/home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/Finish.dat/libs/mmmc/fsa0m_a_t33_generic_io_tt1p8v25c.lib' for library set
+**ERROR: (TCLCMD-995):	Can not open file '/home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/Finish.dat/libs/mmmc/u18_tt.cdb' for library set
+
+
+ERROR: 
+
+
+    while executing
+"error $catchMsg"
+    (procedure "restoreDesign" line 29)
+
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+**ERROR: (TCLCMD-995):	Can not open file '/home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/Finish.dat/libs/mmmc/fsa0m_a_generic_core_tt1p8v25c.lib' for library set
+**ERROR: (TCLCMD-995):	Can not open file '/home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/Finish.dat/libs/mmmc/fsa0m_a_t33_generic_io_tt1p8v25c.lib' for library set
+**ERROR: (TCLCMD-995):	Can not open file '/home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/Finish.dat/libs/mmmc/u18_tt.cdb' for library set
+
+
+ERROR: 
+
+
+    while executing
+"error $catchMsg"
+    (procedure "restoreDesign" line 29)
+
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+**ERROR: (TCLCMD-995):	Can not open file '/home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/Finish.dat/libs/mmmc/fsa0m_a_generic_core_tt1p8v25c.lib' for library set
+**ERROR: (TCLCMD-995):	Can not open file '/home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/Finish.dat/libs/mmmc/fsa0m_a_t33_generic_io_tt1p8v25c.lib' for library set
+**ERROR: (TCLCMD-995):	Can not open file '/home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/Finish.dat/libs/mmmc/u18_tt.cdb' for library set
+
+
+ERROR: 
+
+
+    while executing
+"error $catchMsg"
+    (procedure "restoreDesign" line 29)
+
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+**ERROR: (TCLCMD-995):	Can not open file '/home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/Finish.dat/libs/mmmc/fsa0m_a_generic_core_tt1p8v25c.lib' for library set
+**ERROR: (TCLCMD-995):	Can not open file '/home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/Finish.dat/libs/mmmc/fsa0m_a_t33_generic_io_tt1p8v25c.lib' for library set
+**ERROR: (TCLCMD-995):	Can not open file '/home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/Finish.dat/libs/mmmc/u18_tt.cdb' for library set
+
+
+ERROR: 
+
+
+    while executing
+"error $catchMsg"
+    (procedure "restoreDesign" line 29)
+
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+**ERROR: (TCLCMD-995):	Can not open file '/home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/Finish.dat/libs/mmmc/fsa0m_a_generic_core_tt1p8v25c.lib' for library set
+**ERROR: (TCLCMD-995):	Can not open file '/home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/Finish.dat/libs/mmmc/fsa0m_a_t33_generic_io_tt1p8v25c.lib' for library set
+
+
+ERROR: 
+
+
+    while executing
+"error $catchMsg"
+    (procedure "restoreDesign" line 29)
+
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+**WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+RC_typ RC_best RC_worst
+**WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B1' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B1P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B1S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B1T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B2' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B2P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B2S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3B2T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3P' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3S' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-58):	MACRO 'AN3T' has been found in the database. Its content except DENSITY and PIN ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (EMS-27):	Message (IMPLF-58) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPLF-119):	LAYER 'metal1' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal2' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal3' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal4' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal5' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-119):	LAYER 'metal6' has been found in the database. Its content except ANTENNA* data will be ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-61):	392 duplicated MACRO definitions have been found in the LEF file(s). Their content except DENSITY and PIN ANTENNA* data have been ignored.
+Review the LEF files specified in the init_lef_file variable and remove redundant definitions.
+**WARN: (IMPLF-200):	Pin 'IO' in macro 'ZMA2GSD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'IO' in macro 'ZMA2GSC' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'I' in macro 'XMD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'I' in macro 'XMC' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'GNDO' in macro 'GNDIOD' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'GNDO' in macro 'GNDIOC' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+**WARN: (IMPLF-200):	Pin 'A' in macro 'ANTENNA' has no ANTENNAGATEAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Loading view definition file from /home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/viewDefinition.tcl
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_generic_core_ss1p62v125c.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'O' of cell 'YA2GSC' is not defined in the library. (File /home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_t33_generic_io_ss1p62v125c.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'O' of cell 'YA2GSD' is not defined in the library. (File /home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_t33_generic_io_ss1p62v125c.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'IO' of cell 'ZMA2GSC' is not defined in the library. (File /home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_t33_generic_io_ss1p62v125c.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'IO' of cell 'ZMA2GSD' is not defined in the library. (File /home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_t33_generic_io_ss1p62v125c.lib)
+**WARN: (TECHLIB-302):	No function defined for cell 'ANTENNA'. The cell will only be used for analysis. (File /home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_generic_core_ff1p98vm40c.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'O' of cell 'YA2GSC' is not defined in the library. (File /home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_t33_generic_io_ff1p98vm40c.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'O' of cell 'YA2GSD' is not defined in the library. (File /home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_t33_generic_io_ff1p98vm40c.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'IO' of cell 'ZMA2GSC' is not defined in the library. (File /home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_t33_generic_io_ff1p98vm40c.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_capacitance' on 'output/inout' pin 'IO' of cell 'ZMA2GSD' is not defined in the library. (File /home/raid7_2/user12/r2945050/ICDLab/HW4/lib/fsa0m_a_t33_generic_io_ff1p98vm40c.lib)
+*** End library_loading (cpu=0.05min, real=0.05min, mem=25.6M, fe_cpu=4.74min, fe_real=29.32min, fe_mem=554.6M) ***
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4T' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4T' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4S' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4S' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4P' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4P' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR4' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3T' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3T' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3S' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3S' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3P' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3P' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR3' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR3' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HT' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'GND' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+**WARN: (IMPVL-159):	Pin 'VCC' of cell 'XOR2HS' is defined in LEF but not in the timing library.
+**WARN: (EMS-27):	Message (IMPVL-159) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+*** Netlist is unique.
+**WARN: (IMPFP-3961):	The techSite 'iocore_f' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_e' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_ds' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_cs' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_d' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_c' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_b' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+**WARN: (IMPFP-3961):	The techSite 'iocore_a' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+Loading preference file /home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/gui.pref.tcl ...
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+**WARN: (IMPTCM-77):	Option "-modulePlan" for command setPlaceMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+**WARN: (IMPEXT-6202):	In addition to the technology file, the capacitance table file is specified for all the RC corners. If the technology file  is already specified for all the RC corners, the capacitance table file is not required for preRoute and postRoute extraction. In a new session, the capacitance table files can be removed from the create_rc_corner command to enable the technology file to be used for preRoute and postRoute (effort level medium/high/signoff) extraction engines.
+CHIP
+CHIP
+**WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+'set_default_switching_activity' finished successfully.
+<CMD> setDrawView place
+<CMD> saveNetlist CHIP.v
+Writing Netlist "CHIP.v" ...
+<CMD> setAnalysisMode -analysisType bcwc
+<CMD> write_sdf -max_view av_func_mode_max -min_view av_func_mode_min -edges noedge -splitsetuphold  -remashold -splitrecrem -min_period_edges none CHIP.sdf
+**WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_parallel_arcs'. This setting is recommended for generating SDF for functional  simulation applications.
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: CHIP
+# Design Mode: 90nm
+# Analysis Mode: MMMC Non-OCV 
+# Parasitics Mode: No SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+Extraction called for design 'CHIP' of instances=6932 and nets=532 using extraction engine 'postRoute' at effort level 'low' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PostRoute (effortLevel low) RC Extraction called for design CHIP.
+RC Extraction called in multi-corner(2) mode.
+Process corner(s) are loaded.
+ Corner: RC_worst
+ Corner: RC_best
+extractDetailRC Option : -outfile /tmp/innovus_temp_23625_cad17_r2945050_kpd5LC/CHIP_23625_oxUCeT.rcdb.d  -extended
+RC Mode: PostRoute -effortLevel low [Extended CapTable, RC Table Resistances]
+      RC Corner Indexes            0       1   
+Capacitance Scaling Factor   : 1.00000 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 1.00000 
+Resistance Scaling Factor    : 1.00000 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 1.00000 
+Clock Res. Scaling Factor    : 1.00000 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 964.9M)
+Extracted 10.0307% (CPU Time= 0:00:00.1  MEM= 1040.5M)
+Extracted 20.0394% (CPU Time= 0:00:00.1  MEM= 1040.5M)
+Extracted 30.0263% (CPU Time= 0:00:00.1  MEM= 1040.5M)
+Extracted 40.035% (CPU Time= 0:00:00.1  MEM= 1040.5M)
+Extracted 50.0438% (CPU Time= 0:00:00.1  MEM= 1040.5M)
+Extracted 60.0307% (CPU Time= 0:00:00.1  MEM= 1041.5M)
+Extracted 70.0394% (CPU Time= 0:00:00.1  MEM= 1041.5M)
+Extracted 80.0263% (CPU Time= 0:00:00.1  MEM= 1041.5M)
+Extracted 90.035% (CPU Time= 0:00:00.1  MEM= 1041.5M)
+Extracted 100% (CPU Time= 0:00:00.1  MEM= 1041.5M)
+Number of Extracted Resistors     : 7580
+Number of Extracted Ground Cap.   : 7806
+Number of Extracted Coupling Cap. : 11216
+Filtering XCap in 'relativeOnly' mode using values relative_c_threshold=0.03 and total_c_threshold=5fF.
+ Corner: RC_worst
+ Corner: RC_best
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1025.4M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:00.2  Real Time: 0:00:01.0  MEM: 1025.449M)
+AAE_INFO: 1 threads acquired from CTE.
+Start delay calculation (fullDC) (1 T). (MEM=1025.45)
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+AAE_INFO: Number of noise libraries( CDBs ) loaded = 2
+AAE_INFO: Cdb files are: 
+ 	/home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/libs/mmmc/u18_ss.cdb
+	/home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/libs/mmmc/u18_ff.cdb
+ 
+**WARN: (IMPESI-3083):	CDB cell FILLERCC does not have a corresponding model in any timing library file. Skipping the characterized noise model from cdb file /home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/libs/mmmc/u18_ss.cdb.
+**WARN: (IMPESI-3083):	CDB cell FILLERCC does not have a corresponding model in any timing library file. Skipping the characterized noise model from cdb file /home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/libs/mmmc/u18_ss.cdb.
+**WARN: (IMPESI-3083):	CDB cell FILLERBC does not have a corresponding model in any timing library file. Skipping the characterized noise model from cdb file /home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/libs/mmmc/u18_ss.cdb.
+**WARN: (IMPESI-3083):	CDB cell FILLERBC does not have a corresponding model in any timing library file. Skipping the characterized noise model from cdb file /home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/libs/mmmc/u18_ss.cdb.
+**WARN: (IMPESI-3083):	CDB cell FILLERAC does not have a corresponding model in any timing library file. Skipping the characterized noise model from cdb file /home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/libs/mmmc/u18_ss.cdb.
+**WARN: (IMPESI-3083):	CDB cell FILLERAC does not have a corresponding model in any timing library file. Skipping the characterized noise model from cdb file /home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/libs/mmmc/u18_ss.cdb.
+**WARN: (IMPESI-3083):	CDB cell FILLER8C does not have a corresponding model in any timing library file. Skipping the characterized noise model from cdb file /home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/libs/mmmc/u18_ss.cdb.
+**WARN: (IMPESI-3083):	CDB cell FILLER8C does not have a corresponding model in any timing library file. Skipping the characterized noise model from cdb file /home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/libs/mmmc/u18_ss.cdb.
+**WARN: (IMPESI-3083):	CDB cell FILLER4C does not have a corresponding model in any timing library file. Skipping the characterized noise model from cdb file /home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/libs/mmmc/u18_ss.cdb.
+**WARN: (IMPESI-3083):	CDB cell FILLER4C does not have a corresponding model in any timing library file. Skipping the characterized noise model from cdb file /home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/libs/mmmc/u18_ss.cdb.
+**WARN: (IMPESI-3083):	CDB cell FILLER2C does not have a corresponding model in any timing library file. Skipping the characterized noise model from cdb file /home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/libs/mmmc/u18_ss.cdb.
+**WARN: (IMPESI-3083):	CDB cell FILLER2C does not have a corresponding model in any timing library file. Skipping the characterized noise model from cdb file /home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/libs/mmmc/u18_ss.cdb.
+**WARN: (IMPESI-3083):	CDB cell FILLERCC does not have a corresponding model in any timing library file. Skipping the characterized noise model from cdb file /home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/libs/mmmc/u18_ff.cdb.
+**WARN: (IMPESI-3083):	CDB cell FILLERCC does not have a corresponding model in any timing library file. Skipping the characterized noise model from cdb file /home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/libs/mmmc/u18_ff.cdb.
+**WARN: (IMPESI-3083):	CDB cell FILLERBC does not have a corresponding model in any timing library file. Skipping the characterized noise model from cdb file /home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/libs/mmmc/u18_ff.cdb.
+**WARN: (IMPESI-3083):	CDB cell FILLERBC does not have a corresponding model in any timing library file. Skipping the characterized noise model from cdb file /home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/libs/mmmc/u18_ff.cdb.
+**WARN: (IMPESI-3083):	CDB cell FILLERAC does not have a corresponding model in any timing library file. Skipping the characterized noise model from cdb file /home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/libs/mmmc/u18_ff.cdb.
+**WARN: (IMPESI-3083):	CDB cell FILLERAC does not have a corresponding model in any timing library file. Skipping the characterized noise model from cdb file /home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/libs/mmmc/u18_ff.cdb.
+**WARN: (IMPESI-3083):	CDB cell FILLER8C does not have a corresponding model in any timing library file. Skipping the characterized noise model from cdb file /home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/libs/mmmc/u18_ff.cdb.
+**WARN: (IMPESI-3083):	CDB cell FILLER8C does not have a corresponding model in any timing library file. Skipping the characterized noise model from cdb file /home/raid7_2/user12/r2945050/ICDLab/HW4/DBS/coreFiller.dat/libs/mmmc/u18_ff.cdb.
+**WARN: (EMS-27):	Message (IMPESI-3083) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+**WARN: (IMPESI-3086):	The cell 'YA2GSD' does not have characterized noise model(s) for 'fsa0m_a_t33_generic_io_ss1p62v125c, fsa0m_a_t33_generic_io_ff1p98vm40c' lib(s). Missing noise information could compromise the accuracy of analysis.
+**WARN: (IMPESI-3086):	The cell 'XMD' does not have characterized noise model(s) for 'fsa0m_a_t33_generic_io_ss1p62v125c, fsa0m_a_t33_generic_io_ff1p98vm40c' lib(s). Missing noise information could compromise the accuracy of analysis.
+AAE_INFO: 1 threads acquired from CTE.
+AAE_INFO: 1 threads acquired from CTE.
+AAE_INFO: 1 threads acquired from CTE.
+Total number of fetched objects 515
+AAE_INFO-618: Total number of nets in the design is 532,  100.0 percent of the nets selected for SI analysis
+AAE_INFO: 1 threads acquired from CTE.
+Total number of fetched objects 515
+AAE_INFO-618: Total number of nets in the design is 532,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1322.32 CPU=0:00:00.5 REAL=0:00:01.0)
+End delay calculation (fullDC). (MEM=1224.95 CPU=0:00:02.6 REAL=0:00:03.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1225.0M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1225.0M)
+Starting SI iteration 2
+Start delay calculation (fullDC) (1 T). (MEM=1224.95)
+AAE_INFO: 1 threads acquired from CTE.
+Total number of fetched objects 515
+AAE_INFO-618: Total number of nets in the design is 532,  0.4 percent of the nets selected for SI analysis
+AAE_INFO: 1 threads acquired from CTE.
+Glitch Analysis: View av_func_mode_min -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View av_func_mode_min -- Total Number of Nets Analyzed = 515. 
+Glitch Analysis: View av_scan_mode_min -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View av_scan_mode_min -- Total Number of Nets Analyzed = 37. 
+Total number of fetched objects 515
+AAE_INFO-618: Total number of nets in the design is 532,  0.6 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1192.95 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1192.95 CPU=0:00:00.1 REAL=0:00:00.0)
+<CMD> set dbgLefDefOutVersion 5.8
+<CMD> global dbgLefDefOutVersion
+<CMD> set dbgLefDefOutVersion 5.8
+<CMD> defOut -floorplan -netlist -scanChain -routing CHIP.def
+Writing DEF file 'CHIP.def', current time is Fri Mar 22 02:11:09 2024 ...
+unitPerMicron=1000, dbgMicronPerDBU=0.001000, unitPerDBU=1.000000
+DEF file 'CHIP.def' is written, current time is Fri Mar 22 02:11:09 2024 ...
+<CMD> set dbgLefDefOutVersion 5.8
+<CMD> set dbgLefDefOutVersion 5.8
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_0 -loc 192.09 -56.92 -ori R0
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_o_0' is placed at (192090, -56920) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_1 -loc 306.68 -56.92 -ori R0
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_o_1' is placed at (306680, -56920) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_2 -loc 421.27 -56.92 -ori R0
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_o_2' is placed at (421270, -56920) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_3 -loc 535.86 -56.92 -ori R0
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_o_3' is placed at (535860, -56920) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_CoreVSS2 -loc 650.44 -56.92 -ori R0
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_CoreVSS2' is placed at (650440, -56920) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_CoreVDD2 -loc 765.02 -56.92 -ori R0
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_CoreVDD2' is placed at (765020, -56920) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_4 -loc 879.6 -56.92 -ori R0
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_o_4' is placed at (879600, -56920) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_5 -loc 994.19 -56.92 -ori R0
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_o_5' is placed at (994190, -56920) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_6 -loc 1108.78 -56.92 -ori R0
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_o_6' is placed at (1108780, -56920) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_7 -loc 1223.37 -56.92 -ori R0
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_o_7' is placed at (1223370, -56920) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_8 -loc 1478.08 191.27 -ori R90
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_o_8' is placed at (1478080, 191270) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_9 -loc 1478.08 305.03 -ori R90
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_o_9' is placed at (1478080, 305030) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_10 -loc 1478.08 418.79 -ori R90
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_o_10' is placed at (1478080, 418790) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_11 -loc 1478.08 532.55 -ori R90
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_o_11' is placed at (1478080, 532550) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_IOVDD2 -loc 1478.08 646.31 -ori R90
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_IOVDD2' is placed at (1478080, 646310) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_IOVSS2 -loc 1478.08 760.07 -ori R90
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_IOVSS2' is placed at (1478080, 760070) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_12 -loc 1478.08 873.83 -ori R90
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_o_12' is placed at (1478080, 873830) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_13 -loc 1478.08 987.59 -ori R90
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_o_13' is placed at (1478080, 987590) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_14 -loc 1478.08 1101.35 -ori R90
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_o_14' is placed at (1478080, 1101350) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_o_15 -loc 1478.08 1215.11 -ori R90
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_o_15' is placed at (1478080, 1215110) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_a_i_4 -loc 1241 1469 -ori R180
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_a_i_4' is placed at (1241000, 1469000) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_a_i_3 -loc 1144.04 1469 -ori R180
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_a_i_3' is placed at (1144040, 1469000) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_a_i_2 -loc 1047.08 1469 -ori R180
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_a_i_2' is placed at (1047080, 1469000) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_a_i_1 -loc 950.12 1469 -ori R180
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_a_i_1' is placed at (950120, 1469000) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_a_i_0 -loc 853.16 1469 -ori R180
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_a_i_0' is placed at (853160, 1469000) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_CoreVSS1 -loc 756.21 1469 -ori R180
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_CoreVSS1' is placed at (756210, 1469000) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_CoreVDD1 -loc 659.26 1469 -ori R180
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_CoreVDD1' is placed at (659260, 1469000) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_inst_i_2 -loc 562.3 1469 -ori R180
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_inst_i_2' is placed at (562300, 1469000) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_inst_i_1 -loc 465.34 1469 -ori R180
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_inst_i_1' is placed at (465340, 1469000) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_inst_i_0 -loc 368.38 1469 -ori R180
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_inst_i_0' is placed at (368380, 1469000) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_reset_n_i -loc 271.42 1469 -ori R180
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_reset_n_i' is placed at (271420, 1469000) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_clk_p_i -loc 174.46 1469 -ori R180
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_clk_p_i' is placed at (174460, 1469000) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_b_i_7 -loc -56.92 1239.49 -ori R270
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_b_i_7' is placed at (-56920, 1239490) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_b_i_6 -loc -56.92 1150.1 -ori R270
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_b_i_6' is placed at (-56920, 1150100) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_b_i_5 -loc -56.92 1060.71 -ori R270
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_b_i_5' is placed at (-56920, 1060710) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_b_i_4 -loc -56.92 971.33 -ori R270
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_b_i_4' is placed at (-56920, 971330) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_b_i_3 -loc -56.92 881.95 -ori R270
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_b_i_3' is placed at (-56920, 881950) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_b_i_2 -loc -56.92 792.57 -ori R270
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_b_i_2' is placed at (-56920, 792570) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_IOVSS1 -loc -56.92 703.19 -ori R270
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_IOVSS1' is placed at (-56920, 703190) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_IOVDD1 -loc -56.92 613.81 -ori R270
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_IOVDD1' is placed at (-56920, 613810) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_b_i_1 -loc -56.92 524.43 -ori R270
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_b_i_1' is placed at (-56920, 524430) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_b_i_0 -loc -56.92 435.05 -ori R270
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_b_i_0' is placed at (-56920, 435050) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_a_i_7 -loc -56.92 345.67 -ori R270
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_a_i_7' is placed at (-56920, 345670) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_a_i_6 -loc -56.92 256.28 -ori R270
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_a_i_6' is placed at (-56920, 256280) which is outside of core box.
+<CMD> addInst -physical -cell BONDPADD_m -inst BPad_ipad_data_a_i_5 -loc -56.92 166.89 -ori R270
+**WARN: (IMPSYC-6308):	Instance 'BPad_ipad_data_a_i_5' is placed at (-56920, 166890) which is outside of core box.
+<CMD> setDrawView place
+<CMD> redraw
+<CMD> add_text -layer metal5 -pt 1435 640 -label IOVDD -height 10
+
+*** Memory Usage v#1 (Current mem = 1097.637M, initial mem = 179.691M) ***
+*** Message Summary: 1279 warning(s), 20 error(s)
+
+--- Ending "Innovus" (totcpu=0:05:40, real=0:38:14, mem=1097.6M) ---

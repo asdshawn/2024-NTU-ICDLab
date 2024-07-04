@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : Adder_relu
+Version: U-2022.12
+Date   : Wed Jun  5 17:15:23 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    fsa0m_a_generic_core_tt1p8v25c (File: /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/Adder_relu/fsa0m_a_generic_core_tt1p8v25c.db)
+
+Number of ports:                           98
+Number of nets:                           649
+Number of cells:                          558
+Number of combinational cells:            511
+Number of sequential cells:                47
+Number of macros/black boxes:               0
+Number of buf/inv:                        159
+Number of references:                      57
+
+Combinational area:              12249.215974
+Buf/Inv area:                     2568.585559
+Noncombinational area:            2977.934341
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 15227.150315
+Total area:                 undefined
+1

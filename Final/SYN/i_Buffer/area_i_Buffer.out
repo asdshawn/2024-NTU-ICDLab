@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : i_Buffer
+Version: U-2022.12
+Date   : Wed Jun  5 16:42:07 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'i_Buffer' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    fsa0m_a_generic_core_tt1p8v25c (File: /home/raid7_2/user12/r2945050/ICDLab/Final/SYN/i_Buffer/fsa0m_a_generic_core_tt1p8v25c.db)
+
+Number of ports:                          228
+Number of nets:                          5455
+Number of cells:                         5443
+Number of combinational cells:           3903
+Number of sequential cells:              1540
+Number of macros/black boxes:               0
+Number of buf/inv:                       2399
+Number of references:                      56
+
+Combinational area:              81119.806691
+Buf/Inv area:                    36585.157902
+Noncombinational area:           92097.230808
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                173217.037499
+Total area:                 undefined
+1

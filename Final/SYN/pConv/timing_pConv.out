@@ -1,0 +1,63 @@
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : pConv
+Version: U-2022.12
+Date   : Wed Jun  5 16:56:57 2024
+****************************************
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: i_weight[23]
+              (input port clocked by clk)
+  Endpoint: product_2_r_reg[19]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pConv              G200K                 fsa0m_a_generic_core_tt1p8v25c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  input external delay                     1.00       1.50 f
+  i_weight[23] (in)                        0.07       1.57 f
+  U2094/O (INV1S)                          0.35       1.91 r
+  U172/O (INV1S)                           0.51       2.43 f
+  U751/O (BUF1)                            0.38       2.80 f
+  U1050/O (INV1S)                          0.44       3.24 r
+  U2248/O (NR2)                            0.13       3.38 f
+  U1689/S (FA1)                            0.55       3.92 f
+  U2254/S (FA1)                            0.25       4.18 f
+  U1654/S (FA1)                            0.48       4.66 f
+  U1165/O (NR2T)                           0.20       4.86 r
+  U1163/O (NR2T)                           0.12       4.98 f
+  U2277/O (INV1S)                          0.17       5.15 r
+  U2278/O (NR2)                            0.12       5.27 f
+  U526/O (AOI12H)                          0.17       5.44 r
+  U2281/O (XOR2HS)                         0.14       5.57 r
+  product_2_r_reg[19]/D (QDFFRBT)          0.00       5.57 r
+  data arrival time                                   5.57
+
+  clock clk (rise edge)                    1.00       1.00
+  clock network delay (ideal)              0.50       1.50
+  clock uncertainty                       -0.10       1.40
+  product_2_r_reg[19]/CK (QDFFRBT)         0.00       1.40 r
+  library setup time                      -0.10       1.30
+  data required time                                  1.30
+  -----------------------------------------------------------
+  data required time                                  1.30
+  data arrival time                                  -5.57
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -4.27
+
+
+1

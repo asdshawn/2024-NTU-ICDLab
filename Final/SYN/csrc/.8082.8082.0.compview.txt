@@ -1,0 +1,7 @@
+{"vcs1":{"timestamp_begin":1717094320.970825112, "rt":6.34, "ut":0.32, "st":0.23}}
+{"vcselab":{"timestamp_begin":1717094327.809497887, "rt":96.24, "ut":0.29, "st":0.07}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1717094314.634899597}
+{"VCS_COMP_START_TIME": 1717094314.634899597}
+{"VCS_COMP_END_TIME": 1717094425.511358990}
+{"VCS_USER_OPTIONS": "Top.v Top_tb.v -full64 -R -debug_access+all +v2k"}
+{"vcs1": {"peak_mem": 329588}}
