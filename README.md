@@ -23,4 +23,4 @@ About the team project, your team needs to come up with the proposal on your own
 
 ## Final Project
 - Architecture
-  ![Architecture Picture](https://github.com/asdshawn/2024-NTU-ICDLab/tree/main/pic/Architecture.png)
+  ![Architecture Picture](pic/Architecture.png)
