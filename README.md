@@ -10,11 +10,12 @@ About the team project, your team needs to come up with the proposal on your own
 
 | Assignment | Part | Description |
 | ---------- | ---- | ----------- |
-| [Lab1](https://github.com/asdshawn/2024-NTU-ICDLab/tree/main/Lab1) | Verilog     | ALU            |
+| [Lab1](https://github.com/asdshawn/2024-NTU-ICDLab/tree/main/Lab1) | Verilog     | – How to verify your Verilog.
+– How to run the VCS simulator with testbench. |
 | [HW1](https://github.com/asdshawn/2024-NTU-ICDLab/tree/main/HW1)  | Verilog     |             |
-| [Lab2](https://github.com/asdshawn/2024-NTU-ICDLab/tree/main/Lab2) | Testbench   |             |
+| [Lab2](https://github.com/asdshawn/2024-NTU-ICDLab/tree/main/Lab2) | Testbench   | Debug an ALU. |
 | [HW2](https://github.com/asdshawn/2024-NTU-ICDLab/tree/main/HW2)  | Testbench   |             |
-| [Lab3](https://github.com/asdshawn/2024-NTU-ICDLab/tree/main/Lab3) | Synthesis   |             |
+| [Lab3](https://github.com/asdshawn/2024-NTU-ICDLab/tree/main/Lab3) | Synthesis   | Introduction to synthesis |
 | [HW3](https://github.com/asdshawn/2024-NTU-ICDLab/tree/main/HW3)  | Synthesis   |             |
 | [Lab4](https://github.com/asdshawn/2024-NTU-ICDLab/tree/main/Lab4) | APR         |             |
 | [HW4](https://github.com/asdshawn/2024-NTU-ICDLab/tree/main/HW4)  | APR         |             |
