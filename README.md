@@ -23,4 +23,5 @@ About the team project, your team needs to come up with the proposal on your own
 
 ## Final Project
 - Architecture
+
 ![Architecture Picture](pic/Architecture.png)
